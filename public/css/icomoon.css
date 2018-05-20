@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?432s4e');
+  src:  url('fonts/icomoon.eot?432s4e#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?432s4e') format('truetype'),
+    url('fonts/icomoon.woff?432s4e') format('woff'),
+    url('fonts/icomoon.svg?432s4e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e900";
+  color: #251d66;
+}
+.icon-movil:before {
+  content: "\e901";
+  color: #261c66;
+}
+.icon-visa:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-default .path1:before {
+  content: "\e903";
+  color: rgb(255, 255, 255);
+}
+.icon-default .path2:before {
+  content: "\e904";
+  margin-left: -1.2275390625em;
+  color: rgb(255, 255, 255);
+}
+.icon-default .path3:before {
+  content: "\e905";
+  margin-left: -1.2275390625em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.icon-default .path4:before {
+  content: "\e906";
+  margin-left: -1.2275390625em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.icon-default-2:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-contact:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-invoice:before {
+  content: "\e909";
+  color: #0d79aa;
+}
+.icon-care:before {
+  content: "\e90a";
+  color: #0d79aa;
+}
