@@ -1,0 +1,33 @@
+<?php
+	return [
+		'nosotros'        => 'Nosotros',
+		'puerto-vallarta' => 'Puerto Vallarta',
+		'contacto'        => 'Contacto',
+		'lang'            => 'Eng',
+		'home'            => 'Inicio',
+		'cirugia-gas'     => 'Cirugía Gastrointestinal',
+		'cirugia-bar'     => 'Cirugía Bariátrica',
+		'hospitales'      => 'Hospitales',
+		'testimonio'      => 'Testimonio',
+		'blog'            => 'Blog',
+		'galeria'         => 'Galería',
+		'urgencias'       => 'Urgencias / Emergencies',
+		'phone'           => '(322) 223 5521',
+		'movil'           => '(044) 322 150 6291',
+		'dr'              => 'DR. SERGIO DEL HOYO GALVÁN',
+		'dr-certificado'  => 'Cirujano Gastrointestinal Certificado',
+    	'dr-especialista' => 'Especialista en cirugía general, biariátrica y enfermedades gástricas',
+    	'mapa-sitio'      => 'Mapa de sitio',
+    	'forma-pago'      => 'Formas de pago',
+    	'mas-informacion' => 'Más Información',
+    	'manga-gastrica'  => 'Manga Gástrica',
+    	'bypass'          => 'Bypass Gástrico RNY',
+    	'cirugia-paq'     => 'Paquete de Cirugía Bariátrica',
+    	'url-imc'         => 'Índice de Masa Corporal (IMC)',
+    	'obesidad'        => 'Obesidad',
+    	'cmq'             => 'CMQ Premiere',
+    	'cmq-nayarit'     => 'CMQ Riviera Nayarit',
+    	'consultorio'     => 'Consultorio',
+    	'aviso-privacidad'=> 'Aviso de Privacidad'
+	];
+?>

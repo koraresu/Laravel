@@ -83,12 +83,343 @@
 							position relative
 							padding-left 30px
 							span
-								position: absolute;
-								top: 8px;
-								left: 6px;
-								font-size: 18px;
-								font-weight: bold;
+								position absolute
+								top 8px
+								left 6px
+								font-size 18px
+								font-weight bold
 .hero
+	position relative
 	.slide
 		&:before
 			display none
+		.title
+			span
+				font-family 'Titillium Web', sans-serif
+				font-size 20px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				color #093c82
+			h1
+				font-family 'Titillium Web', sans-serif
+				font-size 36px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				color #181818
+			a.theme-btn
+				display none
+	.emergencies
+		position absolute
+		top 0
+		right 0
+		z-index 2
+		background-color #0d79aa
+		padding 15px 30px
+		&:before
+			content ""
+			position absolute
+			top 0
+			left 0
+			bottom 0
+			width 14px
+			background-color #37b4f0
+		.icon-movil
+			font-size 63px
+			color #FFF
+			margin-right 5px
+		.right
+			display inline-block
+			vertical-align top
+			color #FFF
+			span
+				font-family 'Titillium Web', sans-serif
+				display block
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				text-align left
+				text-transform uppercase
+				& + span
+					font-size 29px
+					font-weight bold
+.tag
+	background-color #37b4f0
+	padding 21px 0
+	span
+		font-family 'Titillium Web', sans-serif
+		font-size 14px
+		font-weight normal
+		font-style normal
+		font-stretch normal
+		line-height normal
+		letter-spacing 4.7px
+		text-align center
+		color: #ffffff
+		display block
+		& + span
+			font-size 30px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align center
+		& + span + span
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing -0.1px
+			text-align center
+			color #ffffff
+.who-we-are
+	.home_team_med,.home_care
+		span
+			font-size 60px
+			color #0d79aa
+		h4
+			text-transform uppercase
+			font-family 'Titillium Web', sans-serif
+			font-size 16px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align left
+			color #181818
+		p
+			font-family 'Titillium Web', sans-serif
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align left
+			color #181818
+		a
+			font-family 'Titillium Web', sans-serif
+			font-size 14px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align center
+			color #0d79aa
+			width 166px
+			height 45px
+			border solid 2px #0d79aa
+			padding 8px 20px
+			margin-top 45px
+			display block
+	.mb20
+		span
+			color #0d79aa
+.calculator-imc
+	background-color #37b4f0
+	.container
+		padding-top 20px
+		.imc-message
+			h3
+				font-family 'Titillium Web', sans-serif
+				color #FFF
+				span
+					color #0d79aa
+			p
+				font-family 'Titillium Web', sans-serif
+				color #FFF
+		.imc-form
+			.metrico
+			.imperial
+				font-family 'Titillium Web', sans-serif
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #ffffff
+			.altura
+			.peso
+				label
+					color #ffffff
+					font-size 16px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height 1.88
+					letter-spacing normal
+					text-align left
+					input
+						box-sizing border-box
+						font-family 'Titillium Web', sans-serif
+						color #0d79aa
+						width 100%
+						
+			.borrar
+			.calcular
+				input
+					font-family 'Titillium Web', sans-serif
+					font-size 14px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height normal
+					letter-spacing normal
+					text-align center
+					color #0d79aa
+					border solid 2px #ffffff
+					background-color transparent
+					padding 8px 20px
+					text-transform uppercase
+					box-sizing border-box
+					width 100%
+			.borrar
+				input
+					color #0d79aa
+					border solid 2px #0d79aa
+					box-sizing border-box
+		.imc-resultado
+			.imc-de
+			.imc-res
+			.imc-range
+			.imc-desc
+				font-family 'Titillium Web', sans-serif
+				font-size 16px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				letter-spacing normal
+				text-align center
+				color #ffffff
+			.imc-de
+				line-height: 1em;
+			.imc-res
+				font-size: 90px;
+				line-height: 1em;
+			.imc-range
+				line-height: 1em;
+			.imc-desc
+				line-height: 1em;
+			.imc-desc
+				font-weight: normal;
+				line-height: 1em;	
+.miembro
+	.container
+		padding-top 40px
+		padding-bottom 40px
+		.section-content
+			h3
+				font-family TitilliumWeb
+				font-size 14px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing 4.7px
+				text-align center
+				color #0d79aa
+				text-transform uppercase
+				margin-bottom 40px
+			.rasoc
+				text-align center
+				img
+					object-fit contain
+				span
+					font-family 'Titillium Web', sans-serif
+					font-size 16px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					letter-spacing normal
+					text-align center
+					color #181818
+					display block
+					
+.main-footer
+	background-color #37b4f0
+	.container
+		padding-bottom 5px
+	ul
+		padding 0
+		margin 0
+		li
+			list-style none
+			display block
+			a
+				font-size 14px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				letter-spacing normal
+				text-align left
+				color #251d66
+	.formadepago
+		h4
+			padding 0
+		ul
+			li
+				display inline-block
+				padding 0 10px
+				span
+					font-size 30px
+					color #FFF
+				&:first-child
+					padding-left 0
+				&:last-child
+					padding-right 0
+	.mas-info
+		h4
+			padding 0
+		ul
+			li
+				a
+					font-size 16px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height normal
+					letter-spacing normal
+					text-align left
+					color #ffffff
+					&.contacto
+						border 1px solid #FFF
+						padding 6px 10px
+						position relative
+						padding-left 30px
+						display inline-block
+						margin-bottom 8px
+						span
+							position absolute
+							top 8px
+							left 6px
+							font-size 18px
+							font-weight bold
+						
+	.social
+		ul
+			text-align center
+			li
+				display inline-block
+				a
+					color #FFF
+					span
+						color #FFF
+						font-size 22px
+	.aviso
+		text-align center
+		a
+			color #FFF

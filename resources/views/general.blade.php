@@ -50,13 +50,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"> Nosotros </a>
+                    <a href="#"> @lang('home.nosotros') </a>
                 </li>
                 <li class="separator">
                     <span class="fa fa-circle"></span>
                 </li>
                 <li>
-                    <a href="#"> Puerto Vallarta </a>
+                    <a href="#"> @lang('home.puerto-vallarta') </a>
                 </li>
           </ul>
 
@@ -65,16 +65,16 @@
         <div class="top-right pull-right clearfix">
             <ul class="info-nav clearfix">
                 <li>
-                    <a href=""> <span class="icon-phone"></span> (322) 223 5521</a>
+                    <a href=""> <span class="icon-phone"></span> @lang('home.phone') </a>
                 </li>
                 <li>
-                    <a href=""> <span class="icon-movil"></span> (044) 322 150 6291</a>
+                    <a href=""> <span class="icon-movil"></span> @lang('home.movil') </a>
                 </li>
                 <li>
-                    <a href="#" class="contacto"> <span class="icon-contact"></span> Contacto</a>
+                    <a href="#" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto') </a>
                 </li>
                 <li>
-                    <a href="#">ENG</a>
+                    <a href="#" class="text-uppercase"> @lang('home.lang') </a>
                 </li>
             </ul>
         </div>
@@ -98,55 +98,35 @@
               </div>
               <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation clearfix">
-                  <li class="current dropdown"> <a href="#">Inicio</a>
-                    <ul>
-                      <li><a href="index.html">Home One</a></li>
-                      <li><a href="index-mp-layout2.html">Home Two</a></li>
-                      <li><a href="index-mp-layout3.html">Home Three</a></li>
-                    </ul>
+                  <li class="current"> <a href="#"> @lang('home.home') </a>
                   </li>
-                  <li class="dropdown"> <a href="#">Cirugía Gastrointestinal</a>
+                  <li class="dropdown"> <a href="#"> @lang('home.cirugia-gas') </a>
                     <ul>
                       <li><a href="about-1.html">About Style One</a></li>
                       <li><a href="about-2.html">About Style Two</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"> <a href="#">Cirugía Bariátrica</a>
+                  <li class="dropdown"> <a href="#"> @lang('home.cirugia-bar') </a>
                     <ul>
-                      <li><a href="service-1.html">department One</a></li>
-                      <li><a href="service-2.html">department Two</a></li>
-                      <li><a href="service-3.html">department Three</a></li>
-                      <li><a href="services-details.html">department Details</a></li>
+                      <li><a href="service-1.html"> @lang('home.manga-gastrica') </a></li>
+                      <li><a href="service-2.html"> @lang('home.bypass') </a></li>
+                      <li><a href="service-3.html"> @lang('home.cirugia-paq') </a></li>
+                      <li><a href="services-details.html"> @lang('home.url-imc') </a></li>
+                      <li><a href="services-details.html"> @lang('home.obesidad') </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a href="#">Hospitales</a>
+                  <li class="dropdown"><a href="#"> @lang('home.hospitales') </a>
                     <ul>
-                      <li><a href="portfolio-3.html">Portfolio Three Column</a></li>
-                      <li><a href="portfolio-4.html">Portfolio Four Column</a></li>
-                      <li><a href="portfolio-fullwidth.html">Portfolio Fullwidth</a></li>
-                      <li><a href="portfolio-gutter-less.html">Portfolio Gutter Less</a></li>
-                      <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                      <li><a href="portfolio-3.html"> @lang('home.cmq') </a></li>
+                      <li><a href="portfolio-4.html"> @lang('home.cmq-nayarit') </a></li>
+                      <li><a href="portfolio-fullwidth.html"> @lang('home.consultorio') </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"> <a href="#">Testimonios</a>
-                    <ul>
-                      <li><a href="pricing-table.html">Pricing Table</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                    </ul>
+                  <li> <a href="#"> @lang('home.testimonio') </a>
                   </li>
-                  <li class="dropdown"> <a href="blog.html">Blog</a>
-                    <ul>
-                      <li><a href="blog-grid.html">Blog Grid</a></li>
-                      <li><a href="blog-single.html">Blog Single</a></li>
-                      <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                      <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"> <a href="#">Galería</a>
-                    <ul class="from-right">
-                      <li><a href="contact-1.html">Contact us One</a></li>
-                      <li><a href="contact-2.html">Contact us Two</a></li>
-                    </ul>
+                  <li> <a href="blog.html"> @lang('home.blog') </a></li>
+                  <li> <a href="#"> @lang('home.galeria') </a>
+                  
                   </li>
                 </ul>
               </div>
@@ -167,58 +147,79 @@
     <div class="container">
       <div class="row clearfix">
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="footer-1"> <img src="images/logo/logo.png" alt="">
-            <p>Nulla vitae cursus quam, nec ultrices nibh. Quisque tristique lorem ac diam laoreet auctor. Proin ac massa elit. </p>
-            <ul class="social">
-              <li><a href="#"><span>follow us :</span></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+          <div class="footer-1">
+            
+            <h4> @lang('home.contacto') </h4>
+            <div>
+              <p>
+                Neo Médica / CMQ Premiere <br />
+                160 int. 9 Av. Los tules <br />
+                Puerto Vallarta, Jalisco.
+              </p>
+              <p>
+                CMQ Riviera Nayarit <br />
+                280 Av. Héroes de Nacozari <br />
+                Bucerías, Nayarit.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <!--Footer Column-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="mas-info footer-2">
+            <h4>@lang('home.mas-informacion') </h4>
+            <ul>
+              <li>
+                <a href="#" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto')</a>
+              </li>
+              <li>
+                <a href=""> <span class="icon-phone"></span> @lang('home.phone') </a>
+              </li>
+              <li>
+                <a href=""> <span class="icon-movil"></span> @lang('home.movil') </a>
+              </li>
+              
             </ul>
           </div>
         </div>
         <!--Footer Column-->
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="footer-2">
-            <h4>latest news</h4>
-            <p>Aenean tristique justo et nibh molestie, non porttitor eros suscipit</p>
-            <p>Phasellus dapibus dictum augue ut</p>
-            <p>Mauris blandit vitae. Praesent non</p>
-          </div>
-        </div>
-        <!--Footer Column-->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="footer-3">
-            <h4>Contact us</h4>
-            <p><span>Address :</span> <br>
-              8500 Lorem Street, Chicago, IL, 55030</p>
-            <p><span>Call Us :</span> <br>
-              (123) 456-78-90</p>
-            <p><span>Email :</span> <br>
-              sales@yoursite.com </p>
+          <div class="formadepago footer-3">
+            <h4> @lang('home.forma-pago') </h4>
+            <ul>
+              <li> <span class="icon-visa"></span> </li>
+              <li> <span class="icon-mastercard"></span> </li>
+              <li> <span class="icon-amex"></span> </li>
+            </ul>
           </div>
         </div>
         <!--Footer Column-->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="footer-4">
-            <h4>Flickr</h4>
-            <div class="flickr-feed clearfix">
-              <ul>
-                <li> <a href="images/flicker/1.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/1.jpg" alt=""></a> </li>
-                <li> <a href="images/flicker/2.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/2.jpg" alt=""></a> </li>
-                <li> <a href="images/flicker/3.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/3.jpg" alt=""></a> </li>
-                <li> <a href="images/flicker/4.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/4.jpg" alt=""></a> </li>
-                <li> <a href="images/flicker/5.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/5.jpg" alt=""></a> </li>
-                <li> <a href="images/flicker/6.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/flicker/6.jpg" alt=""></a> </li>
-              </ul>
-            </div>
+            <h4> @lang('home.mapa-sitio') </h4>
+            <ul>
+              <li> <a href=""> @lang('home.home') </a> </li>
+              <li> <a href=""> @lang('home.cirugia-gas') </a> </li>
+              <li> <a href=""> @lang('home.cirugia-bar') </a> </li>
+              <li> <a href=""> @lang('home.hospitales') </a> </li>
+              <li> <a href=""> @lang('home.blog') </a> </li>
+              <li> <a href=""> @lang('home.galeria') </a> </li>
           </div>
         </div>
       </div>
+      <div class="social col-md-12">
+        <ul>
+          <li> <a href="#"> <span class="fa fa-facebook-f"></span> </a> </li>
+          <li> <a href="#"> <span class="fa fa-google-plus"></span> </a> </li>
+          <li> <a href="#"> <span class="fa fa-youtube-play"></span> </a> </li>
+        </ul>
     </div>
-    <!--Copyright--><div class="copyright">&copy; 2017 Copyrights <a href="https://themeforest.net/user/cmsoft/portfolio" target="_blank"> Cmsoft.</a> Design by <a href="https://themeforest.net/item/greenlawn-gardening-and-landscaping-psd-template/17451851?s_rank=2" target="_blank">wpthemeshaper.</a> </div>
+    <div class="aviso col-md-12">
+        <a href="#"> @lang('home.aviso-privacidad') </a>
+    </div>
+    </div>
   </footer>
 </div>
 

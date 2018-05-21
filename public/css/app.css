@@ -87,6 +87,383 @@
   font-size: 18px;
   font-weight: bold;
 }
+.hero {
+  position: relative;
+}
 .hero .slide:before {
   display: none;
+}
+.hero .slide .title span {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #093c82;
+}
+.hero .slide .title h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #181818;
+}
+.hero .slide .title a.theme-btn {
+  display: none;
+}
+.hero .emergencies {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #0d79aa;
+  padding: 15px 30px;
+}
+.hero .emergencies:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 14px;
+  background-color: #37b4f0;
+}
+.hero .emergencies .icon-movil {
+  font-size: 63px;
+  color: #fff;
+  margin-right: 5px;
+}
+.hero .emergencies .right {
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+}
+.hero .emergencies .right span {
+  font-family: 'Titillium Web', sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+.hero .emergencies .right span + span {
+  font-size: 29px;
+  font-weight: bold;
+}
+.tag {
+  background-color: #37b4f0;
+  padding: 21px 0;
+}
+.tag span {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.7px;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+.tag span + span {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.tag span + span + span {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #fff;
+}
+.who-we-are .home_team_med span,
+.who-we-are .home_care span {
+  font-size: 60px;
+  color: #0d79aa;
+}
+.who-we-are .home_team_med h4,
+.who-we-are .home_care h4 {
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.who-we-are .home_team_med p,
+.who-we-are .home_care p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.who-we-are .home_team_med a,
+.who-we-are .home_care a {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d79aa;
+  width: 166px;
+  height: 45px;
+  border: solid 2px #0d79aa;
+  padding: 8px 20px;
+  margin-top: 45px;
+  display: block;
+}
+.who-we-are .mb20 span {
+  color: #0d79aa;
+}
+.calculator-imc {
+  background-color: #37b4f0;
+}
+.calculator-imc .container {
+  padding-top: 20px;
+}
+.calculator-imc .container .imc-message h3 {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+}
+.calculator-imc .container .imc-message h3 span {
+  color: #0d79aa;
+}
+.calculator-imc .container .imc-message p {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff;
+}
+.calculator-imc .container .imc-form .metrico,
+.calculator-imc .container .imc-form .imperial {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.calculator-imc .container .imc-form .altura label,
+.calculator-imc .container .imc-form .peso label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+}
+.calculator-imc .container .imc-form .altura label input,
+.calculator-imc .container .imc-form .peso label input {
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  color: #0d79aa;
+  width: 100%;
+}
+.calculator-imc .container .imc-form .borrar input,
+.calculator-imc .container .imc-form .calcular input {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d79aa;
+  border: solid 2px #fff;
+  background-color: transparent;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 100%;
+}
+.calculator-imc .container .imc-form .borrar input {
+  color: #0d79aa;
+  border: solid 2px #0d79aa;
+  box-sizing: border-box;
+}
+.calculator-imc .container .imc-resultado .imc-de,
+.calculator-imc .container .imc-resultado .imc-res,
+.calculator-imc .container .imc-resultado .imc-range,
+.calculator-imc .container .imc-resultado .imc-desc {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.calculator-imc .container .imc-resultado .imc-de {
+  line-height: 1em;
+}
+.calculator-imc .container .imc-resultado .imc-res {
+  font-size: 90px;
+  line-height: 1em;
+}
+.calculator-imc .container .imc-resultado .imc-range {
+  line-height: 1em;
+}
+.calculator-imc .container .imc-resultado .imc-desc {
+  line-height: 1em;
+}
+.calculator-imc .container .imc-resultado .imc-desc {
+  font-weight: normal;
+  line-height: 1em;
+}
+.miembro .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.miembro .container .section-content h3 {
+  font-family: TitilliumWeb;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.7px;
+  text-align: center;
+  color: #0d79aa;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.miembro .container .section-content .rasoc {
+  text-align: center;
+}
+.miembro .container .section-content .rasoc img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.miembro .container .section-content .rasoc span {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  display: block;
+}
+.main-footer {
+  background-color: #37b4f0;
+}
+.main-footer .container {
+  padding-bottom: 5px;
+}
+.main-footer ul {
+  padding: 0;
+  margin: 0;
+}
+.main-footer ul li {
+  list-style: none;
+  display: block;
+}
+.main-footer ul li a {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #251d66;
+}
+.main-footer .formadepago h4 {
+  padding: 0;
+}
+.main-footer .formadepago ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.main-footer .formadepago ul li span {
+  font-size: 30px;
+  color: #fff;
+}
+.main-footer .formadepago ul li:first-child {
+  padding-left: 0;
+}
+.main-footer .formadepago ul li:last-child {
+  padding-right: 0;
+}
+.main-footer .mas-info h4 {
+  padding: 0;
+}
+.main-footer .mas-info ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.main-footer .mas-info ul li a.contacto {
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.main-footer .mas-info ul li a.contacto span {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main-footer .social ul {
+  text-align: center;
+}
+.main-footer .social ul li {
+  display: inline-block;
+}
+.main-footer .social ul li a {
+  color: #fff;
+}
+.main-footer .social ul li a span {
+  color: #fff;
+  font-size: 22px;
+}
+.main-footer .aviso {
+  text-align: center;
+}
+.main-footer .aviso a {
+  color: #fff;
 }
