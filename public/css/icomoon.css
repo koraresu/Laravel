@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?iilz8b');
-  src:  url('fonts/icomoon.eot?iilz8b#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?iilz8b') format('truetype'),
-    url('fonts/icomoon.woff?iilz8b') format('woff'),
-    url('fonts/icomoon.svg?iilz8b#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1ze4q8');
+  src:  url('fonts/icomoon.eot?1ze4q8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1ze4q8') format('truetype'),
+    url('fonts/icomoon.woff?1ze4q8') format('woff'),
+    url('fonts/icomoon.svg?1ze4q8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e906";
+}
+.icon-lab:before {
+  content: "\e904";
+}
+.icon-med:before {
+  content: "\e905";
+}
+.icon-cardiogram:before {
+  content: "\e90b";
+}
+.icon-food:before {
+  content: "\e90c";
+}
+.icon-pharm:before {
+  content: "\e90d";
+}
+.icon-hosp:before {
+  content: "\e90e";
+}
+.icon-ambulance:before {
+  content: "\e90f";
+}
+.icon-bed:before {
+  content: "\e910";
+}
 .icon-phone:before {
   content: "\e900";
 }
@@ -39,7 +66,7 @@
 .icon-amex:before {
   content: "\e907";
 }
-.icon-contact:before {
+.icon-contacto:before {
   content: "\e908";
 }
 .icon-invoice:before {

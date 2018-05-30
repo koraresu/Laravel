@@ -3,17 +3,21 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>@yield('title')</title>
+
+<meta name="description" content="@yield('description')">
+
 <!-- Stylesheets -->
 <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 
 
+<link rel="stylesheet" href="{{ asset('css/juxtapose.css') }}">
 <!-- Responsive -->
-<link href="css/responsive.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/icomoon.css') }}">
@@ -22,7 +26,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
-<link href="css/app.css" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <!--Change Class in body to change color Scheme for Homepages  ie theme-green , theme-green -->
 
@@ -50,13 +54,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#"> @lang('home.nosotros') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}"> @lang('home.nosotros') </a>
                 </li>
                 <li class="separator">
                     <span class="fa fa-circle"></span>
                 </li>
                 <li>
-                    <a href="#"> @lang('home.puerto-vallarta') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.puerto_vallarta') }}"> @lang('home.puerto-vallarta') </a>
                 </li>
           </ul>
 
@@ -65,16 +69,24 @@
         <div class="top-right pull-right clearfix">
             <ul class="info-nav clearfix">
                 <li>
-                    <a href=""> <span class="icon-phone"></span> @lang('home.phone') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-phone"></span> @lang('home.phone') </a>
                 </li>
                 <li>
-                    <a href=""> <span class="icon-movil"></span> @lang('home.movil') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-movil"></span> @lang('home.movil') </a>
                 </li>
                 <li>
-                    <a href="#" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto') </a>
                 </li>
                 <li>
-                    <a href="#" class="text-uppercase"> @lang('home.lang') </a>
+                  @if (LaravelLocalization::getCurrentLocale() == "en")
+                    <a rel="alternate" hreflang="es" href="{{LaravelLocalization::getLocalizedURL('es') }}" class="text-uppercase">
+                      ESP
+                    </a>
+                  @else
+                    <a rel="alternate" hreflang="en" href="{{LaravelLocalization::getLocalizedURL('en') }}" class="text-uppercase">
+                      ENG
+                    </a>
+                  @endif
                 </li>
             </ul>
         </div>
@@ -87,7 +99,8 @@
       <div class="container ptn pbn">
         <div class="clearfix">
           <div class="pull-left">
-            <div class="logo"> <a href="index-mp-layout1.html"><img src="images/logo/logo.png" alt="" title="Green"></a> </div>
+            <div class="logo"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a> </div>
+
           </div>
           <div class="outer-box clearfix"> 
             <!-- Main Menu -->
@@ -98,34 +111,37 @@
               </div>
               <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation clearfix">
-                  <li class="current"> <a href="#"> @lang('home.home') </a>
+                  <li class="current"> <a href="{{ LaravelLocalization::getNonLocalizedURL('/') }}"> @lang('menu.home') </a>
                   </li>
-                  <li class="dropdown"> <a href="#"> @lang('home.cirugia-gas') </a>
+                  <li class="dropdown"> <a href="#"> @lang('menu.cirugia-gas') </a>
                     <ul>
-                      <li><a href="about-1.html">About Style One</a></li>
-                      <li><a href="about-2.html">About Style Two</a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}">@lang('menu.cirugia-gas-sub.apendicitis')</a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_calculos') }}">@lang('menu.cirugia-gas-sub.colelitiasis')</a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_diverticulitis') }}">@lang('menu.cirugia-gas-sub.diverticulitis')</a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_hernias') }}">@lang('menu.cirugia-gas-sub.hernias')</a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_hernia_hiatal') }}">@lang('menu.cirugia-gas-sub.hernias_hiatal')</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"> <a href="#"> @lang('home.cirugia-bar') </a>
+                  <li class="dropdown"> <a href="#"> @lang('menu.cirugia-bar') </a>
                     <ul>
-                      <li><a href="service-1.html"> @lang('home.manga-gastrica') </a></li>
-                      <li><a href="service-2.html"> @lang('home.bypass') </a></li>
-                      <li><a href="service-3.html"> @lang('home.cirugia-paq') </a></li>
-                      <li><a href="services-details.html"> @lang('home.url-imc') </a></li>
-                      <li><a href="services-details.html"> @lang('home.obesidad') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_manga_gastrica') }}"> @lang('menu.cirugia-bar-sub.manga-gastrica') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_bypass') }}"> @lang('menu.cirugia-bar-sub.bypass') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_paquetes') }}"> @lang('menu.cirugia-bar-sub.cirugia-paq') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_imc') }}"> @lang('menu.cirugia-bar-sub.url-imc') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_obesidad') }}"> @lang('menu.cirugia-bar-sub.obesidad') </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a href="#"> @lang('home.hospitales') </a>
+                  <li class="dropdown"><a href="#"> @lang('menu.hospitales') </a>
                     <ul>
-                      <li><a href="portfolio-3.html"> @lang('home.cmq') </a></li>
-                      <li><a href="portfolio-4.html"> @lang('home.cmq-nayarit') </a></li>
-                      <li><a href="portfolio-fullwidth.html"> @lang('home.consultorio') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital_cmq_premiere') }}"> @lang('menu.hospitales-sub.cmq') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital_cmq_riviera_nayarit') }}"> @lang('menu.hospitales-sub.cmq-nayarit') </a></li>
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital_consultorio_cirujano_bariatrico') }}"> @lang('menu.hospitales-sub.consultorio') </a></li>
                     </ul>
                   </li>
-                  <li> <a href="#"> @lang('home.testimonio') </a>
+                  <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.testimonios') }}"> @lang('menu.testimonio') </a>
                   </li>
-                  <li> <a href="blog.html"> @lang('home.blog') </a></li>
-                  <li> <a href="#"> @lang('home.galeria') </a>
+                  <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('menu.blog') </a></li>
+                  <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'galery') }}"> @lang('menu.galeria') </a>
                   
                   </li>
                 </ul>
@@ -172,13 +188,13 @@
             <h4>@lang('home.mas-informacion') </h4>
             <ul>
               <li>
-                <a href="#" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto')</a>
+                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto')</a>
               </li>
               <li>
-                <a href=""> <span class="icon-phone"></span> @lang('home.phone') </a>
+                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-phone"></span> @lang('home.phone') </a>
               </li>
               <li>
-                <a href=""> <span class="icon-movil"></span> @lang('home.movil') </a>
+                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-movil"></span> @lang('home.movil') </a>
               </li>
               
             </ul>
@@ -200,24 +216,24 @@
           <div class="footer-4">
             <h4> @lang('home.mapa-sitio') </h4>
             <ul>
-              <li> <a href=""> @lang('home.home') </a> </li>
-              <li> <a href=""> @lang('home.cirugia-gas') </a> </li>
-              <li> <a href=""> @lang('home.cirugia-bar') </a> </li>
-              <li> <a href=""> @lang('home.hospitales') </a> </li>
-              <li> <a href=""> @lang('home.blog') </a> </li>
-              <li> <a href=""> @lang('home.galeria') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.home') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.cirugia-gas') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.cirugia-bar') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.hospitales') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.blog') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.galeria') </a> </li>
           </div>
         </div>
       </div>
       <div class="social col-md-12">
         <ul>
-          <li> <a href="#"> <span class="fa fa-facebook-f"></span> </a> </li>
-          <li> <a href="#"> <span class="fa fa-google-plus"></span> </a> </li>
-          <li> <a href="#"> <span class="fa fa-youtube-play"></span> </a> </li>
+          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-facebook-f"></span> </a> </li>
+          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-google-plus"></span> </a> </li>
+          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-youtube-play"></span> </a> </li>
         </ul>
     </div>
     <div class="aviso col-md-12">
-        <a href="#"> @lang('home.aviso-privacidad') </a>
+        <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.aviso-privacidad') </a>
     </div>
     </div>
   </footer>
@@ -226,8 +242,10 @@
 <!--End pagewrapper--> 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
-<script src="js/jquery.js"></script> 
-<script src="js/all-jquery.js"></script> 
-<script src="js/script.js"></script>
+<script src="{{ asset('js/jquery.js') }}"></script> 
+<script src="{{ asset('js/all-jquery.js') }}"></script> 
+<script src="{{ asset('js/juxtapose.min.js') }}"></script>
+<script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>

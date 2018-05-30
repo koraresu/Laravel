@@ -49,7 +49,9 @@
             $('.preloader').delay(100).fadeOut(500, function() {
 
                 //active wow
-                wow.init();
+                if($('.wow').length > 0){
+                    wow.init();    
+                }
 
                 // Call slider parallax function
                 sliderBgSetting();

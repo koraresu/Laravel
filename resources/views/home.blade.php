@@ -1,162 +1,293 @@
 @extends('general')
-
-@section('title', 'Page Title')
-
+@section('title', Lang::get('title.home') )
+@section('description', Lang::get('description.home') )
 @section('content')
-    <!-- start of hero -->
-  <section class="hero hero-slider-wrapper">
-    <div class="emergencies">
-      <span class="icon-movil"></span>
-      <div class="right">
-        <span> @lang('home.urgencias') </span>
-        <span> @lang('home.movil') </span>
-      </div>
-    </div>
-    <div class="hero-slider">
-      <div class="slide"> <img src="images/slider/group-4.png" alt>
-        <div class="title"> <span>NUESTRAS CIRUGÍAS SON REALIZADAS CON</span>
-          <h1>LAPAROSCOPÍA</h1>
-          <a href="#" class="btn theme-btn">Buy Now</a> </div>
-      </div>
-      <div class="slide"> <img src="images/slider/group-4.png" alt>
-        <div class="title"> <span>NUESTRAS CIRUGÍAS SON REALIZADAS CON</span>
-          <h1>LAPAROSCOPÍA</h1>
-          <a href="#" class="btn theme-btn"></a> </div>
-      </div>
-      
-    </div>
-  </section>
-  <!-- end hero slider --> 
-  <section class="tag">
-    <span> @lang('home.dr') </span>
-    <span> @lang('home.dr-certificado') </span>
-    <span> @lang('home.dr-especialista') </span>
-  </section>
-  <!-- Section: who-we-are & Latest Project -->
-  <section class="who-we-are">
-    <div class="container">
-      <div class="section-content">
-        <div class="row">
-          <div class="col-md-9 wow fadeInLeft animated">
-            <div>
-              <p>
-                @lang('home.who-we-are')
-              </p>
-            </div>
-            <div class="col-md-6">
-              <div class="home_team_med">
-                <span class="icon-invoice"></span>
-                <h4>@lang('home.who-team')</h4>
-                <p>
-                  @lang('home.who-team-desc')
-                </p>
-                <a href=""> Conozca Más </a>
-              </div>
+<!-- start of hero -->
+<section class="hero hero-slider-wrapper">
+	<div class="emergencies">
+		<span class="icon-movil"></span>
+		<div class="right">
+			<span> @lang('home.urgencias') </span>
+			<span> @lang('home.movil') </span>
+		</div>
+	</div>
+	<div class="hero-slider">
+		<div class="slide"> <img src="images/slider/group-4.png" alt>
+			<div class="title">
+				<span>NUESTRAS CIRUGÍAS SON REALIZADAS CON</span>
+				<h1>LAPAROSCOPÍA</h1>
+				<a href="#" class="btn theme-btn"></a>
+			</div>
+		</div>
+		<div class="slide"> <img src="images/slider/group-4.png" alt>
+			<div class="title">
+				<span>NUESTRAS CIRUGÍAS SON REALIZADAS CON</span>
+				<h1>LAPAROSCOPÍA</h1>
+				<a href="#" class="btn theme-btn"></a>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!-- end hero slider --> 
+<section class="tag">
+	<span> @lang('home.dr') </span>
+	<span> @lang('home.dr-certificado') </span>
+	<span> @lang('home.dr-especialista') </span>
+</section>
+<!-- Section: who-we-are & Latest Project -->
+<section class="who-we-are">
+	<div class="container">
+		<div class="section-content">
+			<div class="row">
+				<div class="col-md-9">
+					<div>
+						<p>
+							@lang('home.who-we-are')
+						</p>
+					</div>
+					<div class="col-md-6">
+						<div class="home_team_med">
+							<span class="icon-invoice"></span>
+							<h4>@lang('home.who-team')</h4>
+							<p>
+								@lang('home.who-team-desc')
+							</p>
+							<a href=""> Conozca Más </a>
+						</div>
 
 
-            </div>
-            <div class="col-md-6">
-              <div class="home_care">
-                <span class="icon-care"></span>
-                <h4>@lang('home.care')</h4>
-                @lang('home.care-desc')
-              </div>
-            </div>
+					</div>
+					<div class="col-md-6">
+						<div class="home_care">
+							<span class="icon-care"></span>
+							<h4>@lang('home.care')</h4>
+							@lang('home.care-desc')
+						</div>
+					</div>
 
-          </div>
-          <div class="col-md-3 wow fadeInRight animated">
-            <div>
-              <h3 class="text-uppercase small-line mb20">@lang('home.atencion')</h3>
-              @lang('home.atencion-desc')
-            </div>
-            <div>
-              <h3 class="text-uppercase small-line mb20">@lang('home.urgencia')</h3>
-              @lang('home.urgencia-desc')
-            </div>
+				</div>
+				<div class="col-md-3">
+					<div>
+						<h3 class="text-uppercase small-line mb20">@lang('home.atencion')</h3>
+						@lang('home.atencion-desc')
+					</div>
+					<div>
+						<h3 class="text-uppercase small-line mb20">@lang('home.urgencia')</h3>
+						@lang('home.urgencia-desc')
+					</div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="calculator-imc">
-    <div class="container">
-      <div class="section-content">
-        <div class="row">
-            <div class="imc-message col-md-4 col-sm-6 col-xs-12">
-
-              <h3 class="text-uppercase small-line mb20">@lang('home.imc')</h3>
-              @lang('home.imc-desc')
-            </div>
-            <div class="imc-form col-md-4 col-sm-6 col-xs-12">
-              <div class="col-md-12">
-                <div class="metrico col-md-4">
-                  <input type="radio" name="imc-type" /> @lang('home.metrico')
-                </div>
-                <div class="imperial col-md-4">
-                  <input type="radio" name="imc-type" /> @lang('home.imperial')
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="altura col-md-6">
-                  <label>
-                    @lang('home.altura')
-                    <input type="text" />
-                  </label>
-                </div>
-                <div class="peso col-md-6">
-                  <label>
-                    @lang('home.peso')
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="borrar col-md-6">
-                  <input type="button" value="Borrar" />
-                </div>
-                <div class="calcular col-md-6">
-                  <input type="button" value="Calcular" />
-                </div>
-              </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="calculator-imc">
+@component('imc_component')
+    <strong>Whoops!</strong> Something went wrong!
+@endcomponent
+</section>
+<section class="miembro">
+	<div class="container">
+		<div class="section-content">
+			<div class="row">
+				<h3 class="col-md-12">@lang('home.es-miembro')</h3>
+				<div class="rasoc col-md-3">
+					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general.png') }}" />
+					<span> @lang('home.es-miembro-asoc-mex') </span>
+				</div>
+				<div class="rasoc col-md-3">
+					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-endoscopica-ac.png') }}" />
+					<span> @lang('home.es-miembro-asoc-end') </span>
+				</div>
+				<div class="rasoc col-md-3">
+					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general-2.png') }}" />
+					<span> @lang('home.es-miembro-asoc-mex1') </span>
+				</div>
+				<div class="rasoc col-md-3">
+					<img src="{{ asset('images/asoc/consejo-mexicano-de-cirugia-general-ac.png') }}" />
+					<span> @lang('home.es-miembro-asoc-cir') </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
-            </div>
-            <div class="imc-resultado col-md-4 col-sm-6 col-xs-12">
-              <div class="imc-de"> @lang('home.tu-imc')</div>
-              <div class="imc-res"> @lang('home.tu-imc-res') </div>
-              <div class="imc-range"> @lang('home.tu-imc-range') </div>
-              <div class="imc-desc"> @lang('home.tu-imc-desc') </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <section class="miembro">
-      <div class="container">
-        <div class="section-content">
-          <div class="row">
-            <h3 class="col-md-12">@lang('home.es-miembro')</h3>
-            <div class="rasoc col-md-3">
-              <img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general.png') }}" />
-              <span> @lang('home.es-miembro-asoc-mex') </span>
-            </div>
-            <div class="rasoc col-md-3">
-              <img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-endoscopica-ac.png') }}" />
-              <span> @lang('home.es-miembro-asoc-end') </span>
-            </div>
-            <div class="rasoc col-md-3">
-              <img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general-2.png') }}" />
-              <span> @lang('home.es-miembro-asoc-mex1') </span>
-            </div>
-            <div class="rasoc col-md-3">
-              <img src="{{ asset('images/asoc/consejo-mexicano-de-cirugia-general-ac.png') }}" />
-              <span> @lang('home.es-miembro-asoc-cir') </span>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-@endsection
+
+
+
+
+<section class="our-department">
+	<div class="container ptn">
+		<div class="section-title">
+			<div class="row">
+				<div class="col-md-12">
+					<h6> @lang('home.gastro.subtitle') </h6>
+					<h2> @lang('home.gastro.title') </h2>
+				</div>
+			</div>
+		</div>
+		<div class="section-wrap">
+			<div class="row">
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.est') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.ves') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.hem') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.ape') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.gas') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.coli') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.colo') </a></h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<h5><a href="#"> @lang('home.gastro.her') </a></h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="team">
+	<div class="container ptn">
+		<div class="section-title">
+			<div class="row">
+				<div class="col-md-12">
+					<h6>@lang('home.team.title')</h6>
+					<h2>@lang('home.team.subtitle')</h2>
+				</div>
+			</div>
+		</div>
+		<div class="section_wrap">
+			<div class="row">
+				<div class="carousel-col-3">
+					@foreach ($doctors as $doctor)
+					<div class="team-item item">
+						<div class="team-img"> <img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$doctor->photo) }}" alt=""> </div>
+						<div class="img-title">
+							<h4><a href="team-details.html"> {{ $doctor->title }} {{ $doctor->name }}</a></h4>
+							<p> {{ $doctor->speciality }}</p>
+						</div>
+					</div>
+					@endforeach
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="testimonial">
+	<div class="container">
+		<div class="section-content">
+			<h5 class="col-md-12">@lang('home.testimonial.title')</h3>
+				<h3 class="col-md-12">@lang('home.testimonial.subtitle')</h3>
+				<div class="desc">
+					@lang('home.testimonial.desc')
+				</div>
+
+				<div class="row">
+					<div class="">
+						@foreach($testimoniales as $testimonial)
+						<div class="testi col-md-4">
+							<div class="cont">
+								<div class="img_cont">
+									<div class="juxtapose" data-startingposition="50" data-showlabels="true" data-showcredits="true" data-animate="true">
+										<img src="{{ asset('upload/testimonial/'. $testimonial->photo_before) }}" />
+										<img src="{{ asset('upload/testimonial/'. $testimonial->photo_after) }}" />
+									</div>
+								</div>
+								<div class="img_desc">
+									<p> {{ $testimonial->description }} </p>
+									<div class="img_name"> {{ $testimonial->patient }} </div>
+									<div class="img_surg"> {{ $testimonial->surgery }} </div>
+								</div>
+							</div>
+						</div>
+						@endforeach
+					</div>
+				</div>
+				<div class="foot">
+					<a href="#" class="more">@lang('home.testimonial.more') </a>
+					<span> @lang('home.testimonial.special')</span>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="video"></section>
+	<section class="vallarta style-two overlayer parallax" data-bg-image="{{ asset('images/vallarta.jpg') }}" style="background-image: url( {{ asset('images/vallarta.jpg') }} ); background-position: 50% -52px; background-size: cover;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center txt-color-white text-uppercase">
+					<h3>@lang('home.vallarta.title')</h3>
+					<p>
+						@lang('home.vallarta.desc')
+					</p>
+					<a href="#" class="btn theme-btn mt20">@lang('home.vallarta.more')</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	@endsection
