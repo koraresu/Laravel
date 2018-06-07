@@ -6,6 +6,7 @@ body,html
 .header-style-one
 	.header-mainbox
 		background-color #FFF
+		z-index 99
 .main-header
 	.header-top
 		background-color #37b4f0
@@ -24,6 +25,8 @@ body,html
 	.hero-slider
 		.owl-controls
 			height 0
+.movil_lang
+	display none
 .theme-green
 	.main-menu
 		.navigation
@@ -38,7 +41,7 @@ body,html
 					letter-spacing normal
 					text-align center
 					font-size 14px
-					padding 22px 20px
+					padding 22px 15px
 				&:hover
 					& > a
 						color #0d79aa
@@ -67,7 +70,7 @@ body,html
 						font-stretch normal
 						line-height normal
 						letter-spacing normal
-						text-align right
+						text-align left
 						color #FFF
 						text-transform uppercase
 						span
@@ -285,30 +288,32 @@ body,html
 						font-family 'Titillium Web', sans-serif
 						color #0d79aa
 						width 100%
-						
-			.borrar
-			.calcular
-				input
-					font-family 'Titillium Web', sans-serif
-					font-size 14px
-					font-weight bold
-					font-style normal
-					font-stretch normal
-					line-height normal
-					letter-spacing normal
-					text-align center
-					color #0d79aa
-					border solid 2px #ffffff
-					background-color transparent
-					padding 8px 20px
-					text-transform uppercase
-					box-sizing border-box
-					width 100%
-			.borrar
-				input
-					color #0d79aa
-					border solid 2px #0d79aa
-					box-sizing border-box
+						padding 5px
+			.botones
+				margin-top 25px		
+				.borrar
+				.calcular
+					input
+						font-family 'Titillium Web', sans-serif
+						font-size 14px
+						font-weight bold
+						font-style normal
+						font-stretch normal
+						line-height normal
+						letter-spacing normal
+						text-align center
+						color #0d79aa
+						border solid 2px #ffffff
+						background-color transparent
+						padding 8px 20px
+						text-transform uppercase
+						box-sizing border-box
+						width 100%
+				.borrar
+					input
+						color #0d79aa
+						border solid 2px #0d79aa
+						box-sizing border-box
 		.imc-resultado
 			.imc-de
 				font-family 'Titillium Web', sans-serif
@@ -624,6 +629,10 @@ body,html
 				color: #181818;
 			.img_name
 				font-weight: bold;
+			.img_cont
+				width 100%
+				.juxtapose
+					max-width 100%
 	.foot
 		text-align center
 		a.more
@@ -646,50 +655,52 @@ body,html
 			display block
 .vallarta
 	position: relative;
+	text-align center
 	&:before
-		background-color: rgba(15, 38, 58,.3) !important;
-		content: " ";
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 0;
+		background-color rgba(15, 38, 58,.3) !important
+		content " "
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+		z-index 0
 	h3
-		font-family: 'Titillium Web', sans-serif;
-		font-size: 30px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: center;
-		color: #ffffff;
+		font-family 'Titillium Web', sans-serif
+		font-size 30px
+		font-weight bold
+		font-style normal
+		font-stretch normal
+		line-height normal
+		letter-spacing normal
+		text-align center
+		color #ffffff
 	p
 		font-family: 'Titillium Web', sans-serif;
-		width: 750px;
-		font-size: 16px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 1.88;
-		letter-spacing: normal;
-		text-align: center;
-		color: #ffffff;
+		width 750px
+		font-size 16px
+		font-weight normal
+		font-style normal
+		font-stretch normal
+		line-height 1.88
+		letter-spacing normal
+		text-align center
+		color #ffffff
 		text-transform initial
+		margin 10px auto
 	a
-		font-family: 'Titillium Web', sans-serif;
-		font-size: 14px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: center;
-		color: #FFF;
-		border: solid 2px #FFF;
-		padding: 8px 20px;
-		display: inline-block;
+		font-family 'Titillium Web', sans-serif;
+		font-size 14px
+		font-weight bold
+		font-style normal
+		font-stretch normal
+		line-height normal
+		letter-spacing normal
+		text-align center
+		color #FFF
+		border solid 2px #FFF
+		padding 8px 20px
+		display inline-block
 		margin 0
 		margin-top 35px
 		margin-bottom 20px
@@ -769,8 +780,17 @@ ul.lista
 			left 0
 			font-size 50px
 			color #007aad
+		h4
+			font-size 16px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align left
+			color #181818
 		.icon-ambulance
-			font-size 36px
+			font-size 41px
 		.icon-med
 			font-size 60px
 		.icon-lab
@@ -779,6 +799,20 @@ ul.lista
 			font-size 60px
 		.icon-bed
 			font-size 42px
+	.section-wrap
+		margin-top 30px !important
+	.section-content
+		h2
+			font-size 24px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height 1.21
+			letter-spacing normal
+			text-align left
+			color #181818
+			margin-top 30px
+		
 .calculator-section-imc
 	background-color #FFF
 	.container
@@ -802,6 +836,9 @@ ul.lista
 			padding-bottom 20px
 			&:last-child
 				padding-bottom 0
+	.imc-resultado
+		ul
+			display none !important
 .clasificacion-imc
 	.section-title
 		padding-bottom 30px
@@ -851,3 +888,656 @@ ul.lista
 				&.block_bold
 					font-weight bold
 					line-height normal
+.obesidad
+	ul
+		li
+			position relative
+			padding-left 15px
+			
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align left
+			color #181818
+
+			&:before
+				content ""
+				width 8px
+				height 8px
+				border-radius 20px
+				background-color #0d79aa
+				position absolute
+				top 12px
+				left 0
+	.sidebar
+		p
+			padding-top 20px
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align left
+			color #181818
+		ul
+			li
+				font-weight bold
+				font-size 16px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #181818
+				&:before
+					content initial
+					padding-left 0
+.cmq_nayarit
+.cmq_premiere
+.consultorio
+	.sidebar
+		a
+			width 100%
+			img
+				width 100%
+		p
+			text-align center
+		a.map
+			font-family 'Titillium Web', sans-serif
+			font-size 18px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align right
+			color #0d79aa
+			text-transform uppercase
+.contacto
+	.sidebar
+		a
+			width 100%
+			img
+				width 100%
+		p
+			text-align left
+		a.map
+			font-family 'Titillium Web', sans-serif
+			font-size 18px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align right
+			color #0d79aa
+			text-transform uppercase
+	
+	.comunicacion
+		padding-top 10px
+		padding-bottom 10px
+	form
+		padding-top 
+		.text-center
+			text-align center
+		input[type="submit"]
+			border solid 2px #0d79aa
+			font-family 'Titillium Web', sans-serif
+			background-color #FFF
+			border-radius 0
+			font-size 14px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align center
+			color #0d79aa
+			display block
+			margin 0 auto
+		a
+			font-family 'Titillium Web', sans-serif
+			font-size 14px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.64
+			letter-spacing normal
+			text-align center
+			color #181818
+
+.contacto
+.consultorio
+	.comunicacion
+		padding-top 23px
+		.left
+			display inline-block
+			width 75px
+			vertical-align top
+			span
+				font-size 75px
+				display block
+				color #1179a9
+		.right
+			display inline-block
+			width calc( 100% - 90px )
+			vertical-align top
+			span
+				display block
+				font-family 'Titillium Web', sans-serif
+				font-size 24px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height 0
+				letter-spacing normal
+				text-align left
+				color #181818
+				& + span
+					font-size 37px
+					font-family 'Titillium Web', sans-serif
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height 1.7em
+					letter-spacing normal
+					text-align left
+					color #181818
+					& + span
+						font-family 'Titillium Web', sans-serif
+						font-size 16px
+						font-weight normal
+						font-style normal
+						font-stretch normal
+						line-height 0
+						letter-spacing normal
+						text-align left
+						color #181818
+.gallery
+	.section-title
+		h2
+			color #3f3a36
+.overlay_vallarta
+	position relative
+	&:before
+		background-color rgba(0,0,0,0.2)
+		content " "
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+		z-index: 0;
+.video
+	video
+		width 100vw
+		height 56.6vw
+.cirujano
+	.sidebar
+		h5
+			text-align center
+		.cirujano_asociado
+			.member
+				text-align center
+				img
+					display block
+					margin 0 auto
+				span
+					text-align center
+					display block
+					font-size 16px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height 1.19
+					letter-spacing normal
+					text-align center
+					color #181818
+		ul
+			li
+				span
+					font-size 16px
+					font-weight normal
+					font-style normal
+					font-stretch normal
+					line-height 1.88
+					letter-spacing normal
+					text-align center
+					color #181818
+					&.tag_info
+						font-weight bold
+.section-content
+	h2
+		font-size 24px
+		font-weight bold
+		font-style normal
+		font-stretch normal
+		line-height 1.21
+		letter-spacing normal
+		text-align left
+		color #181818
+		margin-top 30px
+	p
+		font-size 16px
+		font-weight normal
+		font-style normal
+		font-stretch normal
+		line-height 1.88
+		letter-spacing normal
+		text-align left
+		color #181818
+		margin-top 30px
+	ul
+		li
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align left
+			color #181818
+@media only screen and (max-width: 480px)
+	header
+		.header-top
+			display none
+	.main-menu
+		.navbar-collapse
+			border 0 !important
+			& > .navigation
+				border 0 !important
+				border-radius 0
+				background-color transparent
+				background transparent
+				& > li
+					background-color #37b4f0 !important
+					& > a
+						background-color #37b4f0 !important
+						font-size 14px
+						font-weight bold
+						font-style normal
+						font-stretch normal
+						line-height normal
+						letter-spacing normal
+						text-align left
+						color #ffffff
+
+					& > ul
+						& > li
+							background-color #37b4f0 !important
+							& > a
+								background-color #37b4f0 !important
+							& > ul
+								& > li
+									background-color #37b4f0 !important
+									& > a
+										background-color #37b4f0 !important
+			.dropdown-btn
+				span
+					display none
+			
+	section.title_section
+		h2
+			text-align center
+		p
+			text-align center			
+	.pull-left
+		width 210px
+		max-width 263px
+	.logo
+		width 100%
+		a
+			width 100%
+			img
+				width 100%
+	.hero
+		height 146px
+		.slide
+			height 146px
+			.title
+				display none
+	section.tag
+		padding 15px 30px
+	section.who-we-are
+		.section-content
+			p
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #181818
+		.home_team_med
+		.home_care
+			text-align center
+			h4
+				text-align center
+				font-size 16px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				text-align center
+				color #181818
+			p
+				text-align center
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align center
+				color #181818
+			a
+				margin 30px auto
+	.main-menu
+		.navbar-header
+			padding 24px 0
+			padding-bottom 6px
+			.movil_lang
+				display block
+				a
+					font-size 20px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height normal
+					letter-spacing normal
+					text-align right
+					color #0d79aa
+				.navbar-toggle
+					background-color transparent
+					border 0
+					.icon-bar
+						background-color #0d79aa
+	.emergencies
+		display none
+	.calculator-imc
+		.container
+			padding-left 30px
+			padding-right 30px
+			.imc-message
+				p
+					font-size 16px
+					font-weight normal
+					font-style normal
+					font-stretch normal
+					line-height 1.88
+					letter-spacing normal
+					text-align left
+					color #ffffff
+			.imc-resultado
+				padding-top 30px
+				height 168px
+				.imc-description
+					text-align center
+				.imc-range
+				.imc-desc
+					display inline-block
+	.miembro
+		h3
+			font-size 14px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing 4.7px
+			text-align center
+			color #0d79aa
+		.rasoc
+			padding 0 20px
+	.our-department
+		padding 0
+		h6
+			font-size 14px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing 4.7px
+			text-align left
+			color #181818
+		h2
+			font-size 25px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height 1.2
+			letter-spacing normal
+			text-align left
+			color #181818
+		.section-title
+			padding 30px
+			padding-bottom 50px
+	.team
+		h6
+			font-size 14px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing 4.7px
+			text-align left
+			color #181818
+		h2
+			font-size 25px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height 1.2
+			letter-spacing normal
+			text-align left
+			color #181818
+		.team-item
+			h4
+				font-size 18px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				text-align left
+				color #ffffff
+			p
+				font-size 14px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				text-align left
+				color #ffffff
+
+	.testimonial
+		.desc
+			width 100%
+			padding 20px 10px
+			font-size 14px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing 2px
+			text-align center
+			color #181818
+		.foot
+			span
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align center
+				color #181818
+	.vallarta
+		padding 0 25px
+		h3
+			font-size 30px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height 1.33
+			letter-spacing normal
+			text-align center
+			color #ffffff
+			text-transform initial
+		p
+			width 100%
+			font-family TitilliumWeb
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align center
+			color #ffffff
+	footer
+		&.main-footer
+			.footer-1
+				padding 0 20px
+			.footer-2
+			.footer-4
+				display none
+			.footer-1
+				h4
+					font-size 18px
+					font-weight bold
+					font-style normal
+					font-stretch normal
+					line-height normal
+					letter-spacing normal
+					text-align left
+					color #ffffff
+				p
+					font-size 16px
+					font-weight normal
+					font-style normal
+					font-stretch normal
+					line-height 1.44
+					letter-spacing normal
+					text-align left
+					color #ffffff
+			.social
+				padding-top 30px
+			.aviso
+				padding-top 30px
+				padding-bottom 30px
+			.logomovil
+				text-align center
+				padding-bottom 27px
+@media only screen and (max-width: 1024px)
+	.theme-green
+		.header-mainbox
+			.container
+				padding-right 0
+				padding-left 0
+			.pull-left
+				padding-right 0
+				padding-left 0
+			.outer-box
+				padding-right 0
+				padding-left 0
+				.main-menu
+					.navigation
+						& > li
+							& > a
+								max-width 140px
+								overflow hidden
+								padding 22px 5px
+.radio_button
+	margin-bottom 0
+	font-weight normal
+	.radio_cont
+		display inline-block
+		position relative
+		width 30px
+		height 30px
+		vertical-align top
+		input[type="radio"]
+			position absolute
+			z-index -1
+			opacity 0
+			&:checked
+				& ~ .control_indicator
+					&:before
+						content ""
+						width 10px
+						height 10px
+						background-color #0d79aa
+						position absolute
+						top 6px
+						left 6px
+						border-radius 100%
+		.control_indicator
+			position absolute
+			top 4px
+			left 0
+			height 26px
+			width 26px
+			background-color #FFF
+			border 2px solid #0d79aa
+			border-radius 100%
+	span
+		display inline-block
+		height 30px
+		vertical-align top
+.header-top
+	ul.info-nav
+		li.dropdown
+			ul
+				visibility hidden
+				opacity 0
+				position absolute
+				left 0px
+				top 120%
+				width 200px
+				padding 0px
+				z-index 100
+				display block
+				transition all 500ms ease
+				-moz-transition all 500ms ease
+				-webkit-transition all 500ms ease
+				-ms-transition all 500ms ease
+				-o-transition all 500ms ease
+				background-color #37b4f0
+				border 1px solid #37b4f0
+				li
+					
+					display block
+					position relative
+					width 100%
+					border-bottom 1px solid rgba(0,0,0,0.10)
+					a
+						position: relative;
+						display: block;
+						padding: 10px 20px;
+						line-height: 24px;
+						font-weight: 400;
+						font-size: 13px;
+						text-transform: capitalize;
+						color: #333333;
+						transition: all 500ms ease;
+						-moz-transition: all 500ms ease;
+						-webkit-transition: all 500ms ease;
+						-ms-transition: all 500ms ease;
+						-o-transition: all 500ms ease;
+					&:hover
+						background-color #0d79aa
+			&:hover
+				ul
+					visibility visible
+					opacity 1
+					top 100%
+			.dropdown-btn
+				display none

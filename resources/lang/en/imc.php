@@ -1,24 +1,69 @@
 <?php
 	return [
-		'no_requiere_range'      => '20 a 25',
-		'no_requiere_message'    => 'no requiere cirugía.',
+		'full' => [
+			'title' => 'Body Mass Index (BMI)',
+			'subtitle' => 'Bariatric Surgery',
+			'paragraph' => 'CKnow your Body Mass Index, enter your height in inches and weight in pounds.'
+		],
+		'clasificacion' => [
+			'paragraph' => 'Before making any changes to your current diet or physical activity, we always recommend to see a specialist for a better assessment and appropriate treatment.',
+			'title' => 'BMI <span>Classification</span>',
+			'class' => [
+				'desorden' => [
+					'range' => '18.5 to 20',
+					'desc' => 'Eating disorder'
+				],
+				'normal' => [
+					'range' => '21 to 24.9',
+					'desc' => 'Normal weight'
+				],
+				'sobrepeso' => [
+					'range' => '25 to 29.9',
+					'desc' => 'Overweight'
+				],
+				'obesidad_i' => [
+					'range' => '30 to 34.9',
+					'desc' => 'Obesity I'
+				],
+				'obesidad_ii' => [
+					'range' => '35 to 39.9',
+					'desc' => 'Obesity II'
+				],
+				'obesidad_iii' => [
+					'range' => '+ than 40',
+					'desc' => 'Obesity III *'
+				],
+				'super' => [
+					'range' => '50 to 60',
+					'desc' => 'Superobesity'
+				],
+				'supersuper' => [
+					'range' => '+ than 60',
+					'desc' => 'Super superobesity'
+				],
+			],
+			'pd' => '* The Obesity III is also known as morbid obesity'
+		],
 
-		'posible_range'          => '25.1 a 29.9',
-		'posible_message'        => 'posible necesite cirugía',
+		'no_requiere_range'      => '20 - 25',
+		'no_requiere_message'    => 'does not require surgery',
 
-		'necesita_one_range'     => '30 a 35',
-		'necesita_one_message'   => 'necesita cirugía',
+		'posible_range'          => '25.1 - 29.9',
+		'posible_message'        => 'potentially needs surgery',
+
+		'necesita_one_range'     => '30 - 35',
+		'necesita_one_message'   => 'needs surgery.',
 		
-		'necesita_two_range'     => '35 a 40',
-		'necesita_two_message'   => 'necesita cirugía',
+		'necesita_two_range'     => '35 - 40',
+		'necesita_two_message'   => 'needs surgery.',
 
-		'necesita_three_range'   => '40 a 50',
-		'necesita_three_message' => 'necesita cirugía',
+		'necesita_three_range'   => '40 - 50',
+		'necesita_three_message' => 'needs surgery.',
 
-		'super_range'            => '50 a 60',
-		'super_message'          => 'necesita cirugía',
+		'super_range'            => '50 - 60',
+		'super_message'          => 'needs surgery.',
 
 		'supersuper_range'       => '60+',
-		'supersuper_message'     => 'necesita cirugía',
+		'supersuper_message'     => 'needs surgery.',
 	];
 ?>

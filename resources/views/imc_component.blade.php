@@ -1,41 +1,54 @@
 <div class="container">
 		<div class="section-content">
 			<div class="row">
-				<div class="imc-message col-md-4 col-sm-6 col-xs-12">
+				<div class="imc-message col-md-3 col-sm-6 col-xs-12">
 
 					<h3 class="text-uppercase small-line mb20">@lang('home.imc.title')</h3>
 					@lang('home.imc.desc')
 				</div>
-				<div class="imc-form col-md-4 col-sm-6 col-xs-12">
+				<div class="imc-form col-md-5 col-sm-12 col-xs-12">
 					<div class="col-md-12">
-						<div class="metrico col-md-4">
-							<input type="radio" name="imc-type" value="metrico" checked="checked" /> @lang('home.imc.metrico')
+						<div class="metrico col-md-6 col-sm-6  col-xs-6">
+							<label class="radio_button">
+								<div class="radio_cont">
+									<input type="radio" name="imc-type" value="metrico" checked="checked" /> 
+									<div class="control_indicator"></div>
+								</div>
+								<span> @lang('home.imc.metrico') </span>
+							</label>
 						</div>
-						<div class="imperial col-md-4">
-							<input type="radio" name="imc-type" value="imperial" /> @lang('home.imc.imperial')
+						<div class="metrico col-md-6 col-sm-6  col-xs-6">
+							<label class="radio_button">
+								<div class="radio_cont">
+									
+										<input type="radio" name="imc-type" value="imperial" />
+										<div class="control_indicator"></div>
+								</div>
+								<span> @lang('home.imc.imperial') </span>
+							</label>
 						</div>
 					</div>
 
 					<div class="col-md-12">
-						<div class="altura col-md-6">
+						<div class="altura col-md-6 col-sm-6  col-xs-6">
 							<label>
-								@lang('home.imc.altura')
-								<input type="text" id="imc_altura" />
+								@lang('home.imc.altura.title')
+								<input type="text" id="imc_altura" data-metric="@lang('home.imc.altura.metric')" data-imperial="@lang('home.imc.altura.imperial')" placeholder="@lang('home.imc.altura.metric')" />
 							</label>
 						</div>
-						<div class="peso col-md-6">
+						<div class="peso col-md-6 col-sm-6  col-xs-6">
 							<label>
-								@lang('home.imc.peso')
-								<input type="text" id="imc_peso" />
+								@lang('home.imc.peso.title')
+								<input type="text" id="imc_peso" data-metric="@lang('home.imc.peso.metric')" data-imperial="@lang('home.imc.peso.imperial')"  placeholder="@lang('home.imc.peso.metric')" />
 							</label>
 						</div>
 					</div>
 
-					<div class="col-md-12">
-						<div class="borrar col-md-6">
+					<div class="botones col-md-12">
+						<div class="borrar col-md-6 col-sm-6  col-xs-6">
 							<input type="reset" value="Borrar" />
 						</div>
-						<div class="calcular col-md-6">
+						<div class="calcular col-md-6 col-sm-6  col-xs-6">
 							<input type="button" value="Calcular" />
 						</div>
 					</div>

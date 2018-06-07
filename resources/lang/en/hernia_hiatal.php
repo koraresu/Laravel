@@ -1,12 +1,11 @@
 <?php
 	return [
 		'title' => 'Hernias Hiatal',
-		'subtitle' => 'Cirugía Gastrointestinal',
-		'paragraph' => '<p>La hernia hiatal es una afección en la cual una porción del estómago se extiende a través de una abertura en el diafragma ubicado en el tórax. El diafragma es la capa muscular que separa el tórax del abdomen; ahí hay una abertura llamada hiato, que permite que el esófago pase y se una al estómago. Una hernia hiatal ocurre cuando el estómago sobresale por esa misma abertura. </p>',
+		'subtitle' => 'Gastrointestinal Surgery',
+		'paragraph' => '<p>A Hiatal Hernia is a condition in which a portion of the upper stomach extends through an opening in the diaphragm. The diaphragm is the muscular layer that separates the chest cavity from the abdomen and there is an opening in the diaphragm, called the hiatus, that allows the esophagus (the food pipe) to pass through and attach to the stomach. A Hiatal Hernia occurs when the stomach bulges up through that same opening.</p>',
 		
-		'causas_title' => 'CAUSAS DE LA <span class="text-theme-color">HERNIA HIATAL</span>',
-		'causas_paragraph' => '<p>Se desconoce la causa de este tipo de hernias. La afección puede deberse a un debilitamiento del tejido de soporte. El riesgo de este problema aumenta con la edad, la obesidad y el tabaquismo. Las hernias de hiato son muy comunes y ocurren frecuentemente en personas mayores de 50 años.</p> <p>Este padecimiento puede ocasionar reflujo (regurgitación) del ácido gástrico desde el estómago hasta el esófago.</p> <p>Los niños con esta afección por lo general nacen con ella (congénita) y a menudo ocurre con reflujo gastroesofágico en bebés. </p>',
-		'sintomas_title' => 'SÍNTOMAS DE <span class="text-theme-color">HERNIA HIATAL</span>',
-		'sintomas_paragraph' => '<p>Rara vez se presentan síntomas de hernia hiatal. La principal molestia que se puede percibir es dolor ocasionado por el reflujo del ácido gástrico, el aire o la bilis.</p><p>Otros síntomas de hernia hiatal pueden ser:</p><ul><li>Dolor torácico</li><li>Acidez gástrica que empeora al agacharse o acostarse</li><li>Dificultad para deglutir</li></ul>',
- 	];
+		'causas_title' => '<span class="text-theme-color">Hiatal Hernia</span> Causes',
+		'causas_paragraph' => '<p>Hiatal Hernia causes are widely unknown. The condition may be due to a weakening of the supporting tissue. The risk of this problem increases with age, with obesity and in people who smoke. Hiatus hernias are a very common type of hernia, mainly occurring in people over 50 years old.</p><p>Hiatal Hernias can cause mild to severe acid reflux, which is regurgitation of gastric acid from the stomach into the esophagus.</p><p>Children with hiatal hernias are typically born with the condition (congenital) and often occurs alongside gastroesophageal reflux in babies.</p>',
+		'sintomas_title' => '<span class="text-theme-color">Hiatal Hernia</span> Symptoms',
+		'sintomas_paragraph' => '<p>A hiatus hernia, itself, rarely causes symptoms. The main hiatal hernia symptoms include a pain and discomfort that are actually due to the acid reflux of gastric acid, air or stomach bile. Other Hiatal Hernia symptoms may include:</p><ul class="lista"><li>Chest pain</li><li>Acid reflux that gets worse when bending over or lying down</li><li>Difficulty swallowing</li></ul>', ];
 ?>

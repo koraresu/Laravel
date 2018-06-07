@@ -20,9 +20,6 @@ public function imc(){
      return view('cirugia_ariatrica.imc',[]);
 }
 public function obesidad(){
-    return view('home',[
-        'doctors' => Doctor::get(),
-        'testimoniales' => Testimonial::get()
-    ]);
+    return view('cirugia_ariatrica.obesidad',[]);
 }
 }

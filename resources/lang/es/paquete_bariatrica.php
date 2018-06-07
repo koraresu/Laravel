@@ -5,6 +5,7 @@
 		'manga' => 'MANGA GÁSTRICA',
 		'bypass' => 'BYPASS GÁSTRICO',
 		'switch' => 'SWITCH DUODENAL',
+		'pkg_title' => 'TODOS LOS PAQUETES DE CIRUGÍA BARIÁTRICA INCLUYEN:',
 		'honorarios' => [
 			'title' => 'Honorarios Médicos',
 			'paragraph' => 'Incluye todas las tarifas médicas con diferentes métodos de pago para satisfacer sus necesidades.',

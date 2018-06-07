@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDoctorCertificateTable extends Migration
+class DoctorCertificateTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,11 @@ class CreateDoctorCertificateTable extends Migration
     {
         Schema::create('doctor_certificate', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('doctor_id')->unsigned();
             $table->string('photo');
             $table->timestamps();
+
+            $table->foreign('doctor_id')->references('id')->on('doctor')->onDelete('cascade');
         });
     }
 
@@ -27,6 +30,6 @@ class CreateDoctorCertificateTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('doctor_certificate');
     }
 }

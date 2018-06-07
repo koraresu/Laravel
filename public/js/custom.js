@@ -3,6 +3,7 @@ $(function() {
         e.preventDefault();
         $('#imc_peso').val("");
         $('#imc_altura').val("");
+
         $('.imc-resultado ul li').css('display','none');
         $('#imc_res').html("");
     });
@@ -15,7 +16,8 @@ $(function() {
         }else{
             var peso   = $('#imc_peso').val();
             var altura = $('#imc_altura').val();
-            var formula = toFixed( (peso) / (altura*2), 1);
+            altura = altura * 12;
+            var formula = toFixed( (peso*703) / (altura*altura), 1);
         }
         var message = "";
         $('.imc-resultado ul li').each(function(i,v){
@@ -46,6 +48,18 @@ $(function() {
         // Ensure that it is a number and stop the keypress
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
+        }
+    });
+    $('.imc-form .radio_cont').on('click', function(){
+        console.log( "CLICKED RADIO" );
+        $('#imc_altura').val("");
+        $('#imc_peso').val("");
+        if($(this).find('input').val() == 'metrico'){
+            $('#imc_altura').attr( 'placeholder' , $('#imc_altura').attr('data-metric') );
+            $('#imc_peso').attr( 'placeholder' , $('#imc_peso').attr('data-metric') );
+        }else{
+            $('#imc_altura').attr( 'placeholder' , $('#imc_altura').attr('data-imperial') );
+            $('#imc_peso').attr( 'placeholder' , $('#imc_peso').attr('data-imperial') );
         }
     });
 });

@@ -14,6 +14,8 @@
 		'urgencias'       => 'Urgencias / Emergencies',
 		'phone'           => '(322) 223 5521',
 		'movil'           => '(044) 322 150 6291',
+        'dr-title-url'    => 'DR. SERGIO DEL HOYO',
+        'team-title-url'  => 'EQUIPO',
 		'dr'              => 'DR. SERGIO DEL HOYO GALVÁN',
 		'dr-certificado'  => 'Cirujano Gastrointestinal Certificado',
     	'dr-especialista' => 'Especialista en cirugía general, biariátrica y enfermedades gástricas',
@@ -43,8 +45,16 @@
 			'desc'  => '<p> Conozca su Índice de Masa Corporal, ingrese su estatura en cms y peso en Kg </p>',
 			'metrico' => 'Métrico',
 			'imperial' => 'Imperial',
-			'altura' => 'Altura',
-			'peso' => 'Peso',
+            'altura' => [
+                'title' => 'Altura',
+                'metric' => '1.80 cm',
+                'imperial' => '24.5 ft'
+            ],
+            'peso' => [
+                'title' => 'Peso',
+                'metric' => '200 kg',
+                'imperial' => '400 lb'
+            ],
 			'tu-imc' => 'Su IMC es de:',
 		],
     	'es-miembro' => 'El Dr. Sergio del Hoyo es miembro de:',
@@ -79,6 +89,24 @@
             'title' => 'Explora Puerto Vallarta',
             'desc' => 'Puerto Vallarta es uno de los destinos de turismo médico más importantes de México, un destino hermoso con playas y atardeceres espectaculares en donde usted no sólo vendrá a realizarse una operación, sentirá que está de vacaciones.',
             'more' => 'LEER MÁS',
+        ],
+        'citas' => [
+            'title' => 'CITAS',
+            'phone' => '322 223 5521',
+            'rest'  => 'Resto del País LADA (01 322)'
+        ],
+        'urgency' => [
+            'title' => 'URGENCIAS',
+            'phone' => '322 150 6291',
+            'rest'  => 'Resto del País LADA (045 322)'
+        ],
+        'slider1' => [
+            'title' => 'NUESTRAS CIRUGÍAS SON REALIZADAS CON',
+            'subtitle' => 'LAPAROSCOPÍA'
+        ],
+        'slider2' => [
+            'title' => 'NUESTRAS CIRUGÍAS SON REALIZADAS CON',
+            'subtitle' => 'LAPAROSCOPÍA'
         ]
 	];
 ?>

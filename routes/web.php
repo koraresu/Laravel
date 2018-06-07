@@ -22,7 +22,7 @@ Route::group([
 	], function()
 {
     //Home
-    Route::get('/', 'HomeController@index');
+    Route::get(LaravelLocalization::transRoute('routes.home'), 'HomeController@index')->name('home');
     Route::get( LaravelLocalization::transRoute('routes.puerto_vallarta') , 'HomeController@vallarta')-> name('vallarta');
     Route::get( LaravelLocalization::transRoute('routes.contacto') , 'HomeController@contacto')-> name('contacto');
     Route::get( LaravelLocalization::transRoute('routes.privacidad') , 'HomeController@privacidad')-> name('privacidad');
@@ -44,9 +44,10 @@ Route::group([
     Route::get( LaravelLocalization::transRoute('routes.cirujanos_bariatricos') , 'CirujanosController@cirujanos')-> name('cirujanos');
     Route::get( LaravelLocalization::transRoute('routes.dr_sergio') , 'HomeController@index')-> name('dr_sergio');
     //Testimonios
-    Route::get( LaravelLocalization::transRoute('routes.testimonios') , 'TestimoniosController@testimonios')-> name('testimonios');
+    Route::get( LaravelLocalization::transRoute('routes.testimonios') , 'TestimoniosController@index')-> name('testimonios');
     // Hospital
     Route::get( LaravelLocalization::transRoute('routes.hospital_cmq_premiere') , 'HospitalController@cmq_premiere')-> name('cmq_premiere');
     Route::get( LaravelLocalization::transRoute('routes.hospital_cmq_riviera_nayarit') , 'HospitalController@cmq_nayarit')-> name('cmq_riviera_nayarit');
     Route::get( LaravelLocalization::transRoute('routes.hospital_consultorio_cirujano_bariatrico') , 'HospitalController@consultorio')-> name('consultorio'); 
+    Route::get('/{dr}', 'CirujanosController@cirujano')->name('cirujano');
 });

@@ -31,6 +31,7 @@ class CreateDoctorLangTable extends Migration
             $table->string('education');
             $table->string('days');
             $table->text('member');
+            $table->text('url');
 
             $table->unique(['doctor_id','locale']);
             $table->foreign('doctor_id')->references('id')->on('doctor')->onDelete('cascade');

@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>@yield('title')</title>
 
 <meta name="description" content="@yield('description')">
@@ -53,8 +53,16 @@
                         <a href="#"><span class="fa fa-youtube-play"></span></a>
                     </div>
                 </li>
-                <li>
+                <li class="dropdown">
                     <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}"> @lang('home.nosotros') </a>
+                    <ul>
+                      @if (LaravelLocalization::getCurrentLocale() == "en")
+                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('en/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
+                      @else
+                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('es/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
+                      @endif
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}">@lang('home.team-title-url')</a></li>
+                    </ul>
                 </li>
                 <li class="separator">
                     <span class="fa fa-circle"></span>
@@ -69,24 +77,22 @@
         <div class="top-right pull-right clearfix">
             <ul class="info-nav clearfix">
                 <li>
-                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-phone"></span> @lang('home.phone') </a>
+                    <a href="#"> <span class="icon-phone"></span> @lang('home.phone') </a>
                 </li>
                 <li>
-                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-movil"></span> @lang('home.movil') </a>
+                    <a href="#"> <span class="icon-movil"></span> @lang('home.movil') </a>
                 </li>
                 <li>
-                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto') </a>
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> <span class="icon-contacto"></span> @lang('home.contacto') </a>
                 </li>
                 <li>
                   @if (LaravelLocalization::getCurrentLocale() == "en")
-                    <a rel="alternate" hreflang="es" href="{{LaravelLocalization::getLocalizedURL('es') }}" class="text-uppercase">
-                      ESP
-                    </a>
+                    <a rel="alternate" hreflang="es" href="{{ LaravelLocalization::getLocalizedURL('es', null, [], true) }}" class="text-uppercase">
                   @else
-                    <a rel="alternate" hreflang="en" href="{{LaravelLocalization::getLocalizedURL('en') }}" class="text-uppercase">
-                      ENG
-                    </a>
+                    <a rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}" class="text-uppercase">
                   @endif
+                    @lang('home.lang')
+                    </a>
                 </li>
             </ul>
         </div>
@@ -98,20 +104,27 @@
     <div class="header-mainbox">
       <div class="container ptn pbn">
         <div class="clearfix">
-          <div class="pull-left">
-            <div class="logo"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a> </div>
+          <div class="col-lg-3 col-md-4 pull-left">
+            <div class="logo"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a> </div>
 
           </div>
-          <div class="outer-box clearfix"> 
+          <div class="col-lg-9 col-md-8 outer-box clearfix"> 
             <!-- Main Menu -->
             <nav class="main-menu logo-outer">
               <div class="navbar-header"> 
                 <!-- Toggle Button -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="movil_lang">
+                  @if (LaravelLocalization::getCurrentLocale() == "en")
+                    <a rel="alternate" hreflang="es" href="{{LaravelLocalization::getLocalizedURL('es') }}" class="text-uppercase">@lang('home.lang')</a>
+                  @else
+                    <a rel="alternate" hreflang="en" href="{{LaravelLocalization::getLocalizedURL('en') }}" class="text-uppercase">@lang('home.lang')</a>
+                  @endif
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
               </div>
               <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation clearfix">
-                  <li class="current"> <a href="{{ LaravelLocalization::getNonLocalizedURL('/') }}"> @lang('menu.home') </a>
+                  <li class="current"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"> @lang('menu.home') </a>
                   </li>
                   <li class="dropdown"> <a href="#"> @lang('menu.cirugia-gas') </a>
                     <ul>
@@ -141,7 +154,7 @@
                   <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.testimonios') }}"> @lang('menu.testimonio') </a>
                   </li>
                   <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('menu.blog') </a></li>
-                  <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'galery') }}"> @lang('menu.galeria') </a>
+                  <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('menu.galeria') </a>
                   
                   </li>
                 </ul>
@@ -155,6 +168,8 @@
     <!--Header Main Box End--> 
   </header>
   <!--End Main Header --> 
+  
+
   @yield('content')
   
   
@@ -162,6 +177,9 @@
   <footer class="main-footer">
     <div class="container">
       <div class="row clearfix">
+        <div class="col-md-12 logomovil visible-xs visible-sm">
+          <img src="{{ asset('images/logo/white.png') }}" />
+        </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
 
           <div class="footer-1">
@@ -188,13 +206,13 @@
             <h4>@lang('home.mas-informacion') </h4>
             <ul>
               <li>
-                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}" class="contacto text-uppercase"> <span class="icon-contact"></span> @lang('home.contacto')</a>
+                <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> <span class="icon-contacto"></span> @lang('home.contacto')</a>
               </li>
               <li>
-                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-phone"></span> @lang('home.phone') </a>
+                <a href="#"> <span class="icon-phone"></span> @lang('home.phone') </a>
               </li>
               <li>
-                <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="icon-movil"></span> @lang('home.movil') </a>
+                <a href="#"> <span class="icon-movil"></span> @lang('home.movil') </a>
               </li>
               
             </ul>
@@ -216,12 +234,12 @@
           <div class="footer-4">
             <h4> @lang('home.mapa-sitio') </h4>
             <ul>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.home') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.cirugia-gas') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.cirugia-bar') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.hospitales') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.blog') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.galeria') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"> @lang('home.home') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal') }}"> @lang('home.cirugia-gas') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica') }}"> @lang('home.cirugia-bar') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital') }}"> @lang('home.hospitales') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('home.blog') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('home.galeria') </a> </li>
           </div>
         </div>
       </div>
@@ -233,7 +251,7 @@
         </ul>
     </div>
     <div class="aviso col-md-12">
-        <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> @lang('home.aviso-privacidad') </a>
+        <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.privacidad') }}"> @lang('home.aviso-privacidad') </a>
     </div>
     </div>
   </footer>

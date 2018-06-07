@@ -1,7 +1,7 @@
 <?php
 	return [
-        'home'            => 'Inicio',
-        'cirugia-gas'     => 'Cirugía Gastrointestinal',
+        'home'            => 'HOME',
+        'cirugia-gas'     => 'GASTROINTESTINAL SURGERY',
         'cirugia-gas-sub' => [
             'apendicitis'     => 'APENDICITIS',
             'colelitiasis'    => 'COLELITIASIS',
@@ -9,23 +9,23 @@
             'hernias'         => 'HERNIAS',
             'hernias_hiatal'  => 'HERNIA HIATAL'
         ],
-        'cirugia-bar'     => 'Cirugía Bariátrica',
+        'cirugia-bar'     => 'BARIATRIC SURGERY',
         'cirugia-bar-sub' => [
-            'manga-gastrica'  => 'Manga Gástrica',
-            'bypass'          => 'Bypass Gástrico RNY',
-            'cirugia-paq'     => 'Paquete de Cirugía Bariátrica',
-            'url-imc'         => 'Índice de Masa Corporal (IMC)',
-            'obesidad'        => 'Obesidad',
+            'manga-gastrica'  => 'SLEEVE GASTRECTOMY',
+            'bypass'          => 'GASTRIC BYPASS RNY',
+            'cirugia-paq'     => 'BARIACTRIC SURGERY PACKAGES',
+            'url-imc'         => 'BODY MASS INDEX (BMI)',
+            'obesidad'        => 'OBESITY',
         ],
-        'hospitales'      => 'Hospitales',
+        'hospitales'      => 'HOSPITALS',
         'hospitales-sub'  => [
             'cmq'             => 'CMQ Premiere',
             'cmq-nayarit'     => 'CMQ Riviera Nayarit',
-            'consultorio'     => 'Consultorio',
+            'consultorio'     => 'DOCTOR’S OFFICE',
         ],
-        'testimonio'      => 'Testimonio',
+        'testimonio'      => 'TESTIMONIALS',
         'testimonio-sub'  => [],
 		'blog'            => 'Blog',
-		'galeria'         => 'Galería',
+		'galeria'         => 'GALLERY',
     ];
 ?>

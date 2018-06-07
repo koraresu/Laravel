@@ -1,6 +1,7 @@
 @extends('general')
-@section('title', Lang::get('title.home') )
-@section('description', Lang::get('description.home') )
+@section('title', Lang::get('seo.packages.title') )
+@section('keywords', Lang::get('seo.packages.keywords') )
+@section('description', Lang::get('seo.packages.description') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/bariatrica.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/bariatrica.png') }}); background-size: cover;">
 	<div class="container ">
@@ -56,6 +57,9 @@
 
 <section class="includes_packages">
 	<div class="container ptn">
+		<div class="section-content">
+			<h2 class="text-uppercase small-line text">@lang('paquete_bariatrica.pkg_title')</h2>
+		</div>
 		<div class="section-wrap">
 			<div class="row">
 

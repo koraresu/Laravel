@@ -1,23 +1,24 @@
 <?php
 	return [
-		'title' => 'Colielitiasis',
-		'subtitle' => 'Cirugía Gastrointestinal',
-		'paragraph' => '<p>La colelitiasis (piedras en la vesícula biliar), conocida como cálculos biliares o litiasis biliar, se refiere a la formación de cálculos en la vías biliares.</p><p>Los cálculos biliares son depósitos endurecidos de fluido biliar que se forman en la vesícula biliar, un pequeño órgano con forma de pera, ubicado en el lado derecho del abdomen, justo debajo del hígado.</p><p>La vesícula biliar tiene un líquido digestivo denominado bilis que se libera en el intestino delgado.</p><p>Los cálculos biliares varían en tamaño y pueden ser tan pequeños como un grano de arena, o tan grandes como una pelota de golf. Algunas personas desarrollan sólo un cálculo, mientras que otras pueden llegar a desarrollar muchos al mismo tiempo.</p><h2 class="text-uppercase small-line text">¿Para qué sirve la vesícula biliar?</h3><p>La vesícula biliar concentra y guarda bilis hepática para llevarla al intestino delgado en respuesta a la comida, y así participar en el proceso de digestión de los alimentos.</p>',
-		'sintomas_title'            => 'SÍntomas de la colielitiasis',
-		'sintomas_paragraph'        => '<p>En general, los síntomas de la colelitiasis incluyen dolor en la parte superior del abdomen lado derecho y hacia la espalda; casi siempre después de haber ingerido alimentos con grasa, lácteos, huevo. También náuseas, vómitos, malestar general, e incluso hasta fiebre en cuadros más avanzados de la enfermedad.</p><p>Si un cálculo biliar provoca un bloqueo de las vías biliares puede haber coloración amarilla (ictericia) de los ojos y piel, e incluso hasta pancreatitis.</p><p>Si usted cuenta con algunos de estos síntomas de la colelitiasis, es importante que acuda inmediatamente a su médico.</p>',
+		'title' => 'Gallstones (Colelthiasis)',
+		'subtitle' => 'Gastrointestinal Surgery',
+		'paragraph' => '<p>Cholelithiasis (stones in the biliary vesicle), commonly known as gallstones, refers to the formation of stones in the bile Duct formed out of bile components.</p><p><b>Gallstones</b> are hardened deposits of bile fluid that form in the gallbladder causing an obstruction. The gallbladder is a small, pear-shaped organ on the right side of your abdomen, just below your liver.</p><p>The gallbladder has a digestive fluid called bile that is released into the small intestine.</p><p>Gallstones can vary in size from the size of a grain of sand to as large as a golf ball.</p><p>Some people develop only one gallstone, while others develop many gallstones at once.</p>',
+		'do_title' => 'What does the Gallbladder do?',
+		'do_paragraph' => '<p>The gallbladder concentrates and stores hepatic bile and delivers it to the small intestine when food is presented, thus participating in food digestion.</p>',
+		'sintomas_title'            => 'Gallstones Symptoms',
+		'sintomas_paragraph'        => '<p>In general, <b>gallstones symptoms</b> include pain in the upper abdomen on the right side and towards the back. Almost always after eating foods that are high in fat or that contain dairy or eggs.</p><p><b>Gallstones symptoms</b> can also include nausea, vomiting, general malaise and even fever in the more advanced stages of the disease. If a gallstone causes a blockage of the bile ducts, there may be a yellow coloration (jaundice) of the eyes and skin, and <b>gallstones</b> can lead up to Pancreatitis.</p>',
 
-		'factores_title' => 'Factores de riesgo para <span class="text-theme-color">Cálculos biliares </span>',
-		'factores_paragraph' => '<p>Las mujeres suelen ser más propensas a los cálculos biliares, pero también se presentan en los hombres.</p>
-		<p>La dieta es un factor muy importante, pues las personas con sobrepeso u obesidad tienen mayor riesgo de desarrollar cálculos biliares.</p>',
+		'factores_title' => 'Risk Factors for <span class="text-theme-color">Gallstones</span>',
+		'factores_paragraph' => '<p>Women are typically more prone to gallstones, although they can occur in men as well. Diet is an important factor, as people who are overweight or obese are more likely to develop gallstones.</p>',
 		
-		'complicaciones_title'     => 'Complicaciones de los <span class="text-theme-color">Cálculos biliares</span>',
-		'complicaciones_paragraph' => '<p>Algunas complicaciones de los cálculos biliares pueden ser la inflamación de la vesícula biliar (COLECISTITIS) y la obstrucción del conducto biliar común o pancreático (COLEDOCOLITIASIS, PANCREATITIS).</p>',
+		'complicaciones_title'     => 'Complications',
+		'complicaciones_paragraph' => '<p>Complications of <b>gallstones</b> can be inflammation of the gallbladder (Cholecystitis) and/or obstruction of the common or pancreatic bile duct (Coledocolitiasis, Pancreatitis).</p>',
 		
-		'diagnostico_title'        => 'Diagnóstico de la <span class="text-theme-color">Colelitiasis</span>',
-		'diagnostico_paragraph'    => '<p>Para tener un diagnóstico adecuado de la colelitiasis, además de un interrogatorio y exploración física, se debe realizar un ultrasonido de hígado y vías biliares.</p>',
+		'diagnostico_title'        => 'Gallstones Diagnosis',
+		'diagnostico_paragraph'    => '<p>In addition to an adequate physical examination, an ultrasound may be ordered to look at the liver and bile ducts.</p>',
 
 		
-		'tratamiento_title' => 'Tratamiento de la <span class="text-theme-color">Colelitiasis</span>',
-		'tratamiento_paragraph' => '<p>El tratamiento adecuado cuando se tiene colelitiasis es la Colecistectomía (extirpación quirúrgica de la vesícula) por vía laparoscópica, es decir por mínimas incisiones.</p>',
+		'tratamiento_title' => 'Gallstone Treatment',
+		'tratamiento_paragraph' => '<p>The most appropriate treatment is a Cholecystectomy (the surgical removal of the gallbladder). A cholecystectomy is typically performed through a minimally-invasive, laparoscopic surgery.</p>',
 	];
 ?>

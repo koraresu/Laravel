@@ -22,6 +22,10 @@ class Doctor extends Model
     	'education',
     	'days',
     	'member',
+        'url',
+        'seo_title',
+        'seo_keywords',
+        'seo_description'
 	];
     public function RealDoctor()
     {

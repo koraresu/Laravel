@@ -8,6 +8,7 @@ html {
 }
 .header-style-one .header-mainbox {
   background-color: #fff;
+  z-index: 99;
 }
 .main-header .header-top {
   background-color: #37b4f0;
@@ -30,6 +31,9 @@ html {
 .hero .hero-slider .owl-controls {
   height: 0;
 }
+.movil_lang {
+  display: none;
+}
 .theme-green .main-menu .navigation > li > a {
   color: #0d79aa;
   font-family: 'Titillium Web', sans-serif;
@@ -40,7 +44,7 @@ html {
   letter-spacing: normal;
   text-align: center;
   font-size: 14px;
-  padding: 22px 20px;
+  padding: 22px 15px;
 }
 .theme-green .main-menu .navigation > li:hover > a {
   color: #0d79aa;
@@ -68,7 +72,7 @@ html {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: right;
+  text-align: left;
   color: #fff;
   text-transform: uppercase;
 }
@@ -313,9 +317,13 @@ html {
   font-family: 'Titillium Web', sans-serif;
   color: #0d79aa;
   width: 100%;
+  padding: 5px;
 }
-.calculator-imc .container .imc-form .borrar input,
-.calculator-imc .container .imc-form .calcular input {
+.calculator-imc .container .imc-form .botones {
+  margin-top: 25px;
+}
+.calculator-imc .container .imc-form .botones .borrar input,
+.calculator-imc .container .imc-form .botones .calcular input {
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -332,7 +340,7 @@ html {
   box-sizing: border-box;
   width: 100%;
 }
-.calculator-imc .container .imc-form .borrar input {
+.calculator-imc .container .imc-form .botones .borrar input {
   color: #0d79aa;
   border: solid 2px #0d79aa;
   box-sizing: border-box;
@@ -693,6 +701,12 @@ html {
 .testimonial .testi .cont .img_name {
   font-weight: bold;
 }
+.testimonial .testi .cont .img_cont {
+  width: 100%;
+}
+.testimonial .testi .cont .img_cont .juxtapose {
+  max-width: 100%;
+}
 .testimonial .foot {
   text-align: center;
 }
@@ -718,6 +732,7 @@ html {
 }
 .vallarta {
   position: relative;
+  text-align: center;
 }
 .vallarta:before {
   background-color: rgba(15,38,58,0.3) !important;
@@ -752,6 +767,7 @@ html {
   text-align: center;
   color: #fff;
   text-transform: initial;
+  margin: 10px auto;
 }
 .vallarta a {
   font-family: 'Titillium Web', sans-serif;
@@ -850,8 +866,18 @@ ul.lista li:before {
   font-size: 50px;
   color: #007aad;
 }
+.includes_packages .home_team_med h4 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
 .includes_packages .home_team_med .icon-ambulance {
-  font-size: 36px;
+  font-size: 41px;
 }
 .includes_packages .home_team_med .icon-med {
   font-size: 60px;
@@ -864,6 +890,20 @@ ul.lista li:before {
 }
 .includes_packages .home_team_med .icon-bed {
   font-size: 42px;
+}
+.includes_packages .section-wrap {
+  margin-top: 30px !important;
+}
+.includes_packages .section-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+  margin-top: 30px;
 }
 .calculator-section-imc {
   background-color: #fff;
@@ -891,6 +931,9 @@ ul.lista li:before {
 }
 .calculator-section-imc .imc-form .col-md-12:last-child {
   padding-bottom: 0;
+}
+.calculator-section-imc .imc-resultado ul {
+  display: none !important;
 }
 .clasificacion-imc .section-title {
   padding-bottom: 30px;
@@ -953,4 +996,726 @@ ul.lista li:before {
 .clasificacion-imc .desc_block .desc span.block_bold {
   font-weight: bold;
   line-height: normal;
+}
+.obesidad ul li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.obesidad ul li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #0d79aa;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.obesidad .sidebar p {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.obesidad .sidebar ul li {
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.obesidad .sidebar ul li:before {
+  content: initial;
+  padding-left: 0;
+}
+.cmq_nayarit .sidebar a,
+.cmq_premiere .sidebar a,
+.consultorio .sidebar a {
+  width: 100%;
+}
+.cmq_nayarit .sidebar a img,
+.cmq_premiere .sidebar a img,
+.consultorio .sidebar a img {
+  width: 100%;
+}
+.cmq_nayarit .sidebar p,
+.cmq_premiere .sidebar p,
+.consultorio .sidebar p {
+  text-align: center;
+}
+.cmq_nayarit .sidebar a.map,
+.cmq_premiere .sidebar a.map,
+.consultorio .sidebar a.map {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #0d79aa;
+  text-transform: uppercase;
+}
+.contacto .sidebar a {
+  width: 100%;
+}
+.contacto .sidebar a img {
+  width: 100%;
+}
+.contacto .sidebar p {
+  text-align: left;
+}
+.contacto .sidebar a.map {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #0d79aa;
+  text-transform: uppercase;
+}
+.contacto .comunicacion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contacto form .text-center {
+  text-align: center;
+}
+.contacto form input[type="submit"] {
+  border: solid 2px #0d79aa;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #fff;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d79aa;
+  display: block;
+  margin: 0 auto;
+}
+.contacto form a {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+}
+.contacto .comunicacion,
+.consultorio .comunicacion {
+  padding-top: 23px;
+}
+.contacto .comunicacion .left,
+.consultorio .comunicacion .left {
+  display: inline-block;
+  width: 75px;
+  vertical-align: top;
+}
+.contacto .comunicacion .left span,
+.consultorio .comunicacion .left span {
+  font-size: 75px;
+  display: block;
+  color: #1179a9;
+}
+.contacto .comunicacion .right,
+.consultorio .comunicacion .right {
+  display: inline-block;
+  width: calc(100% - 90px);
+  vertical-align: top;
+}
+.contacto .comunicacion .right span,
+.consultorio .comunicacion .right span {
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.contacto .comunicacion .right span + span,
+.consultorio .comunicacion .right span + span {
+  font-size: 37px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.7em;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.contacto .comunicacion .right span + span + span,
+.consultorio .comunicacion .right span + span + span {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.gallery .section-title h2 {
+  color: #3f3a36;
+}
+.overlay_vallarta {
+  position: relative;
+}
+.overlay_vallarta:before {
+  background-color: rgba(0,0,0,0.2);
+  content: " ";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.video video {
+  width: 100vw;
+  height: 56.6vw;
+}
+.cirujano .sidebar h5 {
+  text-align: center;
+}
+.cirujano .sidebar .cirujano_asociado .member {
+  text-align: center;
+}
+.cirujano .sidebar .cirujano_asociado .member img {
+  display: block;
+  margin: 0 auto;
+}
+.cirujano .sidebar .cirujano_asociado .member span {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+}
+.cirujano .sidebar ul li span {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+}
+.cirujano .sidebar ul li span.tag_info {
+  font-weight: bold;
+}
+.section-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+  margin-top: 30px;
+}
+.section-content p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+  margin-top: 30px;
+}
+.section-content ul li {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+@media only screen and (max-width: 480px) {
+  header .header-top {
+    display: none;
+  }
+  .main-menu .navbar-collapse {
+    border: 0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation {
+    border: 0 !important;
+    border-radius: 0;
+    background-color: transparent;
+    background: transparent;
+  }
+  .main-menu .navbar-collapse > .navigation > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > a {
+    background-color: #37b4f0 !important;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > a {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse .dropdown-btn span {
+    display: none;
+  }
+  section.title_section h2 {
+    text-align: center;
+  }
+  section.title_section p {
+    text-align: center;
+  }
+  .pull-left {
+    width: 210px;
+    max-width: 263px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo a {
+    width: 100%;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .hero {
+    height: 146px;
+  }
+  .hero .slide {
+    height: 146px;
+  }
+  .hero .slide .title {
+    display: none;
+  }
+  section.tag {
+    padding: 15px 30px;
+  }
+  section.who-we-are .section-content p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med,
+  section.who-we-are .home_care {
+    text-align: center;
+  }
+  section.who-we-are .home_team_med h4,
+  section.who-we-are .home_care h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med p,
+  section.who-we-are .home_care p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med a,
+  section.who-we-are .home_care a {
+    margin: 30px auto;
+  }
+  .main-menu .navbar-header {
+    padding: 24px 0;
+    padding-bottom: 6px;
+  }
+  .main-menu .navbar-header .movil_lang {
+    display: block;
+  }
+  .main-menu .navbar-header .movil_lang a {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0d79aa;
+  }
+  .main-menu .navbar-header .movil_lang .navbar-toggle {
+    background-color: transparent;
+    border: 0;
+  }
+  .main-menu .navbar-header .movil_lang .navbar-toggle .icon-bar {
+    background-color: #0d79aa;
+  }
+  .emergencies {
+    display: none;
+  }
+  .calculator-imc .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .calculator-imc .container .imc-message p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .calculator-imc .container .imc-resultado {
+    padding-top: 30px;
+    height: 168px;
+  }
+  .calculator-imc .container .imc-resultado .imc-description {
+    text-align: center;
+  }
+  .calculator-imc .container .imc-resultado .imc-range,
+  .calculator-imc .container .imc-resultado .imc-desc {
+    display: inline-block;
+  }
+  .miembro h3 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: center;
+    color: #0d79aa;
+  }
+  .miembro .rasoc {
+    padding: 0 20px;
+  }
+  .our-department {
+    padding: 0;
+  }
+  .our-department h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: #181818;
+  }
+  .our-department h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  .our-department .section-title {
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  .team h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: #181818;
+  }
+  .team h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  .team .team-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .team .team-item p {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .testimonial .desc {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #181818;
+  }
+  .testimonial .foot span {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  .vallarta {
+    padding: 0 25px;
+  }
+  .vallarta h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    text-transform: initial;
+  }
+  .vallarta p {
+    width: 100%;
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  footer.main-footer .footer-1 {
+    padding: 0 20px;
+  }
+  footer.main-footer .footer-2,
+  footer.main-footer .footer-4 {
+    display: none;
+  }
+  footer.main-footer .footer-1 h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  footer.main-footer .footer-1 p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  footer.main-footer .social {
+    padding-top: 30px;
+  }
+  footer.main-footer .aviso {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer.main-footer .logomovil {
+    text-align: center;
+    padding-bottom: 27px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .theme-green .header-mainbox .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .pull-left {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .outer-box {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .outer-box .main-menu .navigation > li > a {
+    max-width: 140px;
+    overflow: hidden;
+    padding: 22px 5px;
+  }
+}
+.radio_button {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.radio_button .radio_cont {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+.radio_button .radio_cont input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.radio_button .radio_cont input[type="radio"]:checked ~ .control_indicator:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #0d79aa;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 100%;
+}
+.radio_button .radio_cont .control_indicator {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border: 2px solid #0d79aa;
+  border-radius: 100%;
+}
+.radio_button span {
+  display: inline-block;
+  height: 30px;
+  vertical-align: top;
+}
+.header-top ul.info-nav li.dropdown ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 120%;
+  width: 200px;
+  padding: 0px;
+  z-index: 100;
+  display: block;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  background-color: #37b4f0;
+  border: 1px solid #37b4f0;
+}
+.header-top ul.info-nav li.dropdown ul li {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.header-top ul.info-nav li.dropdown ul li a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #333;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.header-top ul.info-nav li.dropdown ul li:hover {
+  background-color: #0d79aa;
+}
+.header-top ul.info-nav li.dropdown:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+.header-top ul.info-nav li.dropdown .dropdown-btn {
+  display: none;
 }
