@@ -27,7 +27,8 @@
         'hospital_cmq_premiere'                    => 'hospital/cmq-premier',
         'hospital_cmq_riviera_nayarit'             => 'hospital/cmq-riviera-nayarit',
         'hospital_consultorio_cirujano_bariatrico' => 'hospital/bariatric-surgeon-office',
-        
+        'contact_form'                             => 'contact_form',
+        'contacto_thx'                              => 'contact/thanks',
     ];
 ?>
 	

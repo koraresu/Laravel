@@ -64,7 +64,7 @@
 			<div class="row">
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_one">
 						@lang('paquete_bariatrica.honorarios.icon')
 						<h4> @lang('paquete_bariatrica.honorarios.title') </h4>
 						<p> @lang('paquete_bariatrica.honorarios.paragraph') </p>
@@ -72,7 +72,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_one">
 						@lang('paquete_bariatrica.prueba_laboratorio.icon')
 						<h4> @lang('paquete_bariatrica.prueba_laboratorio.title') </h4>
 						<p> @lang('paquete_bariatrica.prueba_laboratorio.paragraph') </p>
@@ -80,7 +80,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_one">
 						@lang('paquete_bariatrica.ekg.icon')
 						<h4> @lang('paquete_bariatrica.ekg.title') </h4>
 						<p> @lang('paquete_bariatrica.ekg.paragraph') </p>
@@ -88,7 +88,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_two">
 						@lang('paquete_bariatrica.consulta.icon')
 						<h4> @lang('paquete_bariatrica.consulta.title') </h4>
 						<p> @lang('paquete_bariatrica.consulta.paragraph') </p>
@@ -96,7 +96,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_two">
 						@lang('paquete_bariatrica.medicamento.icon')
 						<h4> @lang('paquete_bariatrica.medicamento.title') </h4>
 						<p> @lang('paquete_bariatrica.medicamento.paragraph') </p>
@@ -104,7 +104,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_two">
 						@lang('paquete_bariatrica.hospital.icon')
 						<h4> @lang('paquete_bariatrica.hospital.title') </h4>
 						<p> @lang('paquete_bariatrica.hospital.paragraph') </p>
@@ -112,7 +112,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_three">
 						@lang('paquete_bariatrica.transporte.icon')
 						<h4> @lang('paquete_bariatrica.transporte.title') </h4>
 						<p> @lang('paquete_bariatrica.transporte.paragraph') </p>
@@ -120,7 +120,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<div class="home_team_med">
+					<div class="home_team_med row_three">
 						@lang('paquete_bariatrica.hotel.icon')
 						<h4> @lang('paquete_bariatrica.hotel.title') </h4>
 						<p> @lang('paquete_bariatrica.hotel.paragraph') </p>

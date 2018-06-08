@@ -47,7 +47,7 @@
 
 				@foreach($photos as $filename)
 					<div class="col-md-3">
-						<a href="">
+						<a href="#" class="modal_image">
 							<img src="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" />
 						</a>
 					</div>

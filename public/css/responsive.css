@@ -253,14 +253,14 @@ only screen and (min-width: 768px)only screen and (min-width: 768px)
 		padding:10px 10px !important;
 		line-height:22px;
 		color:#ffffff !important;
-		background:#333 !important;
+		/*background:#333 !important;*/
 		text-align:left;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li > a:hover,
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#333 !important;
+		/*background:#333 !important;*/
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:hover > a,

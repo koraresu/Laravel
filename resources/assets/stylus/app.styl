@@ -25,10 +25,32 @@ body,html
 	.hero-slider
 		.owl-controls
 			height 0
+#imagemodal
+	.modal-content
+		border-radius 15px
+		overflow hidden
+		.modal-header
+			border-bottom 0
+			padding 0
+			position absolute
+			top 5px
+			right 5px
+			font-size 16px
+			z-index 999
+			button
+				font-size 30px
+				line-height 12px
+		.modal-body
+			padding 0
+			img
+				width 100%
 .movil_lang
 	display none
+	
 .theme-green
 	.main-menu
+		.collapse
+			max-height initial
 		.navigation
 			& > li
 				& > a
@@ -55,7 +77,10 @@ body,html
 					background-color #37b4f0
 					& > li
 						&:hover
-							background-color #0d79aa
+						&:focus
+						&:active
+							background-color #0d79aa !important
+							background #0d79aa !important
 .header-top
 	.container
 		.top-left
@@ -116,25 +141,24 @@ body,html
 			display none
 		.title
 			span
-				font-family 'Titillium Web', sans-serif
 				font-size 20px
 				font-weight normal
 				font-style normal
 				font-stretch normal
 				line-height normal
 				letter-spacing normal
-				color #093c82
+				text-align center
+				color #ffffff
+
 			h1
-				font-family 'Titillium Web', sans-serif
-				font-size 36px
+				font-size 72px
 				font-weight bold
 				font-style normal
 				font-stretch normal
 				line-height normal
 				letter-spacing normal
-				color #181818
-			a.theme-btn
-				display none
+				text-align center
+				color #ffffff	
 	.emergencies
 		position absolute
 		top 0
@@ -286,9 +310,22 @@ body,html
 					input
 						box-sizing border-box
 						font-family 'Titillium Web', sans-serif
-						color #0d79aa
 						width 100%
 						padding 5px
+						
+						font-size 16px
+						font-weight normal
+						font-style normal
+						font-stretch normal
+						line-height 1.88
+						letter-spacing normal
+						text-align left
+						color #0d79aa
+						&::-webkit-input-placeholder /* Chrome/Opera/Safari */
+						&::-moz-placeholder /* Firefox 19+ */
+						&:-ms-input-placeholder /* IE 10+ */
+						&:-moz-placeholder /* Firefox 18- */
+							color #0d79aa
 			.botones
 				margin-top 25px		
 				.borrar
@@ -773,7 +810,7 @@ ul.lista
 	.home_team_med
 		position relative
 		padding-left 65px
-		min-height 190px
+		
 		span
 			position absolute
 			top 0
@@ -789,6 +826,23 @@ ul.lista
 			letter-spacing normal
 			text-align left
 			color #181818
+			text-transform uppercase
+		p
+			font-size 16px
+			font-weight normal
+			font-style normal
+			font-stretch normal
+			line-height 1.88
+			letter-spacing normal
+			text-align left
+			color #181818
+		&.row_one
+			min-height 150px
+		&.row_two
+			min-height 225px
+		&.row_three
+			min-height 150px
+		
 		.icon-ambulance
 			font-size 41px
 		.icon-med
@@ -1074,9 +1128,10 @@ ul.lista
 		width 100%
 		z-index: 0;
 .video
-	video
-		width 100vw
-		height 56.6vw
+	position relative
+	width 1200px
+	margin 0 auto
+	height auto
 .cirujano
 	.sidebar
 		h5
@@ -1147,6 +1202,8 @@ ul.lista
 		.header-top
 			display none
 	.main-menu
+		.collapse
+			max-height initial
 		.navbar-collapse
 			border 0 !important
 			& > .navigation

@@ -31,8 +31,34 @@ html {
 .hero .hero-slider .owl-controls {
   height: 0;
 }
+#imagemodal .modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+#imagemodal .modal-content .modal-header {
+  border-bottom: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  z-index: 999;
+}
+#imagemodal .modal-content .modal-header button {
+  font-size: 30px;
+  line-height: 12px;
+}
+#imagemodal .modal-content .modal-body {
+  padding: 0;
+}
+#imagemodal .modal-content .modal-body img {
+  width: 100%;
+}
 .movil_lang {
   display: none;
+}
+.theme-green .main-menu .collapse {
+  max-height: initial;
 }
 .theme-green .main-menu .navigation > li > a {
   color: #0d79aa;
@@ -58,8 +84,11 @@ html {
 .theme-green .main-menu .navigation > li > ul {
   background-color: #37b4f0;
 }
-.theme-green .main-menu .navigation > li > ul > li:hover {
-  background-color: #0d79aa;
+.theme-green .main-menu .navigation > li > ul > li:hover,
+.theme-green .main-menu .navigation > li > ul > li:focus,
+.theme-green .main-menu .navigation > li > ul > li:active {
+  background-color: #0d79aa !important;
+  background: #0d79aa !important;
 }
 .header-top .container .top-left ul.info-nav li {
   margin-right: 20px;
@@ -123,27 +152,24 @@ html {
   display: none;
 }
 .hero .slide .title span {
-  font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #093c82;
+  text-align: center;
+  color: #fff;
 }
 .hero .slide .title h1 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 36px;
+  font-size: 72px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #181818;
-}
-.hero .slide .title a.theme-btn {
-  display: none;
+  text-align: center;
+  color: #fff;
 }
 .hero .emergencies {
   position: absolute;
@@ -315,9 +341,26 @@ html {
 .calculator-imc .container .imc-form .peso label input {
   box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif;
-  color: #0d79aa;
   width: 100%;
   padding: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d79aa;
+}
+.calculator-imc .container .imc-form .altura label input::-webkit-input-placeholder,
+.calculator-imc .container .imc-form .peso label input::-webkit-input-placeholder,
+.calculator-imc .container .imc-form .altura label input::-moz-placeholder,
+.calculator-imc .container .imc-form .peso label input::-moz-placeholder,
+.calculator-imc .container .imc-form .altura label input:-ms-input-placeholder,
+.calculator-imc .container .imc-form .peso label input:-ms-input-placeholder,
+.calculator-imc .container .imc-form .altura label input:-moz-placeholder,
+.calculator-imc .container .imc-form .peso label input:-moz-placeholder {
+  color: #0d79aa;
 }
 .calculator-imc .container .imc-form .botones {
   margin-top: 25px;
@@ -857,7 +900,6 @@ ul.lista li:before {
 .includes_packages .home_team_med {
   position: relative;
   padding-left: 65px;
-  min-height: 190px;
 }
 .includes_packages .home_team_med span {
   position: absolute;
@@ -875,6 +917,26 @@ ul.lista li:before {
   letter-spacing: normal;
   text-align: left;
   color: #181818;
+  text-transform: uppercase;
+}
+.includes_packages .home_team_med p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.includes_packages .home_team_med.row_one {
+  min-height: 150px;
+}
+.includes_packages .home_team_med.row_two {
+  min-height: 225px;
+}
+.includes_packages .home_team_med.row_three {
+  min-height: 150px;
 }
 .includes_packages .home_team_med .icon-ambulance {
   font-size: 41px;
@@ -1204,9 +1266,11 @@ ul.lista li:before {
   width: 100%;
   z-index: 0;
 }
-.video video {
-  width: 100vw;
-  height: 56.6vw;
+.video {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: auto;
 }
 .cirujano .sidebar h5 {
   text-align: center;
@@ -1278,6 +1342,9 @@ ul.lista li:before {
 @media only screen and (max-width: 480px) {
   header .header-top {
     display: none;
+  }
+  .main-menu .collapse {
+    max-height: initial;
   }
   .main-menu .navbar-collapse {
     border: 0 !important;

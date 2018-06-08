@@ -25,9 +25,11 @@ Route::group([
     Route::get(LaravelLocalization::transRoute('routes.home'), 'HomeController@index')->name('home');
     Route::get( LaravelLocalization::transRoute('routes.puerto_vallarta') , 'HomeController@vallarta')-> name('vallarta');
     Route::get( LaravelLocalization::transRoute('routes.contacto') , 'HomeController@contacto')-> name('contacto');
+    Route::get( LaravelLocalization::transRoute('routes.contacto_thx') , 'HomeController@contact_thx')-> name('contacto_thx');
     Route::get( LaravelLocalization::transRoute('routes.privacidad') , 'HomeController@privacidad')-> name('privacidad');
     Route::get( LaravelLocalization::transRoute('routes.galery') , 'HomeController@galery')-> name('galery');
     Route::get( 'blog' , 'HomeController@blog')-> name('blog');
+    Route::post( LaravelLocalization::transRoute('routes.contact_form') , 'HomeController@contact_form')-> name('contact_form');
     //Cirugia GastroIntestinal
     Route::get( LaravelLocalization::transRoute('routes.gastrointestinal_apendicitis') , 'CirugiaGastroIntestinalController@apendicitis')-> name('apendicitis');
     Route::get( LaravelLocalization::transRoute('routes.gastrointestinal_calculos') , 'CirugiaGastroIntestinalController@calculos_biliares')-> name('calculo');

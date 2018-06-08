@@ -30,7 +30,7 @@
 						@lang('cmq_premiere.direccion')
 					</p>
 					<div style="text-align: right;">
-						<a href="" class="map"> @lang('cmq_premiere.mapa') </a>
+						<a href="#" class="modal_map map"> @lang('cmq_premiere.mapa') </a>
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 
 				@foreach($photos as $filename)
 					<div class="col-md-3">
-						<a href="">
+						<a href="#" class="modal_image">
 							<img src="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" />
 						</a>
 					</div>

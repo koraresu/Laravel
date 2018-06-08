@@ -1,0 +1,9 @@
+8 de junio de 2018
+- Galeria
+	- No existe diseño
+	- No existen imagenes para la sección
+- Contacto
+	- Requiero información sobre
+		- No existen opciones para ese select
+	- En el formulario falta el campo de telefono.
+	- Al terminar de enviar y guardar, que se va a hacer con el usuario?

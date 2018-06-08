@@ -46,7 +46,8 @@
 							</div>
 						</div>
 					</div>
-					<form class="contact-form" method="post" action="contact-form/contact.php" role="form" novalidate="true">
+					<form class="contact-form" method="post" action="{{ LaravelLocalization::getNonLocalizedURL('contact_form') }}" role="form" novalidate="true">
+						{{ csrf_field() }}
 						<p>@lang('contacto.paragraph')</p>
 						<div class="messages"></div>
 						<div class="controls">
@@ -54,14 +55,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_name">@lang('contacto.name') *</label>
-										<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Name is required.">
+										<input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Name is required.">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_lastname">@lang('contacto.lastname') *</label>
-										<input id="form_phone" type="text" name="phone" class="form-control" placeholder="Please enter your phone *" required="required" data-error="Phone number is required.">
+										<input id="form_phone" type="text" name="lastname" class="form-control" placeholder="Please enter your phone *" required="required" data-error="Phone number is required.">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -79,7 +80,9 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_email">@lang('contacto.information') *</label>
-										<select></select>
+										<select name="information">
+											<option value="1">A</option>
+										</select>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div> 

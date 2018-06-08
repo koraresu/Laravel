@@ -260,8 +260,22 @@
 <!--End pagewrapper--> 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" />
+      </div>
+    </div>
+  </div>
+</div>
 <script src="{{ asset('js/jquery.js') }}"></script> 
 <script src="{{ asset('js/all-jquery.js') }}"></script> 
+<script src="{{ asset('js/afterglow.min.js') }}"></script>
 <script src="{{ asset('js/juxtapose.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>

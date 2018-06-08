@@ -57,17 +57,20 @@
                 sliderBgSetting();
 
                  if ($(".hero-slider").length) {
+                    
+                    
                     $(".hero-slider").owlCarousel({
                         items: 1,
                         autoplay: true,
                         mouseDrag: false,
-                        loop: true,
+                        loop: false,
                         nav: true,
                         navText: ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
                         autoplaySpeed: 700,
                         navSpeed: 700,
                         dotsSpeed: 700
                     });
+                    
                 }
             });
         }

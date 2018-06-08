@@ -21,7 +21,7 @@
 				<div class="col-md-8">
 					@lang('aviso_privacidad.paragraph')
 				</div>
-				<div class="col-md-4 sidebar">
+				<div class="hidden-xs hidden-sm col-md-4 sidebar">
 					<img src="{{ asset('/images/aviso-privacidad.png') }}" />
 				</div>
 			</div>

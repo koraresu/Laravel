@@ -2,7 +2,7 @@
 	return [
 		'title' => 'CMQ PREMIERE',
 		'subtitle' => 'Hospitals',
-		'paragraph' => '<p>Dr. Sergio del Hoyo has agreements with the CMQ Premiere hospital to offer you fair prices and attractive in their costs of hospitalization and surgery.</p><p>Besides the CMQ hospital it offers the highest technology, the best professional team and provide care and humane treatment that they deserve all our patients in the surgical process and recovery features:</p><ul> <l>National certifications in force</li> <li>ED 24 hrs / 365 days</li> <li>Specialty area</li> <li>Intensive therapy</li> <li>Operating rooms with the latest technology</li> <li>Coffee service</li> </ul>',
+		'paragraph' => '<p>Dr. Sergio del Hoyo has partnered with the CMQ Premiere Hospital in Puerto Vallarta to offer you the best prices for your hospital stay after weight loss surgery in Mexico.</p> <p>Additionally, the CMQ Premiere Hospital in Puerto Vallarta offers the best technology with a professional team of weight loss specialists who will provide you with the most comfortable care and treatment during your hospital stay after weight loss surgery that you deserve.</p> <p>Each of our patients can count on the following services for their hospital stay and recovery after weight loss surgery:</p> <ul class="lista"> <li>National Certifications from all of the weight loss specialists</li> <li>Emergency Services 24 hrs a day / 365 days a year</li> <li>Specialized areas</li> <li>Intensive therapy</li> <li>Operating rooms with the latest in technological equipment</li> <li>Cafeteria service</li> </ul>',
 		'instalacion' => 'HOSPITAL <span>FACILITIES</span>',
 		'direccion' => 'Av. Francisco Villa # 1749 | Col. Vallarta Villas | Puerto Vallarta',
 		'mapa' => 'SEE MAP'

@@ -13,20 +13,15 @@
 		</div>
 	</div>
 	<div class="hero-slider">
-		<div class="slide"> <img src="images/slider/group-4.png" alt>
-			<div class="title">
-				<span>@lang('home.slider1.title')</span>
-				<h1>@lang('home.slider1.subtitle')</h1>
-				<a href="#" class="btn theme-btn"></a>
+		@foreach($slides as $ss)
+			<div class="slide">
+				<img src="{{ asset('upload/slideshow/'.$ss->photo) }}" />
+				<div class="title">
+					<span>{{ $ss->title }}</span>
+					<h1>{{ $ss->subtitle }}</h1>
+				</div>
 			</div>
-		</div>
-		<div class="slide"> <img src="images/slider/group-4.png" alt>
-			<div class="title">
-				<span>@lang('home.slider2.title')</span>
-				<h1>@lang('home.slider2.subtitle')</h1>
-				<a href="#" class="btn theme-btn"></a>
-			</div>
-		</div>
+		@endforeach
 
 	</div>
 </section>
@@ -278,8 +273,7 @@
 		</div>
 	</section>
 	<section class="video">
-		<video controls src="http://v2v.cc/~j/theora_testsuite/320x240.ogg">
-		</video>
+		<video class="afterglow" id="my-video" width="1920" height="1080"data-youtube-id="_cebmtTGS90"></video>
 	</section>
 	<section class="vallarta" style="background-image: url( {{ asset('images/vallarta.jpg') }} ); background-size: cover;">
 		<div class="container">
