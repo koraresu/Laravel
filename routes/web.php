@@ -28,7 +28,8 @@ Route::group([
     Route::get( LaravelLocalization::transRoute('routes.contacto_thx') , 'HomeController@contact_thx')-> name('contacto_thx');
     Route::get( LaravelLocalization::transRoute('routes.privacidad') , 'HomeController@privacidad')-> name('privacidad');
     Route::get( LaravelLocalization::transRoute('routes.galery') , 'HomeController@galery')-> name('galery');
-    Route::get( 'blog' , 'HomeController@blog')-> name('blog');
+    Route::get( 'blog' , 'BlogController@index')-> name('blog');
+    Route::get( 'blog/{article}' , 'BlogController@article')-> name('blog_article');
     Route::post( LaravelLocalization::transRoute('routes.contact_form') , 'HomeController@contact_form')-> name('contact_form');
     //Cirugia GastroIntestinal
     Route::get( LaravelLocalization::transRoute('routes.gastrointestinal_apendicitis') , 'CirugiaGastroIntestinalController@apendicitis')-> name('apendicitis');
@@ -51,5 +52,6 @@ Route::group([
     Route::get( LaravelLocalization::transRoute('routes.hospital_cmq_premiere') , 'HospitalController@cmq_premiere')-> name('cmq_premiere');
     Route::get( LaravelLocalization::transRoute('routes.hospital_cmq_riviera_nayarit') , 'HospitalController@cmq_nayarit')-> name('cmq_riviera_nayarit');
     Route::get( LaravelLocalization::transRoute('routes.hospital_consultorio_cirujano_bariatrico') , 'HospitalController@consultorio')-> name('consultorio'); 
-    Route::get('/{dr}', 'CirujanosController@cirujano')->name('cirujano');
+    Route::get(LaravelLocalization::transRoute('routes.drs'), 'CirujanosController@cirujano')->name('cirujano');
+    Route::get(LaravelLocalization::transRoute('routes.dr_sergio'), 'CirujanosController@dr_sergio')->name('cirujano');
 });

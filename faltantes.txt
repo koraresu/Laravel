@@ -7,3 +7,20 @@
 		- No existen opciones para ese select
 	- En el formulario falta el campo de telefono.
 	- Al terminar de enviar y guardar, que se va a hacer con el usuario?
+Falta SEO ( Pedirle a Frank que revise que todo este para anexarlo )
+	- de ( https://docs.google.com/spreadsheets/d/1Tbf5ncOVMV68IX7uTy4XUtgb6F8Sl6LeVbItOOktwAk/edit#gid=1592997060 )
+		- Staff
+		- Hernia Hiatal
+		- Manga Gastrica
+		- Bypass
+		- Paquete
+		- IMC
+		- Obesidad
+		- CMQ Premiere
+		- CMQ Riviera Nayarit
+		- Consultorio
+		- Testimoniales
+		- Blog
+		- Galeria
+		- Puerto Vallarta
+Faltan Coordenadas para los Hospitales, para los Mapas.

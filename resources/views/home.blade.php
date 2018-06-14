@@ -79,9 +79,111 @@
 	</div>
 </section>
 <section class="calculator-imc">
-	@component('imc_component')
-	<strong>Whoops!</strong> Something went wrong!
-	@endcomponent
+	
+	<div class="container">
+		<div class="section-content">
+			<div class="row">
+				<div class="imc-message col-md-3 col-sm-6 col-xs-12">
+
+					<h3 class="text-uppercase small-line mb20">@lang('home.imc.title')</h3>
+					@lang('home.imc.desc')
+				</div>
+				<div class="imc-form col-md-5 col-sm-12 col-xs-12">
+					<div class="col-md-12">
+						<div class="metrico col-md-6 col-sm-6  col-xs-6">
+							<label class="radio_button">
+								<div class="radio_cont">
+									<input type="radio" name="imc-type" value="metrico" checked="checked" /> 
+									<div class="control_indicator"></div>
+								</div>
+								<span> @lang('home.imc.metrico') </span>
+							</label>
+						</div>
+						<div class="metrico col-md-6 col-sm-6  col-xs-6">
+							<label class="radio_button">
+								<div class="radio_cont">
+									
+										<input type="radio" name="imc-type" value="imperial" />
+										<div class="control_indicator"></div>
+								</div>
+								<span> @lang('home.imc.imperial') </span>
+							</label>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="altura col-md-6 col-sm-6  col-xs-6">
+							<label>
+								@lang('home.imc.altura.title')
+								<input type="text" id="imc_altura" data-metric="@lang('home.imc.altura.metric')" data-imperial="@lang('home.imc.altura.imperial')" placeholder="@lang('home.imc.altura.metric')" />
+							</label>
+						</div>
+						<div class="peso col-md-6 col-sm-6  col-xs-6">
+							<label>
+								@lang('home.imc.peso.title')
+								<input type="text" id="imc_peso" data-metric="@lang('home.imc.peso.metric')" data-imperial="@lang('home.imc.peso.imperial')"  placeholder="@lang('home.imc.peso.metric')" />
+							</label>
+						</div>
+					</div>
+
+					<div class="botones col-md-12">
+						<div class="borrar col-md-6 col-sm-6  col-xs-6">
+							<input type="reset" value="Borrar" />
+						</div>
+						<div class="calcular col-md-6 col-sm-6  col-xs-6">
+							<input type="button" value="Calcular" />
+						</div>
+					</div>
+
+
+				</div>
+				<div class="imc-resultado col-md-4 col-sm-6 col-xs-12">
+					<div class="imc-de"> @lang('home.imc.tu-imc')</div>
+					<div class="imc-res" id="imc_res">  </div>
+					<ul>
+
+						<li class="imc-description" data-min="20" data-max="25">
+							<div class="imc-range"> @lang('imc.no_requiere_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.no_requiere_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="25.1" data-max="29.9">
+							<div class="imc-range"> @lang('imc.posible_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.posible_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="30" data-max="35">
+							<div class="imc-range"> @lang('imc.necesita_one_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.necesita_one_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="35.1" data-max="40">
+							<div class="imc-range"> @lang('imc.necesita_two_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.necesita_two_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="40.1" data-max="50">
+							<div class="imc-range"> @lang('imc.necesita_three_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.necesita_three_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="50.1" data-max="60">
+							<div class="imc-range"> @lang('imc.super_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.super_message') </div>
+						</li>
+
+						<li class="imc-description" data-min="60.1" data-max="100">
+							<div class="imc-range"> @lang('imc.supersuper_range') </div>
+							<div class="imc-desc" id="imc_desc"> @lang('imc.supersuper_message') </div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </section>
 <section class="miembro">
 	<div class="container">
@@ -89,19 +191,31 @@
 			<div class="row">
 				<h3 class="col-md-12">@lang('home.es-miembro')</h3>
 				<div class="rasoc col-md-3 col-sm-6 col-xs-6">
-					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general.png') }}" />
+					<div class="image">
+						<span class="helper"></span>
+						<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general.png') }}" />
+					</div>
 					<span> @lang('home.es-miembro-asoc-mex') </span>
 				</div>
 				<div class="rasoc col-md-3 col-sm-6 col-xs-6">
-					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-endoscopica-ac.png') }}" />
+					<div class="image">
+						<span class="helper"></span>
+						<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-endoscopica-ac.png') }}" />
+					</div>
 					<span> @lang('home.es-miembro-asoc-end') </span>
 				</div>
 				<div class="rasoc col-md-3 col-sm-6 col-xs-6">
-					<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general-2.png') }}" />
+					<div class="image">
+						<span class="helper"></span>
+						<img src="{{ asset('images/asoc/asociacion-mexicana-de-cirugia-general-2.png') }}" />
+					</div>
 					<span> @lang('home.es-miembro-asoc-mex1') </span>
 				</div>
 				<div class="rasoc col-md-3 col-sm-6 col-xs-6">
-					<img src="{{ asset('images/asoc/consejo-mexicano-de-cirugia-general-ac.png') }}" />
+					<div class="image">
+						<span class="helper"></span>
+						<img src="{{ asset('images/asoc/consejo-mexicano-de-cirugia-general-ac.png') }}" />
+					</div>
 					<span> @lang('home.es-miembro-asoc-cir') </span>
 				</div>
 			</div>
@@ -158,7 +272,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.ape') </a></h5>
+							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}"> @lang('home.gastro.ape') </a></h5>
 						</div>
 					</div>
 				</div>
@@ -194,7 +308,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.her') </a></h5>
+							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_hernias') }}"> @lang('home.gastro.her') </a></h5>
 						</div>
 					</div>
 				</div>
@@ -219,10 +333,14 @@
 				<div class="carousel-col-3">
 					@foreach ($doctors as $doctor)
 					<div class="team-item item">
-						<div class="team-img"> <img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$doctor->photo) }}" alt=""> </div>
+						<div class="team-img">
+							<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}">
+								<img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$doctor->photo) }}" alt="">
+							</a>
+						</div>
 						<div class="img-title">
-							<h4> {{ $doctor->title }} {{ $doctor->name }} </h4>
-							<p> {{ $doctor->speciality }} </p>
+							<h4><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}"> {{ $doctor->title }} {{ $doctor->name }} </a></h4>
+							<p><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}"> {{ $doctor->speciality }} </a></p>
 						</div>
 					</div>
 					@endforeach

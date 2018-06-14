@@ -24,6 +24,8 @@
           <div class="visible-xs visible-sm">
         <img src="{{ asset('images/cirugia/diveticulitis.png') }}" />
       </div>
+      <h2 class="text-uppercase small-line text">@lang('diverticulitis.diverticulos_title')</h2>
+            @lang('diverticulitis.diverticulos_paragraph')
 			<h2 class="text-uppercase small-line text">@lang('diverticulitis.sintomas_title')</h2>
           	@lang('diverticulitis.sintomas_paragraph')
 

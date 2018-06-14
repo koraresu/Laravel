@@ -30,7 +30,7 @@
 						@lang('cmq_nayarit.direccion')
 					</p>
 					<div style="text-align: right;">
-						<a href="" class="map"> @lang('cmq_nayarit.mapa') </a>
+						<a href="https://goo.gl/maps/96UJDQrdLys" class="map" target="_blank">@lang('cmq_nayarit.mapa') </a>
 					</div>
 				</div>
 			</div>

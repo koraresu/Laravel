@@ -28,7 +28,9 @@
         'hospital_cmq_riviera_nayarit'             => 'hospital/cmq-riviera-nayarit',
         'hospital_consultorio_cirujano_bariatrico' => 'hospital/consultorio-cirujano-bariatrico',
         'contact_form'                             => 'contact_form',
-        'contacto_thx'                              => 'contacto/gracias',
+        'contacto_thx'                             => 'contacto/gracias',
+        'drs'                                      => 'cirujanos-bariatricos/{dr}',
+        'dr_sergio'                                => 'dr-sergio-cirujano-bariatrico'
     ];
 ?>
 	

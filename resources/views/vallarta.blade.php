@@ -45,15 +45,12 @@
 </section>
 <section class="gallery">
 	<div class="container">
-		<div class="section-title">
-			<h2 class="text-uppercase small-line text">@lang('cmq_premiere.instalacion')</h2>
-		</div>
 		<div class="section-content">
 			<div class="row">
 
 				@foreach($photos as $filename)
 				<div class="col-md-3">
-					<a href="">
+					<a href="#" class="modal_image">
 						<img src="{{ url('/images/vallarta/' . basename( $filename ) ) }}" />
 					</a>
 				</div>

@@ -27,6 +27,8 @@
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/movil.css') }}" rel="stylesheet">
+<link href="{{ asset('css/tablet.css') }}" rel="stylesheet">
 </head>
 <!--Change Class in body to change color Scheme for Homepages  ie theme-green , theme-green -->
 
@@ -48,9 +50,9 @@
             <ul class="info-nav clearfix">
                 <li> 
                     <div class="social-links pull-left">
-                        <a href="#"><span class="fa fa-facebook-f"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-youtube-play"></span></a>
+                        <a href="https://www.facebook.com/Dr.SergiodelHoyo/" target="_blank"><span class="fa fa-facebook-f"></span></a>
+                        <a href="https://www.instagram.com/drsergiodelhoyo/" target="_blank"><span class="fa fa-instagram"></span></a>
+                        <a href="https://www.youtube.com/channel/UCnUh4U5zaAiFS9CfeovxVYw" target="_blank"><span class="fa fa-youtube-play"></span></a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -241,14 +243,18 @@
               <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('home.blog') </a> </li>
               <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('home.galeria') </a> </li>
           </div>
+
+          
+
         </div>
       </div>
       <div class="social col-md-12">
         <ul>
-          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-facebook-f"></span> </a> </li>
-          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-google-plus"></span> </a> </li>
-          <li> <a href="{{ LaravelLocalization::getLocalizedURL( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> <span class="fa fa-youtube-play"></span> </a> </li>
+          <li> <a href="https://www.facebook.com/Dr.SergiodelHoyo/" target="_blank"> <span class="fa fa-facebook-f"></span> </a> </li>
+          <li> <a href="https://www.instagram.com/drsergiodelhoyo/" target="_blank"><span class="fa fa-instagram"></span> </a> </li>
+          <li> <a href="https://www.youtube.com/channel/UCnUh4U5zaAiFS9CfeovxVYw" target="_blank"><span class="fa fa-youtube-play"></span> </a> </li>
         </ul>
+
     </div>
     <div class="aviso col-md-12">
         <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.privacidad') }}"> @lang('home.aviso-privacidad') </a>
@@ -273,10 +279,24 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="mapmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="maps"></div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="{{ asset('js/jquery.js') }}"></script> 
 <script src="{{ asset('js/all-jquery.js') }}"></script> 
 <script src="{{ asset('js/afterglow.min.js') }}"></script>
 <script src="{{ asset('js/juxtapose.min.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_kOv_YSoNW2e5l7FUyeup3Bs5um7cnMk"></script>
 <script src="{{ asset('js/script.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 </body>

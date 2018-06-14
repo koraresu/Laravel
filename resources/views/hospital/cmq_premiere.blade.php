@@ -30,7 +30,7 @@
 						@lang('cmq_premiere.direccion')
 					</p>
 					<div style="text-align: right;">
-						<a href="#" class="modal_map map"> @lang('cmq_premiere.mapa') </a>
+						<a href="https://goo.gl/maps/EM2Z2M8QNfK2" class="map" target="_blank"> @lang('cmq_premiere.mapa') </a>
 					</div>
 				</div>
 			</div>

@@ -12,4 +12,6 @@ const { mix } = require('laravel-mix');
  */
 
 mix.stylus('resources/assets/stylus/app.styl', 'public/css')
+.stylus('resources/assets/stylus/movil.styl', 'public/css')
+.stylus('resources/assets/stylus/tablet.styl', 'public/css')
 

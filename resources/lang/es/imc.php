@@ -46,24 +46,24 @@
 		],
 
 		'no_requiere_range'      => '20 - 25',
-		'no_requiere_message'    => 'does not require surgery',
+		'no_requiere_message'    => 'no requiere cirugía',
 
 		'posible_range'          => '25.1 - 29.9',
-		'posible_message'        => 'potentially needs surgery',
+		'posible_message'        => 'posible necesite cirugía',
 
 		'necesita_one_range'     => '30 - 35',
-		'necesita_one_message'   => 'needs surgery.',
+		'necesita_one_message'   => 'necesita cirugía',
 		
 		'necesita_two_range'     => '35 - 40',
-		'necesita_two_message'   => 'needs surgery.',
+		'necesita_two_message'   => 'necesita cirugía',
 
 		'necesita_three_range'   => '40 - 50',
-		'necesita_three_message' => 'needs surgery.',
+		'necesita_three_message' => 'necesita cirugía',
 
 		'super_range'            => '50 - 60',
-		'super_message'          => 'needs surgery.',
+		'super_message'          => 'necesita cirugía',
 
 		'supersuper_range'       => '60+',
-		'supersuper_message'     => 'needs surgery.',
+		'supersuper_message'     => 'necesita cirugía',
 	];
 ?>

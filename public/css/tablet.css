@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1024px) {
+  .theme-green .header-mainbox .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .pull-left {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .outer-box {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .theme-green .header-mainbox .outer-box .main-menu .navigation > li > a {
+    max-width: 140px;
+    overflow: hidden;
+    padding: 22px 5px;
+  }
+}

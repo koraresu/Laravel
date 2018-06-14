@@ -44,10 +44,43 @@ class CirujanosController extends Controller
 			'education' => $doctor->education,
 			'days' => $doctor->days,
 			'members' => $doctor_member,
-			'certificates' => [],
+			'certificates' => $doctor_certificate,
             'seo_title' => $doctor->seo_title,
             'seo_keywords' => $doctor->seo_keywords,
             'seo_description' => $doctor->seo_description
 		]);	
+    }
+    public function dr_sergio(){
+        $doctor = Doctor::where('id','=',1)->first();
+        $doctor_member = DoctorMember::where('doctor_id','=',$doctor->id)->get();
+        $doctor_certificate = DoctorCertificate::where('doctor_id','=',$doctor->id)->get();
+        $description = $doctor->description;
+        $laboral = $doctor->laboral;
+        $chequeo = $doctor->chequeo;
+        $reconocimientos = $doctor->reconocimientos;
+
+
+        $description = str_replace('\r\n','', $description);
+        $laboral = str_replace('\r\n','', $laboral);
+        $chequeo = str_replace('\r\n','', $chequeo);
+        $reconocimientos = str_replace('\r\n','', $reconocimientos);
+        return view('dr_sergio',[
+            'title'  => $doctor->title,
+            'name'   => $doctor->name,
+            'description' => $description,
+            'laboral' => $laboral,
+            'chequeo' => $chequeo,
+            'reconocimientos' => $reconocimientos,
+            'photo' => $doctor->photo,
+            'phone' => $doctor->phone,
+            'speciality' => $doctor->speciality,
+            'education' => $doctor->education,
+            'days' => $doctor->days,
+            'members' => $doctor_member,
+            'certificates' => [],
+            'seo_title' => $doctor->seo_title,
+            'seo_keywords' => $doctor->seo_keywords,
+            'seo_description' => $doctor->seo_description
+        ]);
     }
 }

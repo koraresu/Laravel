@@ -55,14 +55,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_name">@lang('contacto.name') *</label>
-										<input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Name is required.">
+										<input id="form_name" type="text" name="firstname" class="form-control" placeholder="" required="required" data-error="Name is required.">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_lastname">@lang('contacto.lastname') *</label>
-										<input id="form_phone" type="text" name="lastname" class="form-control" placeholder="Please enter your phone *" required="required" data-error="Phone number is required.">
+										<input id="form_phone" type="text" name="lastname" class="form-control" placeholder="" required="required" data-error="Phone number is required.">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -71,7 +71,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_email">@lang('contacto.email') *</label>
-										<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div> 
@@ -80,9 +80,22 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_email">@lang('contacto.information') *</label>
-										<select name="information">
-											<option value="1">A</option>
-										</select>
+										<div class="form_grp_info">
+											<span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+											<select name="information">
+												<optgroup label="@lang('menu.cirugia-gas')">
+													<option value="@lang('menu.cirugia-gas') - @lang('menu.cirugia-gas-sub.apendicitis')">@lang('menu.cirugia-gas-sub.apendicitis')</option>
+													<option value="@lang('menu.cirugia-gas') - @lang('menu.cirugia-gas-sub.colelitiasis')">@lang('menu.cirugia-gas-sub.colelitiasis')</option>
+													<option value="@lang('menu.cirugia-gas') - @lang('menu.cirugia-gas-sub.diverticulitis')">@lang('menu.cirugia-gas-sub.diverticulitis')</option>
+													<option value="@lang('menu.cirugia-gas') - @lang('menu.cirugia-gas-sub.hernias')">@lang('menu.cirugia-gas-sub.hernias')</option>
+													<option value="@lang('menu.cirugia-gas') - @lang('menu.cirugia-gas-sub.hernias_hiatal')">@lang('menu.cirugia-gas-sub.hernias_hiatal')</option>
+												</optgroup>
+												<optgroup label="@lang('menu.cirugia-bar')">
+													<option value="@lang('menu.cirugia-bar') - @lang('menu.cirugia-bar-sub.manga-gastrica')">@lang('menu.cirugia-bar-sub.manga-gastrica')</option>
+													<option value="@lang('menu.cirugia-bar') - @lang('menu.cirugia-bar-sub.bypass')">@lang('menu.cirugia-bar-sub.bypass')</option>
+												</optgroup>
+											</select>
+										</div>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div> 
@@ -91,7 +104,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_message">@lang('contacto.message') *</label>
-										<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="" data-error="Please,leave us a message."></textarea>
+										<textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="" data-error="Please,leave us a message."></textarea>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>

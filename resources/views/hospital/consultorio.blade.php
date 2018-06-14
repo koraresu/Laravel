@@ -54,7 +54,7 @@
 						@lang('consultorio.direccion')
 					</p>
 					<div style="text-align: right;">
-						<a href="" class="map"> @lang('cmq_premiere.mapa') </a>
+						<a href="https://goo.gl/maps/gRP8G4SQWDB2" class="map" target="_blank"> @lang('cmq_premiere.mapa') </a>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,323 @@
+@media only screen and (max-width: 480px) {
+  header .header-top {
+    display: none;
+  }
+  .main-menu .collapse {
+    max-height: initial;
+  }
+  .main-menu .navbar-collapse {
+    border: 0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation {
+    border: 0 !important;
+    border-radius: 0;
+    background-color: transparent;
+    background: transparent;
+  }
+  .main-menu .navbar-collapse > .navigation > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > a {
+    background-color: #37b4f0 !important;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > a {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+    background-color: #37b4f0 !important;
+  }
+  .main-menu .navbar-collapse .dropdown-btn span {
+    display: none;
+  }
+  section.title_section h2 {
+    text-align: center;
+  }
+  section.title_section p {
+    text-align: center;
+  }
+  .pull-left {
+    width: 210px;
+    max-width: 263px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logo a {
+    width: 100%;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .hero {
+    height: 146px;
+  }
+  .hero .slide {
+    height: 146px;
+  }
+  .hero .slide .title {
+    display: none;
+  }
+  section.tag {
+    padding: 15px 30px;
+  }
+  section.who-we-are .section-content p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med,
+  section.who-we-are .home_care {
+    text-align: center;
+  }
+  section.who-we-are .home_team_med h4,
+  section.who-we-are .home_care h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med p,
+  section.who-we-are .home_care p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  section.who-we-are .home_team_med a,
+  section.who-we-are .home_care a {
+    margin: 30px auto;
+  }
+  .main-menu .navbar-header {
+    padding: 24px 0;
+    padding-bottom: 6px;
+  }
+  .main-menu .navbar-header .movil_lang {
+    display: block;
+  }
+  .main-menu .navbar-header .movil_lang a {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0d79aa;
+  }
+  .main-menu .navbar-header .movil_lang .navbar-toggle {
+    background-color: transparent;
+    border: 0;
+  }
+  .main-menu .navbar-header .movil_lang .navbar-toggle .icon-bar {
+    background-color: #0d79aa;
+  }
+  .emergencies {
+    display: none;
+  }
+  .calculator-imc .container .imc-message {
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .calculator-imc .container .imc-message p {
+    padding: 20px 20px 0 40px;
+  }
+  .calculator-imc .container .imc-resultado {
+    padding: 60px 10px 10px 10px;
+  }
+  .miembro h3 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: center;
+    color: #0d79aa;
+  }
+  .miembro .rasoc {
+    padding: 0 20px;
+  }
+  .our-department {
+    padding: 0;
+  }
+  .our-department h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: #181818;
+  }
+  .our-department h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  .our-department .section-title {
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  .team h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: #181818;
+  }
+  .team h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  .team .team-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .team .team-item p {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .testimonial .desc {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #181818;
+  }
+  .testimonial .foot span {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #181818;
+  }
+  .vallarta {
+    padding: 0 25px;
+  }
+  .vallarta h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    text-transform: initial;
+  }
+  .vallarta p {
+    width: 100%;
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  footer.main-footer .footer-1 {
+    padding: 0 20px;
+  }
+  footer.main-footer .footer-2,
+  footer.main-footer .footer-4 {
+    display: none;
+  }
+  footer.main-footer .footer-1 h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  footer.main-footer .footer-1 p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  footer.main-footer .social {
+    padding-top: 30px;
+  }
+  footer.main-footer .aviso {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer.main-footer .logomovil {
+    text-align: center;
+    padding-bottom: 27px;
+  }
+}

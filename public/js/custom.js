@@ -62,6 +62,22 @@ $(function() {
             $('#imc_peso').attr( 'placeholder' , $('#imc_peso').attr('data-imperial') );
         }
     });
+    $(".modal_map").on("click", function(e) {
+        e.preventDefault();
+        var lat = $(this).attr('data-lat');
+        var lng = $(this).attr('data-lng');
+        if( (lng == undefined) ){ lat = 0; }
+        if( (lat == undefined) ){ lng = 0; }
+        $('#mapmodal').modal('show');
+        var point = new google.maps.LatLng(parseFloat( lat ), parseFloat( lng ) );
+        var map = new google.maps.Map( document.querySelector('#mapmodal .maps') , {
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            zoom: 13,
+            center: point
+        });
+        var marker = new google.maps.Marker({ position: point, map: map, icon: 'http://www.google.com/intl/en_us/mapfiles/ms/icons/red-dot.png' });
+        google.maps.event.trigger(map, 'resize');
+    });
     $(".modal_image").on("click", function(e) {
         e.preventDefault();
         $('#imagepreview').attr('src', $(this).find('img').attr('src') ); // here asign the image to the modal when the user click the enlarge link

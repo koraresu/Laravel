@@ -1,6 +1,6 @@
 <?php
 	return [
-		'title' => '',
-		'subtitle' => ''
+		'title' => 'Equipo',
+		'subtitle' => 'Nosotros'
 	];
 ?>

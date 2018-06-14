@@ -81,14 +81,15 @@
 						</ul>
 					</div>
 					<div class="cirujano_asociado">
-						<h5> @lang('cirujano.miembro') </h5>
-						@foreach ($members as $member)
-						<div class="member col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<img src="{{ asset('upload/member/'.$member->photo) }}" />
-							<span> {{ $member->name }} </span>
-						</div>
-						@endforeach
-
+						@if(count($members) > 0)
+							<h5> @lang('cirujano.miembro') </h5>
+							@foreach ($members as $member)
+							<div class="member col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<img src="{{ asset('upload/member/'.$member->photo) }}" />
+								<span> {{ $member->name }} </span>
+							</div>
+							@endforeach
+						@endif
 					</div>
 				</div>
 			</div>
@@ -106,8 +107,8 @@
 
 					@foreach($certificates as $certificate)
 						<div class="col-md-3">
-							<a href="#">
-								<img src="{{ url('/images/certificate/' . $certificate->photo ) }}" />
+							<a href="#" class="modal_image">
+								<img src="{{ url('/upload/certificate/' . $certificate->photo ) }}" />
 							</a>
 						</div>
 					@endforeach

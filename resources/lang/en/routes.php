@@ -29,6 +29,8 @@
         'hospital_consultorio_cirujano_bariatrico' => 'hospital/bariatric-surgeon-office',
         'contact_form'                             => 'contact_form',
         'contacto_thx'                              => 'contact/thanks',
+        'drs'                                      => 'bariatric-surgeons/{dr}',
+        'dr_sergio'                                => 'dr-sergio-cirujano-bariatrico'
     ];
 ?>
 	
