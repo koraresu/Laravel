@@ -3,11 +3,11 @@
         'home'            => 'Inicio',
         'cirugia-gas'     => 'Cirugía Gastrointestinal',
         'cirugia-gas-sub' => [
-            'apendicitis'     => 'APENDICITIS',
-            'colelitiasis'    => 'COLELITIASIS',
-            'diverticulitis'  => 'DIVERTICULITIS',
-            'hernias'         => 'HERNIAS',
-            'hernias_hiatal'  => 'HERNIA HIATAL'
+            'apendicitis'     => 'Apendicitis',
+            'colelitiasis'    => 'Colelitiasis',
+            'diverticulitis'  => 'Diverticulitis',
+            'hernias'         => 'Hernias',
+            'hernias_hiatal'  => 'Hernia Hiatal'
         ],
         'cirugia-bar'     => 'Cirugía Bariátrica',
         'cirugia-bar-sub' => [
@@ -27,5 +27,6 @@
         'testimonio-sub'  => [],
 		'blog'            => 'Blog',
 		'galeria'         => 'Galería',
+        'otros'           => 'Otros'
     ];
 ?>

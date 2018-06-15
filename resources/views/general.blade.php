@@ -26,6 +26,8 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/movil.css') }}" rel="stylesheet">
 <link href="{{ asset('css/tablet.css') }}" rel="stylesheet">
@@ -38,7 +40,11 @@
   <!-- start preloader -->
   <div class="preloader"></div>
   <!-- end preloader --> 
-  
+  <div class="float_contact">
+    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase">
+      <span class="icon-contacto"></span> @lang('home.contacto')
+    </a>
+  </div>
   <!-- Main Header / Style One-->
   <header class="main-header header-style-one"> 
     <!-- Header Top -->

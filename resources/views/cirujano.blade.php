@@ -85,7 +85,10 @@
 							<h5> @lang('cirujano.miembro') </h5>
 							@foreach ($members as $member)
 							<div class="member col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<img src="{{ asset('upload/member/'.$member->photo) }}" />
+								<div class="image">
+									<span class="helper"></span>
+									<img src="{{ asset('upload/member/'.$member->photo) }}" />
+								</div>
 								<span> {{ $member->name }} </span>
 							</div>
 							@endforeach

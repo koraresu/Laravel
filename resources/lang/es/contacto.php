@@ -10,6 +10,26 @@
 		'information' => 'Requiero información sobre',
 		'message' => 'Mensaje',
 		'send' => 'ENVIAR',
-		'privacy' => 'Aviso de Privacidad'
+		'privacy' => 'Aviso de Privacidad',
+		'error' => [
+			'firstname'    => [
+				'required' => 'El nombre es requerido',
+			],
+            'lastname'     => [
+				'required' => 'El apellido es requerido',
+			],
+            'email'        => [
+				'required' => 'El correo electronico es requerido',
+			],
+            'information'  => [
+				'required' => 'Es requerido que selecciones información',
+			],
+            'message'      => [
+				'required' => 'Es requerido el mensaje.'
+			],
+			'recaptcha'    => [
+				'required' => 'Es necesario.'
+			],
+		]
 	];
 ?>

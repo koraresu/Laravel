@@ -1,31 +1,32 @@
 <?php
 	return [
-        'home'            => 'HOME',
-        'cirugia-gas'     => 'GASTROINTESTINAL SURGERY',
+        'home'            => 'Home',
+        'cirugia-gas'     => 'Gastrointestinal Surgery',
         'cirugia-gas-sub' => [
-            'apendicitis'     => 'APENDICITIS',
-            'colelitiasis'    => 'COLELITIASIS',
-            'diverticulitis'  => 'DIVERTICULITIS',
-            'hernias'         => 'HERNIAS',
-            'hernias_hiatal'  => 'HERNIA HIATAL'
+            'apendicitis'     => 'Apendicitis',
+            'colelitiasis'    => 'Colelitiasis',
+            'diverticulitis'  => 'Diverticulitis',
+            'hernias'         => 'Hernias',
+            'hernias_hiatal'  => 'Hernia Hiatal'
         ],
-        'cirugia-bar'     => 'BARIATRIC SURGERY',
+        'cirugia-bar'     => 'Bariatric Surgery',
         'cirugia-bar-sub' => [
-            'manga-gastrica'  => 'SLEEVE GASTRECTOMY',
-            'bypass'          => 'GASTRIC BYPASS RNY',
-            'cirugia-paq'     => 'BARIACTRIC SURGERY PACKAGES',
-            'url-imc'         => 'BODY MASS INDEX (BMI)',
-            'obesidad'        => 'OBESITY',
+            'manga-gastrica'  => 'Sleeve Gastrectomy',
+            'bypass'          => 'Gastric Bypass RNY',
+            'cirugia-paq'     => 'Bariactric Surgery Packages',
+            'url-imc'         => 'Body Mass Index (BMI)',
+            'obesidad'        => 'Obesity',
         ],
-        'hospitales'      => 'HOSPITALS',
+        'hospitales'      => 'Hospitals',
         'hospitales-sub'  => [
             'cmq'             => 'CMQ Premiere',
             'cmq-nayarit'     => 'CMQ Riviera Nayarit',
-            'consultorio'     => 'DOCTOR’S OFFICE',
+            'consultorio'     => 'Doctor’s Office',
         ],
-        'testimonio'      => 'TESTIMONIALS',
+        'testimonio'      => 'Testimonials',
         'testimonio-sub'  => [],
 		'blog'            => 'Blog',
-		'galeria'         => 'GALLERY',
+		'galeria'         => 'Gallery',
+        'otros'           => 'Others'
     ];
 ?>

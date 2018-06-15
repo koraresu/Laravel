@@ -845,27 +845,63 @@ body,html
 			.img_desc
 				padding 30px 20px
 				font-family 'Titillium Web', sans-serif
-				font-size: 16px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.88;
-				letter-spacing: normal;
-				text-align: left;
-				color: #181818;
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #181818
+				p
+					/* hide text if it more than N lines  */
+					overflow: hidden;
+					/* for set '...' in absolute position */
+					position: relative; 
+					/* use this value to count block height */
+					line-height: 1.2em;
+					/* max-height = line-height (1.2) * lines max number (3) */
+					max-height: 7.3em;
+					/* fix problem when last visible word doesn't adjoin right side  */
+					text-align: justify;  
+					/* place for '...' */
+					margin-right: -1em;
+					padding-right: 1em;
+					&:before
+						/* points in the end */
+						content: '...';
+						/* absolute position */
+						position: absolute;
+						/* set position to right bottom corner of block */
+						right: 0;
+						bottom: 0;
+					&:after
+						/* points in the end */
+						content: '';
+						/* absolute position */
+						position: absolute;
+						/* set position to right bottom corner of text */
+						right: 0;
+						/* set width and height */
+						width: 1em;
+						height: 1em;
+						margin-top: 0.2em;
+						/* bg color = bg color under block */
+						background: white;
 			.img_name
 			.img_surg
 				font-family 'Titillium Web', sans-serif
-				font-size: 16px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1.88;
-				letter-spacing: normal;
-				text-align: left;
-				color: #181818;
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #181818
+				min-height 30px
 			.img_name
-				font-weight: bold;
+				font-weight bold
 			.img_cont
 				width 100%
 				.juxtapose
@@ -1362,6 +1398,35 @@ section.gallery
 	width 1200px
 	margin 0 auto
 	height auto
+.g-recaptcha
+	div
+		margin 0 auto
+.float_contact
+	position fixed
+	top 100px
+	right 50px
+	z-index -1
+	opacity 0
+	transition all 500ms ease
+	-moz-transition all 500ms ease
+	-webkit-transition all 500ms ease
+	-ms-transition all 500ms ease
+	-o-transition all 500ms ease
+	a
+		background-color #0d79aa
+		color #FFF
+		padding 6px 10px
+		border 1px solid #FFF
+		span
+			color #FFF
+		&:active
+		&:hover
+			color #FFF
+			background-color #0d79aa
+	&.show
+		
+		z-index 1000
+		opacity 1
 .cirujano
 	.sidebar
 		h5
@@ -1369,9 +1434,17 @@ section.gallery
 		.cirujano_asociado
 			.member
 				text-align center
-				img
-					display block
-					margin 0 auto
+				.image
+					height 67px
+					font-size 0
+					img
+						object-fit contain
+						vertical-align middle
+					.helper
+						display inline-block
+						height 100%
+						vertical-align middle
+						width 1px
 				span
 					text-align center
 					display block

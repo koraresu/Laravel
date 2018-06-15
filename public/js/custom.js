@@ -31,6 +31,16 @@ $(function() {
         });
 		$('#imc_res').html( formula );
 	});
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var f_pos = ($('footer').offset().top)-500;
+        console.log( scroll + '-' + f_pos );
+        if(scroll > 55 && scroll < f_pos){
+            $('.float_contact').addClass('show');
+        }else{
+            $('.float_contact').removeClass('show');
+        }
+    });
 	$('#imc_peso,#imc_altura').keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||

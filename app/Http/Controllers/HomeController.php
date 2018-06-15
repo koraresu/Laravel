@@ -11,6 +11,7 @@ use App\Testimonial;
 use App\Slideshow;
 use App\Contacto;
 use File;
+use LaravelLocalization;
 class HomeController extends Controller
 {
     public function index(){
@@ -29,12 +30,35 @@ class HomeController extends Controller
 		return view('contacto',[]);
 	}
 	public function contact_form(Request $request){
+		$messages = [
+    		'firstname.required'   => LaravelLocalization::transRoute('contacto.error.firstname.required'),
+    		'lastname.required'    => LaravelLocalization::transRoute('contacto.error.lastname.required'),
+    		'email.required'       => LaravelLocalization::transRoute('contacto.error.email.required'),
+    		'information.required' => LaravelLocalization::transRoute('contacto.error.information.required'),
+    		'message.required'     => LaravelLocalization::transRoute('contacto.error.message.required'),
+    		'g-recaptcha-response.required'=> LaravelLocalization::transRoute('contacto.error.recaptcha.required'),
+		];
+		$validator = \Validator::make($request->all(), [
+            'firstname'   => 'required',
+			'lastname'    => 'required',
+            'email'       => 'required',
+            'information' => 'required',
+            'message'     => 'required',
+            'g-recaptcha-response' => 'required'
+        ], $messages);
+
+        if ($validator->fails()) {
+        	return redirect( LaravelLocalization::transRoute('routes.contacto') )
+            ->withErrors($validator)
+			->withInput();
+        }
 		$input = $request->all();
+		print_r( $input );
 		$contact_data = Contacto::create($request->all());
 		$contact_data = Contacto::findOrFail( $contact_data->id );
-		Mail::to('rkenshin21@gmail.com')->send(new ContactShipped($contact_data));
+		//Mail::to('rkenshin21@gmail.com')->send(new ContactShipped($contact_data));
 
-		return redirect()->route('contacto_thx');
+		//return redirect()->route('contacto_thx');
 	}
 	public function contact_thx(){
 		return view('contacto_thx',[]);

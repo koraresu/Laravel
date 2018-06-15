@@ -46,6 +46,15 @@
 							</div>
 						</div>
 					</div>
+					@if ($errors->any())
+					    <div class="alert alert-danger">
+					        <ul>
+					            @foreach ($errors->all() as $error)
+					                <li>{{ $error }}</li>
+					            @endforeach
+					        </ul>
+					    </div>
+					@endif
 					<form class="contact-form" method="post" action="{{ LaravelLocalization::getNonLocalizedURL('contact_form') }}" role="form" novalidate="true">
 						{{ csrf_field() }}
 						<p>@lang('contacto.paragraph')</p>
@@ -55,14 +64,14 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_name">@lang('contacto.name') *</label>
-										<input id="form_name" type="text" name="firstname" class="form-control" placeholder="" required="required" data-error="Name is required.">
+										<input id="form_name" type="text" name="firstname" class="form-control" required="required" data-error="Name is required." value="{{ old('firstname') }}">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="form_lastname">@lang('contacto.lastname') *</label>
-										<input id="form_phone" type="text" name="lastname" class="form-control" placeholder="" required="required" data-error="Phone number is required.">
+										<input id="form_phone" type="text" name="lastname" class="form-control" placeholder="" required="required" data-error="Phone number is required."  value="{{ old('lastname') }}">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
@@ -71,7 +80,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_email">@lang('contacto.email') *</label>
-										<input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+										<input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required." value="{{ old('email') }}">
 										<div class="help-block with-errors"></div>
 									</div>
 								</div> 
@@ -94,6 +103,9 @@
 													<option value="@lang('menu.cirugia-bar') - @lang('menu.cirugia-bar-sub.manga-gastrica')">@lang('menu.cirugia-bar-sub.manga-gastrica')</option>
 													<option value="@lang('menu.cirugia-bar') - @lang('menu.cirugia-bar-sub.bypass')">@lang('menu.cirugia-bar-sub.bypass')</option>
 												</optgroup>
+												<optgroup>
+													<option value="@lang('menu.otros')">@lang('menu.otros')</option>
+												</optgroup>
 											</select>
 										</div>
 										<div class="help-block with-errors"></div>
@@ -104,9 +116,12 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="form_message">@lang('contacto.message') *</label>
-										<textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="" data-error="Please,leave us a message."></textarea>
+										<textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="" data-error="Please,leave us a message.">{{ old('message') }}</textarea>
 										<div class="help-block with-errors"></div>
 									</div>
+								</div>
+								<div class="col-md-12" style="text-align: center;">
+									<div class="g-recaptcha" data-sitekey="6LdqHl8UAAAAAPCnPUq8DojyCFK0ynwkt2dFsmBn"></div>
 								</div>
 								<div class="text-center col-md-12">
 									<input type="submit" class="btn btn-success btn-send disabled" value="@lang('contacto.send')">

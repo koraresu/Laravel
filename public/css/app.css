@@ -948,6 +948,44 @@ html {
   text-align: left;
   color: #181818;
 }
+.testimonial .testi .cont .img_desc p {
+/* hide text if it more than N lines  */
+  overflow: hidden;
+/* for set '...' in absolute position */
+  position: relative;
+/* use this value to count block height */
+  line-height: 1.2em;
+/* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 7.3em;
+/* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+/* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+.testimonial .testi .cont .img_desc p:before {
+/* points in the end */
+  content: '...';
+/* absolute position */
+  position: absolute;
+/* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+.testimonial .testi .cont .img_desc p:after {
+/* points in the end */
+  content: '';
+/* absolute position */
+  position: absolute;
+/* set position to right bottom corner of text */
+  right: 0;
+/* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+/* bg color = bg color under block */
+  background: #fff;
+}
 .testimonial .testi .cont .img_name,
 .testimonial .testi .cont .img_surg {
   font-family: 'Titillium Web', sans-serif;
@@ -959,6 +997,7 @@ html {
   letter-spacing: normal;
   text-align: left;
   color: #181818;
+  min-height: 30px;
 }
 .testimonial .testi .cont .img_name {
   font-weight: bold;
@@ -1521,15 +1560,59 @@ section.gallery .modal_image img {
   margin: 0 auto;
   height: auto;
 }
+.g-recaptcha div {
+  margin: 0 auto;
+}
+.float_contact {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  z-index: -1;
+  opacity: 0;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.float_contact a {
+  background-color: #0d79aa;
+  color: #fff;
+  padding: 6px 10px;
+  border: 1px solid #fff;
+}
+.float_contact a span {
+  color: #fff;
+}
+.float_contact a:active,
+.float_contact a:hover {
+  color: #fff;
+  background-color: #0d79aa;
+}
+.float_contact.show {
+  z-index: 1000;
+  opacity: 1;
+}
 .cirujano .sidebar h5 {
   text-align: center;
 }
 .cirujano .sidebar .cirujano_asociado .member {
   text-align: center;
 }
-.cirujano .sidebar .cirujano_asociado .member img {
-  display: block;
-  margin: 0 auto;
+.cirujano .sidebar .cirujano_asociado .member .image {
+  height: 67px;
+  font-size: 0;
+}
+.cirujano .sidebar .cirujano_asociado .member .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: middle;
+}
+.cirujano .sidebar .cirujano_asociado .member .image .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 1px;
 }
 .cirujano .sidebar .cirujano_asociado .member span {
   text-align: center;
