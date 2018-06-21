@@ -19,8 +19,9 @@ class CirujanosController extends Controller
     }
     public function cirujano($cirujano){
     	$doctor = DoctorTranslation::where('url','=',$cirujano)->where('locale','=', LaravelLocalization::getCurrentLocale() )->first();
-    	$doctor_member = DoctorMember::where('doctor_id','=',$doctor->id)->get();
-        $doctor_certificate = DoctorCertificate::where('doctor_id','=',$doctor->id)->get();
+        
+    	$doctor_member = DoctorMember::where('doctor_id','=',$doctor->doctor_id)->get();
+        $doctor_certificate = DoctorCertificate::where('doctor_id','=',$doctor->doctor_id)->get();
 		$description = $doctor->description;
 		$laboral = $doctor->laboral;
 		$chequeo = $doctor->chequeo;
@@ -31,6 +32,8 @@ class CirujanosController extends Controller
     	$laboral = str_replace('\r\n','', $laboral);
     	$chequeo = str_replace('\r\n','', $chequeo);
     	$reconocimientos = str_replace('\r\n','', $reconocimientos);
+
+        
     	return view('cirujano',[
     		'title'  => $doctor->title,
     		'name'   => $doctor->name,

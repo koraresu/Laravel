@@ -66,7 +66,7 @@ class HomeController extends Controller
 	public function privacidad(){
 		return view('aviso_privacidad',[]);
 	}
-	public function galery(){
+	public function gallery(){
 		return view('galeria',[]);
 	}
 }

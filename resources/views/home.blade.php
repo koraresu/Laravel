@@ -245,7 +245,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.est') </a></h5>
+							<h5>@lang('home.gastro.est')</h5>
 						</div>
 					</div>
 				</div>
@@ -254,7 +254,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.ves') </a></h5>
+							<h5>@lang('home.gastro.ves')</h5>
 						</div>
 					</div>
 				</div>
@@ -263,7 +263,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.hem') </a></h5>
+							<h5>@lang('home.gastro.hem')</h5>
 						</div>
 					</div>
 				</div>
@@ -281,7 +281,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.gas') </a></h5>
+							<h5>@lang('home.gastro.gas')</h5>
 						</div>
 					</div>
 				</div>
@@ -290,7 +290,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.coli') </a></h5>
+							<h5>@lang('home.gastro.coli')</h5>
 						</div>
 					</div>
 				</div>
@@ -299,7 +299,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<h5><a href="#"> @lang('home.gastro.colo') </a></h5>
+							<h5>@lang('home.gastro.colo')</h5>
 						</div>
 					</div>
 				</div>

@@ -34,7 +34,7 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var f_pos = ($('footer').offset().top)-500;
-        console.log( scroll + '-' + f_pos );
+        
         if(scroll > 55 && scroll < f_pos){
             $('.float_contact').addClass('show');
         }else{

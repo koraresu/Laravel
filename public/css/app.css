@@ -708,7 +708,7 @@ html {
   font-stretch: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #251d66;
+  color: #fff;
 }
 .main-footer .formadepago h4 {
   padding: 0;
@@ -1413,7 +1413,9 @@ ul.lista li:before {
   text-align: center;
   color: #0d79aa;
   display: block;
-  margin: 0 auto;
+  padding: 6px 30px;
+  margin: 10px auto;
+  margin-top: 35px;
 }
 .contacto form a {
   font-family: 'Titillium Web', sans-serif;
@@ -1565,7 +1567,7 @@ section.gallery .modal_image img {
 }
 .float_contact {
   position: fixed;
-  top: 100px;
+  bottom: 100px;
   right: 50px;
   z-index: -1;
   opacity: 0;
@@ -1596,11 +1598,14 @@ section.gallery .modal_image img {
 .cirujano .sidebar h5 {
   text-align: center;
 }
+.cirujano .sidebar .cirujano_info ul li {
+  text-align: center;
+}
 .cirujano .sidebar .cirujano_asociado .member {
   text-align: center;
 }
 .cirujano .sidebar .cirujano_asociado .member .image {
-  height: 67px;
+  height: 74px;
   font-size: 0;
 }
 .cirujano .sidebar .cirujano_asociado .member .image img {

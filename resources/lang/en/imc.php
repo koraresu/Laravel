@@ -45,25 +45,25 @@
 			'pd' => '* The Obesity III is also known as morbid obesity'
 		],
 
-		'no_requiere_range'      => '20 - 25',
+		'no_requiere_range'      => '20 - 25: Normal weight',
 		'no_requiere_message'    => 'does not require surgery',
 
-		'posible_range'          => '25.1 - 29.9',
+		'posible_range'          => '25.1 - 29.9: Overweight',
 		'posible_message'        => 'potentially needs surgery',
 
-		'necesita_one_range'     => '30 - 35',
+		'necesita_one_range'     => '30 - 35: Obesity grade I',
 		'necesita_one_message'   => 'needs surgery.',
 		
-		'necesita_two_range'     => '35 - 40',
+		'necesita_two_range'     => '35 - 40: Obesity grade II',
 		'necesita_two_message'   => 'needs surgery.',
 
-		'necesita_three_range'   => '40 - 50',
+		'necesita_three_range'   => '40 - 50: Obesity grade III (morbid obesity)',
 		'necesita_three_message' => 'needs surgery.',
 
-		'super_range'            => '50 - 60',
+		'super_range'            => '50 - 60: Super obesity',
 		'super_message'          => 'needs surgery.',
 
-		'supersuper_range'       => '60+',
+		'supersuper_range'       => '60+: Super super obesity',
 		'supersuper_message'     => 'needs surgery.',
 	];
 ?>

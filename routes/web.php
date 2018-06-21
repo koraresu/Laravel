@@ -27,7 +27,7 @@ Route::group([
     Route::get( LaravelLocalization::transRoute('routes.contacto') , 'HomeController@contacto')-> name('contacto');
     Route::get( LaravelLocalization::transRoute('routes.contacto_thx') , 'HomeController@contact_thx')-> name('contacto_thx');
     Route::get( LaravelLocalization::transRoute('routes.privacidad') , 'HomeController@privacidad')-> name('privacidad');
-    Route::get( LaravelLocalization::transRoute('routes.galery') , 'HomeController@galery')-> name('galery');
+    Route::get( LaravelLocalization::transRoute('routes.gallery') , 'HomeController@gallery')-> name('galery');
     Route::get( 'blog' , 'BlogController@index')-> name('blog');
     Route::get( 'blog/{article}' , 'BlogController@article')-> name('blog_article');
     Route::post( LaravelLocalization::transRoute('routes.contact_form') , 'HomeController@contact_form')-> name('contact_form');
