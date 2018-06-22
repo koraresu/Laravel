@@ -93,6 +93,40 @@ $(function() {
         $('#imagepreview').attr('src', $(this).find('img').attr('src') ); // here asign the image to the modal when the user click the enlarge link
         $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
     });
+    if ($('.carousel-col-3').length) {
+        $('.carousel-col-3').owlCarousel({
+            loop:true,
+            margin:50,
+            nav:true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots:false,
+            smartSpeed: 500,
+            autoplay: 5000,
+            responsive: {
+                        0: {
+                            items: 1
+                        },
+                        480: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        750: {
+                            items: 2
+                        },
+                        960: {
+                            items: 3
+                        },
+                        1170: {
+                            items: 3
+                        },
+                        1300: {
+                            items: 3
+                        }
+                    }
+        });
+    }
 });
 function toFixed(num, fixed) {
     var re = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');

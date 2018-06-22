@@ -27,11 +27,14 @@
 					<div class="cirujano_info">
 						@lang('dr_sergio.acerca')						
 					</div>
-					<div class="cirujano_asociado">
+					<div class="cirujano_asociado row">
 						<h5> @lang('dr_sergio.miembro') </h5>
 						@foreach ($members as $member)
 						<div class="member col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<img src="{{ asset('upload/member/'.$member->photo) }}" />
+							<div class="image">
+								<span class="helper"></span>
+								<img src="{{ asset('upload/member/'.$member->photo) }}" />
+							</div>
 							<span> {{ $member->name }} </span>
 						</div>
 						@endforeach
@@ -40,16 +43,18 @@
 				</div>
 				<div class="col-md-8" style="visibility: visible; animation-name: fadeInLeft;">
 
-					<h2 class="text-uppercase small-line text"> @lang('dr_sergio.estudios.title')</h2>
+					<h2 class="text-uppercase small-line text">
+						@lang('dr_sergio.estudios.title')
+					</h2>
 					@lang('dr_sergio.estudios.paragraph')
-					<h2 class="text-uppercase small-line text"> @lang('dr_sergio.especialidad.title')</h2>
+					<h2 class="text-uppercase small-line text">
+						@lang('dr_sergio.especialidad.title')
+					</h2>
 					@lang('dr_sergio.especialidad.paragraph')
-					<h2 class="text-uppercase small-line text"> @lang('dr_sergio.certificaciones.title')</h2>
+					<h2 class="text-uppercase small-line text">
+						@lang('dr_sergio.certificaciones.title')
+					</h2>
 					@lang('dr_sergio.certificaciones.paragraph')
-
-
-
-
 
 				</div>
 				<div class="hidden-xs hidden-sm col-md-4 sidebar" style="visibility: visible; animation-name: fadeInRight;">
@@ -57,7 +62,7 @@
 					<div class="cirujano_info">
 						@lang('dr_sergio.acerca')						
 					</div>
-					<div class="cirujano_asociado">
+					<div class="cirujano_asociado row">
 						<h5> @lang('dr_sergio.miembro') </h5>
 						@foreach ($members as $member)
 						<div class="member col-lg-6 col-md-6 col-sm-12 col-xs-12">

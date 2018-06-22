@@ -27,16 +27,18 @@
                         </ul>
                     </div>
                     <div class="portfolio col-4 gutter-less mtn">
+                        @foreach($images as $image)
                         <div class="portfolio-item item-one">
                             <div class="thumb">
-                                <img src="{{ asset('upload/galeria/bariatric-surgeon.jpg') }}" alt="">
+                                <img src="{{ asset('upload/galeria/' . $image->photo ) }}" alt="">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-btn">
-                                        <a href="{{ asset('upload/galeria/bariatric-surgeon.jpg') }}" class="popup-link" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                        <a href="{{ asset('upload/galeria/' . $image->photo ) }}" class="popup-link" title="lightbox view"> <span class="icon-search"></span>  </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

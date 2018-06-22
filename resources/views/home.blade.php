@@ -245,6 +245,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.est')</h5>
 						</div>
 					</div>
@@ -254,6 +255,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.ves')</h5>
 						</div>
 					</div>
@@ -263,6 +265,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.hem')</h5>
 						</div>
 					</div>
@@ -272,6 +275,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}"> @lang('home.gastro.ape') </a></h5>
 						</div>
 					</div>
@@ -281,6 +285,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.gas')</h5>
 						</div>
 					</div>
@@ -290,6 +295,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.coli')</h5>
 						</div>
 					</div>
@@ -299,6 +305,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5>@lang('home.gastro.colo')</h5>
 						</div>
 					</div>
@@ -308,6 +315,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
+							<span></span>
 							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_hernias') }}"> @lang('home.gastro.her') </a></h5>
 						</div>
 					</div>
@@ -367,13 +375,14 @@
 						<div class="testi col-md-4">
 							<div class="cont">
 								<div class="img_cont">
-									<div class="juxtapose" data-startingposition="50" data-showlabels="true" data-showcredits="true" data-animate="true">
-										<img src="{{ asset('upload/testimonial/'. $testimonial->photo_before) }}" />
-										<img src="{{ asset('upload/testimonial/'. $testimonial->photo_after) }}" />
-									</div>
+									
+									<img src="{{ asset('upload/testimonial/'. $testimonial->photo_before) }}" />
+									
 								</div>
 								<div class="img_desc">
-									<p> {{ $testimonial->description }} </p>
+									<p> 
+										{{ str_limit( $testimonial->description , $limit = 250, $end = '...') }}
+									</p>
 									<div class="img_name"> {{ $testimonial->patient }} </div>
 									<div class="img_surg"> {{ $testimonial->surgery }} </div>
 								</div>
@@ -391,7 +400,7 @@
 		</div>
 	</section>
 	<section class="video">
-		<video class="afterglow" id="my-video" width="1920" height="1080"data-youtube-id="_cebmtTGS90"></video>
+		<iframe width="640" height="360" src="//www.youtube.com/embed/_cebmtTGS90" frameborder="0" allowfullscreen></iframe>
 	</section>
 	<section class="vallarta" style="background-image: url( {{ asset('images/vallarta.jpg') }} ); background-size: cover;">
 		<div class="container">

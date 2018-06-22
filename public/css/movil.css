@@ -1,6 +1,23 @@
 @media only screen and (max-width: 480px) {
+  header {
+    z-index: 1001 !important;
+  }
   header .header-top {
     display: none;
+  }
+  .logo_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .header-mainbox .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .header-mainbox .container .outer-box {
+    padding-right: 0;
+    padding-left: 0;
   }
   .main-menu .collapse {
     max-height: initial;
@@ -27,12 +44,14 @@
     letter-spacing: normal;
     text-align: left;
     color: #fff;
+    padding: 10px 30px !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li {
     background-color: #37b4f0 !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li > a {
     background-color: #37b4f0 !important;
+    padding: 10px 50px !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
     background-color: #37b4f0 !important;
@@ -40,17 +59,54 @@
   .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
     background-color: #37b4f0 !important;
   }
+  .main-menu .navbar-collapse .dropdown-btn {
+    border: 0 !important;
+    right: 30px;
+  }
   .main-menu .navbar-collapse .dropdown-btn span {
     display: none;
   }
+  .float_contact {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+  }
+  .float_contact ul {
+    font-size: 0;
+  }
+  .float_contact ul li {
+    display: inline-block;
+    width: 50%;
+  }
+  .float_contact ul li a {
+    display: block;
+    text-align: center;
+    line-height: 0;
+    padding: 10px 10px;
+    border: 0;
+  }
+  .float_contact ul li a span {
+    font-size: 30px;
+  }
+  .float_contact ul li a.contacto {
+    background-color: #fff;
+  }
+  .float_contact ul li a.contacto span {
+    color: #0d79aa;
+  }
+  section.title_section {
+    background-position: 35% 0;
+  }
   section.title_section h2 {
     text-align: center;
+    padding: 0 10px;
   }
   section.title_section p {
     text-align: center;
   }
   .pull-left {
-    width: 210px;
+    padding-left: 30px;
     max-width: 263px;
   }
   .logo {
@@ -143,6 +199,9 @@
   .emergencies {
     display: none;
   }
+  .calculator-imc {
+    margin: 0 30px;
+  }
   .calculator-imc .container .imc-message {
     padding: 0;
     padding-left: 0;
@@ -166,6 +225,9 @@
   }
   .miembro .rasoc {
     padding: 0 20px;
+  }
+  .miembro .rasoc .image img {
+    max-width: calc(100% - 4px);
   }
   .our-department {
     padding: 0;
@@ -234,6 +296,27 @@
     text-align: left;
     color: #fff;
   }
+  .team .team-item p a {
+    color: #fff;
+  }
+  .team .owl-controls {
+    display: block !important;
+  }
+  .team .owl-controls .owl-nav {
+    position: static;
+  }
+  .team .owl-controls .owl-nav .owl-prev,
+  .team .owl-controls .owl-nav .owl-next {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -50px;
+  }
+  .team .owl-controls .owl-nav .owl-next {
+    left: auto;
+    right: 0;
+  }
   .testimonial .desc {
     width: 100%;
     padding: 20px 10px;
@@ -258,6 +341,7 @@
   }
   .vallarta {
     padding: 0 25px;
+    margin: 30px 0;
   }
   .vallarta h3 {
     font-size: 30px;
@@ -294,7 +378,7 @@
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: normal;
+    line-height: 1.28;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
@@ -312,12 +396,18 @@
   footer.main-footer .social {
     padding-top: 30px;
   }
+  footer.main-footer .social ul li {
+    padding: 0 15px;
+  }
   footer.main-footer .aviso {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   footer.main-footer .logomovil {
     text-align: center;
     padding-bottom: 27px;
+  }
+  footer.main-footer .formadepago {
+    padding: 0 15px;
   }
 }

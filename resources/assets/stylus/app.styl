@@ -685,6 +685,7 @@ body,html
 			text-align center
 			li
 				display inline-block
+				padding 0 15px
 				a
 					color #FFF
 					span
@@ -722,7 +723,8 @@ body,html
 	.section-wrap
 		.service-box
 			color: #fff;
-			padding: 66px 25px;
+			padding 0
+			height 160px
 			position: relative;
 			text-align: center;
 			transform: translateZ(0px);
@@ -730,15 +732,8 @@ body,html
 			margin-bottom: 30px;
 			&:before,
 			&::after
-				bottom: 0;
 				content: "";
-				left: 0;
-				margin: 10px;
-				position: absolute;
-				right: 0;
-				top: 0;
-				transition: all 0.3s ease 0s;
-				z-index: 3;
+				
 			&::before
 				border-left: 1px solid #fff;
 				border-right: 1px solid #fff;
@@ -769,12 +764,23 @@ body,html
 				position: relative;
 				z-index: 4;
 			.service-box-content
-				position: relative;
-				z-index: 4;
+				position relative
+				z-index 4
+				height 100%
 				a
-					color: #FFF;
+					color #FFF
 				h5
-					text-transform: uppercase;
+					text-transform uppercase
+					display inline-block
+					vertical-align middle
+					width calc(100% - 4px )
+					padding 0 15px
+					text-align center
+				span
+					height 100%
+					display inline-block
+					vertical-align middle
+					width 0
 			&::before
 				transform: scaleY(1);
 			&::after
@@ -801,6 +807,8 @@ body,html
 						font-family 'Titillium Web', sans-serif
 					p
 						text-transform uppercase
+		.owl-controls
+			display none
 .testimonial
 	background-color: #f6f6f6;
 	padding-bottom 0
@@ -854,58 +862,32 @@ body,html
 				text-align left
 				color #181818
 				p
-					/* hide text if it more than N lines  */
-					overflow: hidden;
-					/* for set '...' in absolute position */
-					position: relative; 
-					/* use this value to count block height */
-					line-height: 1.2em;
-					/* max-height = line-height (1.2) * lines max number (3) */
-					max-height: 7.3em;
-					/* fix problem when last visible word doesn't adjoin right side  */
-					text-align: justify;  
-					/* place for '...' */
-					margin-right: -1em;
-					padding-right: 1em;
-					&:before
-						/* points in the end */
-						content: '...';
-						/* absolute position */
-						position: absolute;
-						/* set position to right bottom corner of block */
-						right: 0;
-						bottom: 0;
-					&:after
-						/* points in the end */
-						content: '';
-						/* absolute position */
-						position: absolute;
-						/* set position to right bottom corner of text */
-						right: 0;
-						/* set width and height */
-						width: 1em;
-						height: 1em;
-						margin-top: 0.2em;
-						/* bg color = bg color under block */
-						background: white;
-			.img_name
-			.img_surg
-				font-family 'Titillium Web', sans-serif
-				font-size 16px
-				font-weight normal
-				font-style normal
-				font-stretch normal
-				line-height 1.88
-				letter-spacing normal
-				text-align left
-				color #181818
-				min-height 30px
-			.img_name
-				font-weight bold
+					
+					overflow hidden
+					position relative
+					line-height 1.2em
+					height 7.3em
+					text-align justify
+					margin-right -1em
+					padding-right 1em
+				.img_name
+				.img_surg
+					font-family 'Titillium Web', sans-serif
+					font-size 16px
+					font-weight normal
+					font-style normal
+					font-stretch normal
+					line-height 1.88
+					letter-spacing normal
+					text-align left
+					color #181818
+					min-height 30px
+				.img_name
+					font-weight bold
 			.img_cont
 				width 100%
-				.juxtapose
-					max-width 100%
+				img
+					width 100%
 	.foot
 		text-align center
 		a.more
@@ -929,6 +911,7 @@ body,html
 .vallarta
 	position: relative;
 	text-align center
+	margin-top 30px
 	&:before
 		background-color rgba(15, 38, 58,.3) !important
 		content " "
@@ -994,7 +977,7 @@ a.jx-knightlab
 	color #181818
 section.title_section
 	background-attachment initial
-	background-position 0 0 !important
+	background-position 0 0
 	.container
 		padding-top 100px
 		padding-bottom 100px
@@ -1398,9 +1381,21 @@ section.gallery
 		z-index: 0;
 .video
 	position relative
-	width 1200px
-	margin 0 auto
-	height auto
+	padding-bottom 56.25% /*16:9*/
+	padding-top 30px
+	height 0
+	overflow hidden
+.video iframe,
+.video object,
+.video embed
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+
+
+		
 .g-recaptcha
 	div
 		margin 0 auto
@@ -1507,9 +1502,6 @@ section.gallery
 			letter-spacing normal
 			text-align left
 			color #181818
-
-@import('movil')
-@import('tablet')
 .radio_button
 	margin-bottom 0
 	font-weight normal

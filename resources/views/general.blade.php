@@ -29,8 +29,8 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="{{ asset('css/movil.css') }}" rel="stylesheet">
 <link href="{{ asset('css/tablet.css') }}" rel="stylesheet">
+<link href="{{ asset('css/movil.css') }}" rel="stylesheet">
 </head>
 <!--Change Class in body to change color Scheme for Homepages  ie theme-green , theme-green -->
 
@@ -41,9 +41,25 @@
   <div class="preloader"></div>
   <!-- end preloader --> 
   <div class="float_contact">
-    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase">
-      <span class="icon-contacto"></span> @lang('home.contacto')
-    </a>
+    <div class="hidden-xs hidden-sm">
+      <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase">
+        <span class="icon-contacto"></span> @lang('home.contacto')
+      </a>
+    </div>
+    <div class="hidden-md hidden-lg">
+      <ul>
+        <li>
+          <a href="tel:{{ str_replace(' ', '', Lang::get('home.movil') ) }}" class="text-uppercase">
+            <span class="icon-phone"></span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase">
+            <span class="icon-contacto"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
   <!-- Main Header / Style One-->
   <header class="main-header header-style-one"> 
@@ -85,10 +101,12 @@
         <div class="top-right pull-right clearfix">
             <ul class="info-nav clearfix">
                 <li>
-                    <a href="#"> <span class="icon-phone"></span> @lang('home.phone') </a>
+                    <a href="tel:{{ str_replace(' ', '', Lang::get('home.phone') ) }}" class="text-uppercase">
+                      <span class="icon-phone"></span> @lang('home.phone')
+                    </a>
                 </li>
                 <li>
-                    <a href="#"> <span class="icon-movil"></span> @lang('home.movil') </a>
+                    <a href="tel:{{ str_replace(' ', '', Lang::get('home.movil') ) }}"> <span class="icon-movil"></span> @lang('home.movil') </a>
                 </li>
                 <li>
                     <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> <span class="icon-contacto"></span> @lang('home.contacto') </a>
@@ -112,8 +130,10 @@
     <div class="header-mainbox">
       <div class="container ptn pbn">
         <div class="clearfix">
-          <div class="col-lg-3 col-md-4 pull-left">
-            <div class="logo"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a> </div>
+          <div class="logo_cont col-lg-3 col-md-4 pull-left">
+            <div class="logo">
+              <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a>
+            </div>
 
           </div>
           <div class="col-lg-9 col-md-8 outer-box clearfix"> 
@@ -134,6 +154,26 @@
                 <ul class="navigation clearfix">
                   <li class="current"> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"> @lang('menu.home') </a>
                   </li>
+                  
+
+
+                  <li class="dropdown hidden-md hidden-lg">
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}"> @lang('home.nosotros') </a>
+                    <ul>
+                      @if (LaravelLocalization::getCurrentLocale() == "en")
+                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('en/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
+                      @else
+                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('es/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
+                      @endif
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}">@lang('home.team-title-url')</a></li>
+                    </ul>
+                  </li>
+
+                   <li class="hidden-md hidden-lg">
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.puerto_vallarta') }}"> @lang('home.puerto-vallarta') </a>
+                </li>
+
+
                   <li class="dropdown"> <a href="#"> @lang('menu.cirugia-gas') </a>
                     <ul>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}">@lang('menu.cirugia-gas-sub.apendicitis')</a></li>
@@ -165,6 +205,9 @@
                   <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('menu.galeria') </a>
                   
                   </li>
+                  <li class="hidden-md hidden-lg">
+                    <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto text-uppercase"> @lang('home.contacto') </a>
+                </li>
                 </ul>
               </div>
             </nav>

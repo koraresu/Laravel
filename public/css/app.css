@@ -760,6 +760,7 @@ html {
 }
 .main-footer .social ul li {
   display: inline-block;
+  padding: 0 15px;
 }
 .main-footer .social ul li a {
   color: #fff;
@@ -800,7 +801,8 @@ html {
 }
 .our-department .section-wrap .service-box {
   color: #fff;
-  padding: 66px 25px;
+  padding: 0;
+  height: 160px;
   position: relative;
   text-align: center;
   transform: translateZ(0px);
@@ -809,15 +811,7 @@ html {
 }
 .our-department .section-wrap .service-box:before,
 .our-department .section-wrap .service-box::after {
-  bottom: 0;
   content: "";
-  left: 0;
-  margin: 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all 0.3s ease 0s;
-  z-index: 3;
 }
 .our-department .section-wrap .service-box::before {
   border-left: 1px solid #fff;
@@ -855,12 +849,24 @@ html {
 .our-department .section-wrap .service-box .service-box-content {
   position: relative;
   z-index: 4;
+  height: 100%;
 }
 .our-department .section-wrap .service-box .service-box-content a {
   color: #fff;
 }
 .our-department .section-wrap .service-box .service-box-content h5 {
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 4px);
+  padding: 0 15px;
+  text-align: center;
+}
+.our-department .section-wrap .service-box .service-box-content span {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
 }
 .our-department .section-wrap .service-box::before {
   transform: scaleY(1);
@@ -888,6 +894,9 @@ html {
 }
 .team .section_wrap .owl-carousel .team-item .img-title p {
   text-transform: uppercase;
+}
+.team .section_wrap .owl-controls {
+  display: none;
 }
 .testimonial {
   background-color: #f6f6f6;
@@ -949,45 +958,16 @@ html {
   color: #181818;
 }
 .testimonial .testi .cont .img_desc p {
-/* hide text if it more than N lines  */
   overflow: hidden;
-/* for set '...' in absolute position */
   position: relative;
-/* use this value to count block height */
   line-height: 1.2em;
-/* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 7.3em;
-/* fix problem when last visible word doesn't adjoin right side  */
+  height: 7.3em;
   text-align: justify;
-/* place for '...' */
   margin-right: -1em;
   padding-right: 1em;
 }
-.testimonial .testi .cont .img_desc p:before {
-/* points in the end */
-  content: '...';
-/* absolute position */
-  position: absolute;
-/* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-.testimonial .testi .cont .img_desc p:after {
-/* points in the end */
-  content: '';
-/* absolute position */
-  position: absolute;
-/* set position to right bottom corner of text */
-  right: 0;
-/* set width and height */
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-/* bg color = bg color under block */
-  background: #fff;
-}
-.testimonial .testi .cont .img_name,
-.testimonial .testi .cont .img_surg {
+.testimonial .testi .cont .img_desc .img_name,
+.testimonial .testi .cont .img_desc .img_surg {
   font-family: 'Titillium Web', sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -999,14 +979,14 @@ html {
   color: #181818;
   min-height: 30px;
 }
-.testimonial .testi .cont .img_name {
+.testimonial .testi .cont .img_desc .img_name {
   font-weight: bold;
 }
 .testimonial .testi .cont .img_cont {
   width: 100%;
 }
-.testimonial .testi .cont .img_cont .juxtapose {
-  max-width: 100%;
+.testimonial .testi .cont .img_cont img {
+  width: 100%;
 }
 .testimonial .foot {
   text-align: center;
@@ -1034,6 +1014,7 @@ html {
 .vallarta {
   position: relative;
   text-align: center;
+  margin-top: 30px;
 }
 .vallarta:before {
   background-color: rgba(15,38,58,0.3) !important;
@@ -1107,7 +1088,7 @@ a.jx-knightlab {
 }
 section.title_section {
   background-attachment: initial;
-  background-position: 0 0 !important;
+  background-position: 0 0;
 }
 section.title_section .container {
   padding-top: 100px;
@@ -1558,9 +1539,19 @@ section.gallery .modal_image img {
 }
 .video {
   position: relative;
-  width: 1200px;
-  margin: 0 auto;
-  height: auto;
+  padding-bottom: 56.25% /*16:9*/;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .g-recaptcha div {
   margin: 0 auto;
@@ -1675,348 +1666,6 @@ section.gallery .modal_image img {
   letter-spacing: normal;
   text-align: left;
   color: #181818;
-}
-@media only screen and (max-width: 480px) {
-  header .header-top {
-    display: none;
-  }
-  .main-menu .collapse {
-    max-height: initial;
-  }
-  .main-menu .navbar-collapse {
-    border: 0 !important;
-  }
-  .main-menu .navbar-collapse > .navigation {
-    border: 0 !important;
-    border-radius: 0;
-    background-color: transparent;
-    background: transparent;
-  }
-  .main-menu .navbar-collapse > .navigation > li {
-    background-color: #37b4f0 !important;
-  }
-  .main-menu .navbar-collapse > .navigation > li > a {
-    background-color: #37b4f0 !important;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-  }
-  .main-menu .navbar-collapse > .navigation > li > ul > li {
-    background-color: #37b4f0 !important;
-  }
-  .main-menu .navbar-collapse > .navigation > li > ul > li > a {
-    background-color: #37b4f0 !important;
-  }
-  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
-    background-color: #37b4f0 !important;
-  }
-  .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
-    background-color: #37b4f0 !important;
-  }
-  .main-menu .navbar-collapse .dropdown-btn span {
-    display: none;
-  }
-  section.title_section h2 {
-    text-align: center;
-  }
-  section.title_section p {
-    text-align: center;
-  }
-  .pull-left {
-    width: 210px;
-    max-width: 263px;
-  }
-  .logo {
-    width: 100%;
-  }
-  .logo a {
-    width: 100%;
-  }
-  .logo a img {
-    width: 100%;
-  }
-  .hero {
-    height: 146px;
-  }
-  .hero .slide {
-    height: 146px;
-  }
-  .hero .slide .title {
-    display: none;
-  }
-  section.tag {
-    padding: 15px 30px;
-  }
-  section.who-we-are .section-content p {
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    text-align: left;
-    color: #181818;
-  }
-  section.who-we-are .home_team_med,
-  section.who-we-are .home_care {
-    text-align: center;
-  }
-  section.who-we-are .home_team_med h4,
-  section.who-we-are .home_care h4 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #181818;
-  }
-  section.who-we-are .home_team_med p,
-  section.who-we-are .home_care p {
-    text-align: center;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    text-align: center;
-    color: #181818;
-  }
-  section.who-we-are .home_team_med a,
-  section.who-we-are .home_care a {
-    margin: 30px auto;
-  }
-  .main-menu .navbar-header {
-    padding: 24px 0;
-    padding-bottom: 6px;
-  }
-  .main-menu .navbar-header .movil_lang {
-    display: block;
-  }
-  .main-menu .navbar-header .movil_lang a {
-    font-size: 20px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #0d79aa;
-  }
-  .main-menu .navbar-header .movil_lang .navbar-toggle {
-    background-color: transparent;
-    border: 0;
-  }
-  .main-menu .navbar-header .movil_lang .navbar-toggle .icon-bar {
-    background-color: #0d79aa;
-  }
-  .emergencies {
-    display: none;
-  }
-  .calculator-imc .container .imc-message {
-    padding: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .calculator-imc .container .imc-message p {
-    padding: 20px 20px 0 40px;
-  }
-  .calculator-imc .container .imc-resultado {
-    padding: 60px 10px 10px 10px;
-  }
-  .miembro h3 {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 4.7px;
-    text-align: center;
-    color: #0d79aa;
-  }
-  .miembro .rasoc {
-    padding: 0 20px;
-  }
-  .our-department {
-    padding: 0;
-  }
-  .our-department h6 {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 4.7px;
-    text-align: left;
-    color: #181818;
-  }
-  .our-department h2 {
-    font-size: 25px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #181818;
-  }
-  .our-department .section-title {
-    padding: 30px;
-    padding-bottom: 50px;
-  }
-  .team h6 {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 4.7px;
-    text-align: left;
-    color: #181818;
-  }
-  .team h2 {
-    font-size: 25px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #181818;
-  }
-  .team .team-item h4 {
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-  }
-  .team .team-item p {
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-  }
-  .testimonial .desc {
-    width: 100%;
-    padding: 20px 10px;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #181818;
-  }
-  .testimonial .foot span {
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    text-align: center;
-    color: #181818;
-  }
-  .vallarta {
-    padding: 0 25px;
-  }
-  .vallarta h3 {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-    text-transform: initial;
-  }
-  .vallarta p {
-    width: 100%;
-    font-family: TitilliumWeb;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.88;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-  }
-  footer.main-footer .footer-1 {
-    padding: 0 20px;
-  }
-  footer.main-footer .footer-2,
-  footer.main-footer .footer-4 {
-    display: none;
-  }
-  footer.main-footer .footer-1 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-  }
-  footer.main-footer .footer-1 p {
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.44;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-  }
-  footer.main-footer .social {
-    padding-top: 30px;
-  }
-  footer.main-footer .aviso {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  footer.main-footer .logomovil {
-    text-align: center;
-    padding-bottom: 27px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .theme-green .header-mainbox .container {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .theme-green .header-mainbox .pull-left {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .theme-green .header-mainbox .outer-box {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .theme-green .header-mainbox .outer-box .main-menu .navigation > li > a {
-    max-width: 140px;
-    overflow: hidden;
-    padding: 22px 5px;
-  }
 }
 .radio_button {
   margin-bottom: 0;

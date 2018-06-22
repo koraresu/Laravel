@@ -10,6 +10,7 @@ use App\Doctor;
 use App\Testimonial;
 use App\Slideshow;
 use App\Contacto;
+use App\Gallery;
 use File;
 use LaravelLocalization;
 class HomeController extends Controller
@@ -67,6 +68,8 @@ class HomeController extends Controller
 		return view('aviso_privacidad',[]);
 	}
 	public function gallery(){
-		return view('galeria',[]);
+		return view('galeria',[
+			'images' => Gallery::get()
+		]);
 	}
 }

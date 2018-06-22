@@ -157,39 +157,7 @@
 
 
     //carousel-col-3 Column
-    if ($('.carousel-col-3').length) {
-        $('.carousel-col-3').owlCarousel({
-            loop:true,
-            margin:50,
-            nav:false,
-            dots:false,
-            smartSpeed: 500,
-            autoplay: 5000,
-            responsive: {
-                        0: {
-                            items: 1
-                        },
-                        480: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        750: {
-                            items: 2
-                        },
-                        960: {
-                            items: 3
-                        },
-                        1170: {
-                            items: 3
-                        },
-                        1300: {
-                            items: 3
-                        }
-                    }
-        });
-    }
+    
 
     //carousel-col-3 Column
     if ($('.carousel-col-4').length) {
