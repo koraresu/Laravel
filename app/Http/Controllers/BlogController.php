@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use \App\Blog;
+use \App\BlogTranslations;
+use LaravelLocalization;
 class BlogController extends Controller
 {
 	public function index(){
@@ -36,6 +38,23 @@ class BlogController extends Controller
     	]);
     }
     public function article($article){
-    	return view('blog.article',[]);
+    	$locale  = LaravelLocalization::getCurrentLocale();
+    	$olocale = '';
+
+    	if($locale == 'es'){
+
+    	}else{
+
+    	}
+
+    	$blogT = BlogTranslations::where('slug','=',$article)->where('locale','=', LaravelLocalization::getCurrentLocale() )->first();
+    	$blog = Blog::where('id','=',$blogT->id)->first();
+    	
+    	
+
+    	return view('blog.article', [
+    		'blog'       => $blog,
+    		'blog_trans' => $blogT
+    	]);
     }
 }

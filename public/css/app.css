@@ -1603,12 +1603,13 @@ section.gallery .modal_image img {
   -o-object-fit: contain;
      object-fit: contain;
   vertical-align: middle;
+  max-width: 100%;
 }
 .cirujano .sidebar .cirujano_asociado .member .image .helper {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  width: 1px;
+  width: 0;
 }
 .cirujano .sidebar .cirujano_asociado .member span {
   text-align: center;

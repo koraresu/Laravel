@@ -20,6 +20,7 @@ class CirujanosController extends Controller
     public function cirujano($cirujano){
     	$doctor = DoctorTranslation::where('url','=',$cirujano)->where('locale','=', LaravelLocalization::getCurrentLocale() )->first();
         
+        
     	$doctor_member = DoctorMember::where('doctor_id','=',$doctor->doctor_id)->get();
         $doctor_certificate = DoctorCertificate::where('doctor_id','=',$doctor->doctor_id)->get();
 		$description = $doctor->description;

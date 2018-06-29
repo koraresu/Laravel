@@ -1,6 +1,7 @@
 @extends('general')
-@section('title', Lang::get('title.home') )
-@section('description', Lang::get('description.home') )
+@section('title', Lang::get('seo.aviso-privacidad.title') )
+@section('keywords', Lang::get('seo.aviso-privacidad.keywords') )
+@section('description', Lang::get('seo.aviso-privacidad.description') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/hospital.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/hospital.png') }}); background-size: cover;">
 	<div class="container ">

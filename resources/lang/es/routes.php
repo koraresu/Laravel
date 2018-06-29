@@ -8,7 +8,7 @@
         'privacidad'                               => 'aviso-de-privacidad',
         'gallery'                                  => 'galeria',
         'blog'                                     => 'blog',
-        'blog-article'                             => 'blog-:slug',
+        'blog-article'                             => 'blog/:slug',
 
         'gastrointestinal'                         => 'cirugia-gastrointestinal',
         'gastrointestinal_apendicitis'             => 'cirugia-gastrointestinal/apendicitis',
