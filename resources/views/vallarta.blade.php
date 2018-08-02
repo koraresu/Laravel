@@ -2,13 +2,14 @@
 @section('title', Lang::get('seo.vallarta.title') )
 @section('keywords', Lang::get('seo.vallarta.keywords') )
 @section('description', Lang::get('seo.vallarta.description') )
+@section('h1', Lang::get('vallarta.title') . ' ' . Lang::get('vallarta.subtitle') )
 @section('content')
 <section class="overlay overlay_vallarta title_section " data-bg-image="{{ asset('images/puerto_vallarta.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/puerto_vallarta.png') }}); background-size: cover;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<h2>@lang('vallarta.title')</h2>
+					<div class="title">@lang('vallarta.title')</div>
 					<p>@lang('vallarta.subtitle')</p>
 				</div>
 			</div>

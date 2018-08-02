@@ -56,4 +56,20 @@
 		</div>
 	</div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "CMQ RIVIERA NAYARIT",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Heroes de Nacozari 280, Bucerías",
+    "addressLocality": "Riviera Nayarit",
+    "addressRegion": "Nayarit",
+    "postalCode": "63732"
+  },
+}
+</script>
+
 @endsection

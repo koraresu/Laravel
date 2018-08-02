@@ -1,60 +1,29 @@
-<html>
-  <head>
-    <title>{{ config('backpack.base.project_name') }} Error 400</title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        color: #B0BEC5;
-        display: table;
-        font-weight: 100;
-        font-family: 'Lato';
-      }
-
-      .container {
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-      .content {
-        text-align: center;
-        display: inline-block;
-      }
-
-      .title {
-        font-size: 156px;
-      }
-
-      .quote {
-        font-size: 36px;
-      }
-
-      .explanation {
-        font-size: 24px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <div class="title">400</div>
-        <div class="quote">Bad request.</div>
-        <div class="explanation">
-          <br>
-          <small>
-            <?php
-              $default_error_message = "Please return to <a href='".url('')."'>our homepage</a>.";
-            ?>
-            {!! isset($exception)? ($exception->getMessage()?$exception->getMessage():$default_error_message): $default_error_message !!}
-         </small>
-       </div>
+@extends('general')
+@section('title', Lang::get('seo.error.title') )
+@section('keywords', Lang::get('seo.error.keywords') )
+@section('description', Lang::get('seo.error.description') )
+@section('content')
+<section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/hospital.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/hospital.png') }}); background-size: cover;">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner-title">
+          <h2>@lang('error.400.title')</h2>
+          <p>@lang('error.400.subtitle')</p>
+        </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</section>
+<section class="error cont_info">
+  <div class="container">
+    <div class="section-content">
+      <h2>@lang('error.400.error')</h2>
+      <h3>@lang('error.400.status')</h3>
+      <div class="message"> @lang('error.400.desc')  </div>
+      <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"> RETURN HOME </a>
+    </div>
+  </div>
+</section>
+
+@endsection

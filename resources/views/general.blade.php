@@ -6,7 +6,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>@yield('title')</title>
 
+<link rel="apple-touch-icon" href="{{ asset('favicon.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('favicon-72.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('favicon-114.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ asset('favicon-120.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('favicon-144.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ asset('favicon-152.png') }}" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWZBZK');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+(function(h,e,a,t,m,p) {
+m=e.createElement(a);m.async=!0;m.src=t;
+p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+})(window,document,'script','https://u.heatmap.it/log.js');
+</script>
+
+<meta name="title" content="@yield('title')">
 <meta name="description" content="@yield('description')">
+
+<meta name=""DC.title" content="@yield('title')" />
+ <meta name="geo.region" content="MX-JAL" />
+ <meta name="geo.placename" content="Puerto Vallarta" />
+ <meta name="geo.position" content="20.641706;-105.231316" />
+ <meta name="ICBM" content="20.641706, -105.231316" />
+
+ <meta property="og:type" content="place">
+ <meta property=""og:title" content="@yield('title')">
+ <meta property="og:url" content="http://drsergiodelhoyo.com/es">
+ <meta property="og:image" content="http://drsergiodelhoyo.com/images/logo/logo.png"> 
+ <meta property="og:description" content="" />
+ <meta property="place:location:latitude" content="20.647058">
+ <meta property="place:location:longitude" content="-105.220184">
 
 <!-- Stylesheets -->
 <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -35,6 +72,10 @@
 <!--Change Class in body to change color Scheme for Homepages  ie theme-green , theme-green -->
 
 <body class="theme-green">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWZBZK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="page-wrapper"> 
   
   <!-- start preloader -->
@@ -80,11 +121,9 @@
                 <li class="dropdown">
                     <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}"> @lang('home.nosotros') </a>
                     <ul>
-                      @if (LaravelLocalization::getCurrentLocale() == "en")
-                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('en/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
-                      @else
-                        <li><a href="{{ LaravelLocalization::getNonLocalizedURL('es/dr-sergio-cirujano-bariatrico') }}">@lang('home.dr-title-url') </a></li>
-                      @endif
+
+                      
+                        <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}">@lang('home.dr-title-url') </a></li>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}">@lang('home.team-title-url')</a></li>
                     </ul>
                 </li>
@@ -132,7 +171,10 @@
         <div class="clearfix">
           <div class="logo_cont col-lg-3 col-md-4 pull-left">
             <div class="logo">
-              <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"><img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green"></a>
+              <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}">
+                <h1>@yield('h1')</h1>
+                <img src="{{ asset('images/logo/logo.png') }}" alt="" title="Green">
+              </a>
             </div>
 
           </div>
@@ -201,7 +243,9 @@
                   </li>
                   <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.testimonios') }}"> @lang('menu.testimonio') </a>
                   </li>
-                  <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('menu.blog') </a></li>
+                  <!--
+                    <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('menu.blog') </a></li>
+                  -->
                   <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('menu.galeria') </a>
                   
                   </li>
@@ -285,12 +329,17 @@
           <div class="footer-4">
             <h4> @lang('home.mapa-sitio') </h4>
             <ul>
+
               <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , '/') }}"> @lang('home.home') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal') }}"> @lang('home.cirugia-gas') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica') }}"> @lang('home.cirugia-bar') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital') }}"> @lang('home.hospitales') </a> </li>
-              <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('home.blog') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.cirujanos_bariatricos') }}"> @lang('home.nosotros') </a></li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.testimonios') }}"> @lang('menu.testimonio') </a>
+                  </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.hospital_cmq_premiere') }}"> @lang('home.hospitales') </a> </li>
               <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}"> @lang('home.galeria') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getNonLocalizedURL('blog') }}"> @lang('home.blog') </a> </li>
+              <li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.contacto') }}" class="contacto">@lang('home.contacto') </a> </li>
+            
+              
           </div>
 
           

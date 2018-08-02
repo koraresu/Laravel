@@ -2,6 +2,7 @@
 @section('title', $seo_title )
 @section('keywords', $seo_keywords )
 @section('description', $seo_description )
+@section('h1', $title .' '. $name .' '. Lang::get('home.nosotros') )
 @section('content')
 
 
@@ -11,7 +12,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<h2>{{ $title}} {{ $name}}</h2>
+					<div class="title">{{ $title}} {{ $name}}</div>
 					<p>@lang('home.nosotros')</p>
 				</div>
 			</div>
@@ -80,25 +81,25 @@
 		</div>
 	</div>
 </section>
-@if(count( $certificates ) > 0)
-	<section class="gallery">
-		<div class="container">
-			<div class="section-title">
-				<h2 class="text-uppercase small-line text">@lang('dr_sergio.certificados')</h2>
-			</div>
-			<div class="section-content">
-				<div class="row">
+	@if(count( $certificates ) > 0)
+		<section class="gallery">
+			<div class="container">
+				<div class="section-title">
+					<h2 class="text-uppercase small-line text">@lang('cirujano.certificados')</h2>
+				</div>
+				<div class="section-content">
+					<div class="row">
 
-					@foreach($certificates as $certificate)
+						@foreach($certificates as $certificate)
 						<div class="col-md-3">
-							<a href="#">
-								<img src="{{ url('/images/certificate/' . $certificate->photo ) }}" />
+							<a href="#" class="modal_image">
+								<img src="{{ url('/upload/certificate/' . $certificate->photo ) }}" />
 							</a>
 						</div>
-					@endforeach
+						@endforeach
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-@endif
+		</section>
+	@endif
 @endsection

@@ -2,13 +2,14 @@
 @section('title', Lang::get('seo.staff.title') )
 @section('keywords', Lang::get('seo.staff.keywords') )
 @section('description', Lang::get('seo.staff.description') )
+@section('h1', Lang::get('obesidad.gastroenterologo.title') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/bariatrica.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/bariatrica.png') }}); background-size: cover;">
 	<div class="container ">
 	  <div class="row">
 		<div class="col-md-12">
 		  <div class="inner-title">
-			<h2>@lang('staff.title')</h2>
+			<div class="title">@lang('staff.title')</div>
 			<p>@lang('staff.subtitle')</p>
 		  </div>
 		</div>
@@ -29,6 +30,7 @@
 							</a>
 						</div>
 						<div class="img-title">
+							<h2 class="h"> {{ $doctor->title }} {{ $doctor->name }} {{ $doctor->speciality }} </h2>
 							<h4><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}"> {{ $doctor->title }} {{ $doctor->name }} </a> </h4>
 							<p> {{ $doctor->speciality }} </p>
 						</div>
@@ -40,14 +42,14 @@
 		  <h2 class="text-uppercase small-line text">@lang('obesidad.gastroenterologo.title')</h2>
 			<p>@lang('obesidad.gastroenterologo.paragraph')</p>
 			<ul>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.abdominal')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.estrenimiento')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.vesicula')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.hemorroides')</a> </li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.abdominal') </h3></li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.estrenimiento') </h3></li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.vesicula') </h3></li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.hemorroides') </h3></li>
 				<li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}">@lang('obesidad.gastroenterologo.lista.apendicitis')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.gastritis')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.colitis')</a> </li>
-				<li> <a href="">@lang('obesidad.gastroenterologo.lista.colon')</a> </li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.gastritis') </h3></li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.colitis') </h3></li>
+				<li> <h3> @lang('obesidad.gastroenterologo.lista.colon') </h3></li>
 				<li> <a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_hernias') }}">@lang('obesidad.gastroenterologo.lista.hernias')</a> </li>
 			</ul>
 		</div>

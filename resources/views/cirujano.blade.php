@@ -2,13 +2,14 @@
 @section('title', $seo_title )
 @section('keywords', $seo_keywords )
 @section('description', $seo_description )
+@section('h1', $title .' '. $name .' '. Lang::get('home.nosotros') )
 @section('content')
 	<section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/bariatrica.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/bariatrica.png') }}); background-size: cover;">
 		<div class="container ">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="inner-title">
-						<h2>{{ $title}} {{ $name}}</h2>
+						<div class="title">{{ $title}} {{ $name}}</div>
 						<p>@lang('home.nosotros')</p>
 					</div>
 				</div>
@@ -101,7 +102,23 @@
 		</div>
 	</section>
 	@if(count( $certificates ) > 0)
-		<section class="gallery">
+		<section class="gallery visible-sm visible-xs">
+			<div class="section_wrap">
+				<div class="row">
+					<div class="carousel-col-3">
+						@foreach($certificates as $certificate)
+							<div class="col-md-3">
+								<a href="#" class="modal_image">
+									<img src="{{ url('/upload/certificate/' . $certificate->photo ) }}" />
+								</a>
+							</div>
+						@endforeach
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery hidden-sm hidden-xs">
 			<div class="container">
 				<div class="section-title">
 					<h2 class="text-uppercase small-line text">@lang('cirujano.certificados')</h2>
@@ -121,4 +138,9 @@
 			</div>
 		</section>
 	@endif
+
+
+	
+
+
 @endsection

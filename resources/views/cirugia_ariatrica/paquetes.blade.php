@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<h2>@lang('paquetes_bariatrica.title')</h2>
+					<div class="title">@lang('paquetes_bariatrica.title')</div>
 					<p>@lang('paquetes_bariatrica.subtitle')</p>
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
 							<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
-							<h5><a href="#"> @lang('paquete_bariatrica.manga') </a></h5>
+							<h3><a href="#"> @lang('paquete_bariatrica.manga') </a></h3>
 						</div>
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
 							<img src="{{ asset('images/cirugia/bypass_icon.png') }}" />
-							<h5><a href="#"> @lang('paquete_bariatrica.bypass') </a></h5>
+							<h3><a href="#"> @lang('paquete_bariatrica.bypass') </a></h3>
 						</div>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
 							<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
-							<h5><a href="#"> @lang('paquete_bariatrica.switch') </a></h5>
+							<h3><a href="#"> @lang('paquete_bariatrica.switch') </a></h3>
 						</div>
 					</div>
 				</div>

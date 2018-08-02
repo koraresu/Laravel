@@ -1,3 +1,5 @@
+bg_claro = #77D6CB
+bg_obscuro = #0D79AA
 body,html
 	font-family 'Titillium Web', sans-serif
 .container
@@ -18,6 +20,29 @@ body,html
 		.container
 			padding-top 0
 			padding-bottom 0
+			.logo_cont
+				.logo
+					a
+						h1
+							height 0
+							overflow hidden
+h2.h
+	height 0
+	overflow hidden
+h3
+	text-transform uppercase
+	letter-spacing 0.5px
+.sidebar
+	.title
+		font-size: 24px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.21;
+		letter-spacing: normal;
+		text-align: left;
+		color: #181818;
+		margin-top: 30px;
 .hero
 	height 550px
 	.slide
@@ -25,6 +50,53 @@ body,html
 	.hero-slider
 		.owl-controls
 			height 0
+.error
+	&.cont_info
+		.section-content
+			width 100%
+			max-width 360px
+			text-align center
+			margin 0 auto
+			h2
+			h3
+				font-family 'Titillium Web', sans-serif
+				font-size 40px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height 1
+				letter-spacing normal
+				text-align center
+				color #181818
+			h3
+				color bg_claro
+				font-size 80px
+				line-height 0.81
+			.message
+				font-family 'Titillium Web', sans-serif
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align center
+				color #181818
+				padding 20px 0
+			a
+				font-family 'Titillium Web', sans-serif
+				font-size 14px
+				font-weight bold
+				font-style normal
+				font-stretch normal
+				line-height normal
+				letter-spacing normal
+				text-align center
+				color bg_claro
+				border solid 2px bg_claro
+				padding 8px 20px
+				display inline-block
+				margin 0
 #imagemodal
 #mapmodal
 	.modal-content
@@ -60,7 +132,7 @@ body,html
 		.navigation
 			& > li
 				& > a
-					color #0d79aa
+					color bg_obscuro
 					font-family 'Titillium Web', sans-serif
 					font-weight bold
 					font-style normal
@@ -73,21 +145,21 @@ body,html
 					text-transform uppercase
 				&:hover
 					& > a
-						color #0d79aa
+						color bg_obscuro
 				&.current
 					& > a
-						color #0d79aa
+						color bg_obscuro
 				&.current-menu-item
 					& > a
-						color #0d79aa
+						color bg_obscuro	
 				& > ul
-					background-color #37b4f0
+					background-color bg_obscuro
 					& > li
 						&:hover
 						&:focus
 						&:active
-							background-color #0d79aa !important
-							background #0d79aa !important
+							background-color bg_obscuro !important
+							background bg_obscuro !important
 						a
 							text-transform uppercase
 .header-top
@@ -167,7 +239,7 @@ body,html
 		&:before
 			display none
 		.title
-			span
+			.tit
 				font-size 20px
 				font-weight normal
 				font-style normal
@@ -176,8 +248,7 @@ body,html
 				letter-spacing normal
 				text-align center
 				color #ffffff
-
-			h1
+			.sub
 				font-size 72px
 				font-weight bold
 				font-style normal
@@ -191,7 +262,7 @@ body,html
 		top 0
 		right 0
 		z-index 2
-		background-color #0d79aa
+		background-color bg_obscuro
 		padding 15px 30px
 		&:before
 			content ""
@@ -200,7 +271,7 @@ body,html
 			left 0
 			bottom 0
 			width 14px
-			background-color #37b4f0
+			background-color bg_claro
 		.icon-movil
 			font-size 63px
 			color #FFF
@@ -224,7 +295,7 @@ body,html
 					font-size 29px
 					font-weight bold
 .tag
-	background-color #37b4f0
+	background-color bg_obscuro
 	padding 21px 0
 	span
 		font-family 'Titillium Web', sans-serif
@@ -269,7 +340,7 @@ body,html
 			bottom 0
 			right 10px
 			i
-				color #0d79aa
+				color bg_claro
 	select
 		display block
 		width 100%
@@ -308,9 +379,9 @@ body,html
 					line-height 1.88
 					letter-spacing normal
 					text-align left
-					color #0d79aa
+					color bg_claro
 				span
-					color #0d79aa
+					color bg_claro
 			a.btn
 				font-family 'Titillium Web', sans-serif
 				font-size 14px
@@ -320,10 +391,10 @@ body,html
 				line-height normal
 				letter-spacing normal
 				text-align center
-				color #0d79aa
+				color bg_claro
 				max-width 166px
 				height 45px
-				border solid 2px #0d79aa
+				border solid 2px bg_claro
 				padding 8px 20px
 				margin-top 45px
 				display inline-block
@@ -337,13 +408,13 @@ body,html
 					background-color #ffffff
 					border solid 1px #979797
 				button
-					background-color #0d79aa
+					background-color bg_claro
 					line-height 55px
 					span
 						font-size 25px
 		.popular-tags
 			a
-				background-color #0d79aa
+				background-color bg_claro
 				font-family 'Titillium Web', sans-serif
 				font-size 14px
 				font-weight normal
@@ -365,7 +436,7 @@ body,html
 							font-style normal
 							font-stretch normal
 							letter-spacing normal
-							color #0d79aa
+							color bg_claro
 		.sidebar-title
 			margin-bottom 10px
 			h2
@@ -389,7 +460,7 @@ body,html
 	.home_team_med,.home_care
 		span
 			font-size 60px
-			color #0d79aa
+			color bg_claro
 		h4
 			text-transform uppercase
 			font-family 'Titillium Web', sans-serif
@@ -420,25 +491,25 @@ body,html
 			line-height normal
 			letter-spacing normal
 			text-align center
-			color #0d79aa
+			color bg_claro
 			width 166px
 			height 45px
-			border solid 2px #0d79aa
+			border solid 2px bg_claro
 			padding 8px 20px
 			margin-top 45px
 			display block
 	.mb20
 		span
-			color #0d79aa
+			color bg_claro
 .calculator-imc
-	background-color #37b4f0
+	background-color bg_obscuro
 	.container
 		.imc-message
 			h3
 				font-family 'Titillium Web', sans-serif
 				color #FFF
 				span
-					color #0d79aa
+					color bg_claro
 			p
 				font-family 'Titillium Web', sans-serif
 				color #FFF
@@ -478,12 +549,12 @@ body,html
 						line-height 1.88
 						letter-spacing normal
 						text-align left
-						color #0d79aa
+						color bg_claro
 						&::-webkit-input-placeholder /* Chrome/Opera/Safari */
 						&::-moz-placeholder /* Firefox 19+ */
 						&:-ms-input-placeholder /* IE 10+ */
 						&:-moz-placeholder /* Firefox 18- */
-							color #0d79aa
+							color bg_claro
 			.botones
 				margin-top 25px		
 				.borrar
@@ -497,8 +568,9 @@ body,html
 						line-height normal
 						letter-spacing normal
 						text-align center
-						color #0d79aa
-						border solid 2px #ffffff
+						color bg_claro
+						border solid 2px #FFFFFF
+						color #FFFFFF
 						background-color transparent
 						padding 8px 20px
 						text-transform uppercase
@@ -506,8 +578,8 @@ body,html
 						width 100%
 				.borrar
 					input
-						color #0d79aa
-						border solid 2px #0d79aa
+						color bg_claro
+						border solid 2px bg_claro
 						box-sizing border-box
 			
 		
@@ -581,8 +653,6 @@ body,html
 				padding-bottom 0
 	.imc-resultado
 		padding 40px 0 0 40px
-		ul
-			display none !important
 .miembro
 	background-color #f6f6f6
 	.container
@@ -596,7 +666,7 @@ body,html
 				line-height normal
 				letter-spacing 4.7px
 				text-align center
-				color #0d79aa
+				color bg_obscuro
 				text-transform uppercase
 				margin-bottom 40px
 			.rasoc
@@ -621,7 +691,7 @@ body,html
 					display block
 					
 .main-footer
-	background-color #37b4f0
+	background-color bg_obscuro
 	.container
 		padding-bottom 5px
 	ul
@@ -638,6 +708,7 @@ body,html
 				letter-spacing normal
 				text-align left
 				color #FFFFFF
+				text-transform uppercase
 	.formadepago
 		h4
 			padding 0
@@ -735,26 +806,25 @@ body,html
 				content: "";
 				
 			&::before
-				border-left: 1px solid #fff;
-				border-right: 1px solid #fff;
-				transform: scaleY(0);
-				transform-origin: 100% 0 0;
+				border-left 1px solid #fff
+				border-right 1px solid #fff
+				transform scaleY(0)
+				transform-origin 100% 0 0
 			&::after
-				border-bottom: 1px solid #fff;
-				border-top: 1px solid #fff;
-				transform: scaleX(0);
-				transform-origin: 0 100% 0;
+				border-bottom 1px solid #fff
+				border-top 1px solid #fff
+				transform scaleX(0)
+				transform-origin 0 100% 0
 			.service-box-overlay
-				background-color: #37b4f0;
-				bottom: 0;
-				left: 0;
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: 2;
-				transition: all 0.3s ease 0s;
-				background-color: #37b4f0;
-				opacity: 0.9;
+				background-color bg_obscuro
+				bottom 0
+				left 0
+				position absolute
+				right 0
+				top 0
+				z-index 2
+				transition all 0.3s ease 0s
+				opacity 0.9
 			& > i 
 				color: #FFF;
 				display: block;
@@ -767,9 +837,12 @@ body,html
 				position relative
 				z-index 4
 				height 100%
+				padding 30px 0
 				a
 					color #FFF
 				h5
+					font-size 1.143em
+					letter-spacing 0.5px
 					text-transform uppercase
 					display inline-block
 					vertical-align middle
@@ -794,7 +867,7 @@ body,html
 					&:after
 						content initial
 				.img-title
-					background-color #37b4f0
+					background-color bg_obscuro
 					h4
 						font-size: 18px;
 						font-weight: bold;
@@ -807,8 +880,107 @@ body,html
 						font-family 'Titillium Web', sans-serif
 					p
 						text-transform uppercase
+						color #FFF
+						a
+							color #FFF
 		.owl-controls
 			display none
+.testimoniales
+	background-color: #f6f6f6;
+	padding-bottom 0
+	padding-top 0
+	h5
+		font-family 'Titillium Web', sans-serif
+		font-size 14px
+		font-weight normal
+		font-style normal
+		font-stretch normal
+		line-height normal
+		letter-spacing 4.7px
+		text-align center
+		color bg_claro
+	h3
+		font-family 'Titillium Web', sans-serif
+		font-size: 30px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #181818;
+	.desc
+		margin 0 auto
+		margin-bottom 30px
+		width 580px
+		font-family 'Titillium Web', sans-serif
+		font-size 14px
+		font-weight normal
+		font-style normal
+		font-stretch normal
+		line-height normal
+		letter-spacing 2px
+		text-align center
+		color #181818
+	.testi
+		padding 5px 10px
+		.cont
+			background-color #FFF
+			.img_desc
+				padding 30px 20px
+				font-family 'Titillium Web', sans-serif
+				font-size 16px
+				font-weight normal
+				font-style normal
+				font-stretch normal
+				line-height 1.88
+				letter-spacing normal
+				text-align left
+				color #181818
+				p
+					position relative
+					line-height 1.2em
+					text-align justify
+					margin-right -1em
+					padding-right 1em
+				.img_name
+				.img_surg
+					font-family 'Titillium Web', sans-serif
+					font-size 16px
+					font-weight normal
+					font-style normal
+					font-stretch normal
+					line-height 1.88
+					letter-spacing normal
+					text-align left
+					color #181818
+					min-height 30px
+				.img_name
+					font-weight bold
+			.img_cont
+				width 100%
+				img
+					width 100%
+	.foot
+		text-align center
+		a.more
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: bg_claro;
+			border: solid 2px bg_claro;
+			padding: 8px 20px;
+			display: inline-block;
+			margin 0
+			margin-top 35px
+			margin-bottom 20px
+		span
+			display block
 .testimonial
 	background-color: #f6f6f6;
 	padding-bottom 0
@@ -822,7 +994,7 @@ body,html
 		line-height normal
 		letter-spacing 4.7px
 		text-align center
-		color #0d79aa
+		color bg_obscuro
 	h3
 		font-family 'Titillium Web', sans-serif
 		font-size: 30px;
@@ -899,8 +1071,8 @@ body,html
 			line-height: normal;
 			letter-spacing: normal;
 			text-align: center;
-			color: #0d79aa;
-			border: solid 2px #0d79aa;
+			color: bg_obscuro;
+			border: solid 2px bg_obscuro;
 			padding: 8px 20px;
 			display: inline-block;
 			margin 0
@@ -981,7 +1153,7 @@ section.title_section
 	.container
 		padding-top 100px
 		padding-bottom 100px
-	h2
+	.title
 		font-family 'Titillium Web', sans-serif
 		font-size 35px
 		font-weight bold
@@ -1024,7 +1196,7 @@ ul.lista
 			width 8px
 			height 8px
 			border-radius 20px
-			background-color #0d79aa
+			background-color bg_claro
 			position absolute
 			top 12px
 			left 0
@@ -1160,7 +1332,7 @@ ul.lista
 				width 8px
 				height 8px
 				border-radius 20px
-				background-color #0d79aa
+				background-color bg_claro
 				position absolute
 				top 12px
 				left 0
@@ -1208,7 +1380,7 @@ ul.lista
 			line-height normal
 			letter-spacing normal
 			text-align right
-			color #0d79aa
+			color bg_claro
 			text-transform uppercase
 .contacto
 	.sidebar
@@ -1227,7 +1399,7 @@ ul.lista
 			line-height normal
 			letter-spacing normal
 			text-align right
-			color #0d79aa
+			color bg_claro
 			text-transform uppercase
 	
 	.comunicacion
@@ -1238,7 +1410,7 @@ ul.lista
 		.text-center
 			text-align center
 		input[type="submit"]
-			border solid 2px #0d79aa
+			border solid 2px bg_claro
 			font-family 'Titillium Web', sans-serif
 			background-color #FFF
 			border-radius 0
@@ -1249,7 +1421,7 @@ ul.lista
 			line-height normal
 			letter-spacing normal
 			text-align center
-			color #0d79aa
+			color bg_claro
 			display block
 			
 			padding 6px 30px
@@ -1299,6 +1471,7 @@ ul.lista
 		ul
 			li
 				a
+				h3
 					font-family 'Titillium Web', sans-serif
 					font-size 16px
 					font-weight bold
@@ -1308,6 +1481,8 @@ ul.lista
 					letter-spacing normal
 					text-align left
 					color #181818
+				h3
+					text-transform initial
 .contacto
 .consultorio
 	.comunicacion
@@ -1384,7 +1559,29 @@ section.gallery
 	padding-bottom 56.25% /*16:9*/
 	padding-top 30px
 	height 0
-	overflow hidden
+	/* overflow hidden */
+	margin-bottom 75px
+	.bottom
+		position absolute
+		bottom -50px
+		left 0
+		right 0
+		text-align center
+		a
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			color: bg_obscuro;
+			border: solid 2px bg_obscuro;
+			padding: 8px 20px;
+			display: inline-block;
+			margin 0
+			
 .video iframe,
 .video object,
 .video embed
@@ -1411,7 +1608,7 @@ section.gallery
 	-ms-transition all 500ms ease
 	-o-transition all 500ms ease
 	a
-		background-color #0d79aa
+		background-color bg_claro
 		color #FFF
 		padding 6px 10px
 		border 1px solid #FFF
@@ -1420,7 +1617,7 @@ section.gallery
 		&:active
 		&:hover
 			color #FFF
-			background-color #0d79aa
+			background-color bg_claro
 	&.show
 		
 		z-index 1000
@@ -1522,7 +1719,7 @@ section.gallery
 						content ""
 						width 10px
 						height 10px
-						background-color #0d79aa
+						background-color bg_claro
 						position absolute
 						top 6px
 						left 6px
@@ -1534,12 +1731,15 @@ section.gallery
 			height 26px
 			width 26px
 			background-color #FFF
-			border 2px solid #0d79aa
+			border 2px solid bg_claro
 			border-radius 100%
 	span
 		display inline-block
 		height 30px
 		vertical-align top
+.main-header
+	.header-top
+		background-color bg_obscuro
 .header-top
 	ul.info-nav
 		li.dropdown
@@ -1581,7 +1781,7 @@ section.gallery
 						-ms-transition: all 500ms ease;
 						-o-transition: all 500ms ease;
 					&:hover
-						background-color #0d79aa
+						background-color bg_claro
 			&:hover
 				ul
 					visibility visible
@@ -1589,3 +1789,6 @@ section.gallery
 					top 150%
 			.dropdown-btn
 				display none
+.scroll-to-top
+	color #FFF
+	border 1px solid #FFF

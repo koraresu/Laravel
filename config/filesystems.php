@@ -62,7 +62,11 @@ return [
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
         ],
-
+        'uploads' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+            //'root' => '/home/kh48a7xdak01/public_html/uploads',
+        ],
     ],
 
 ];

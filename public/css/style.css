@@ -2861,13 +2861,6 @@ Bx Slider
 	float: left;
 }
 
-.owl-prev:hover,
-.owl-next:hover {
-    background: #0798BC !important;
-    color: #FFF !important;
-    border: 1px solid #0798BC !important;
-}
-
 /*** 
 
 ====================================================================

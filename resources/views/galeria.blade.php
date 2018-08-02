@@ -2,13 +2,14 @@
 @section('title', Lang::get('seo.gallery.title') )
 @section('keywords', Lang::get('seo.gallery.keywords') )
 @section('description', Lang::get('seo.gallery.description') )
+@section('h1', Lang::get('gallery.title') )
 @section('content')
 	<section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/hospital.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/hospital.png') }}); background-size: cover;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<h2>@lang('gallery.title')</h2>
+					<div class="title">@lang('gallery.title')</div>
 					<p>@lang('gallery.subtitle')</p>
 				</div>
 			</div>
@@ -39,6 +40,18 @@
                             </div>
                         </div>
                         @endforeach
+
+                        <div class="portfolio-item item-two">
+                            <div class="thumb">
+                                <img src="https://img.youtube.com/vi/6CqYHG3WiN8/maxresdefault.jpg" alt="">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-btn">
+                                        <a href="https://www.youtube.com/watch?v=6CqYHG3WiN8" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

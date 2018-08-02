@@ -2,13 +2,14 @@
 @section('title', Lang::get('seo.imc.title') )
 @section('keywords', Lang::get('seo.imc.keywords') )
 @section('description', Lang::get('seo.imc.description') )
+@section('h1', Lang::get('imc.full.title') . ' ' . Lang::get('imc.full.subtitle') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/bariatrica.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/bariatrica.png') }}); background-size: cover;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<h2>@lang('imc.full.title')</h2>
+					<div class="title">@lang('imc.full.title')</div>
 					<p>@lang('imc.full.subtitle')</p>
 				</div>
 			</div>
@@ -65,10 +66,10 @@
 
 					<div class="botones col-md-12">
 						<div class="borrar col-md-6 col-sm-6  col-xs-6">
-							<input type="reset" value="Borrar" />
+							<input type="reset" value="@lang('home.imc.borrar')" />
 						</div>
 						<div class="calcular col-md-6 col-sm-6  col-xs-6">
-							<input type="button" value="Calcular" />
+							<input type="button" value="@lang('home.imc.calcular')" />
 						</div>
 					</div>
 

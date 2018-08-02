@@ -31,6 +31,7 @@
     	'cmq-nayarit'     => 'CMQ Riviera Nayarit',
     	'consultorio'     => 'Consultorio',
     	'aviso-privacidad'=> 'Aviso de Privacidad',
+        'conozca-mas'     => 'Conozca Más',
     	'who-we-are'      => 'El Dr. Sergio del Hoyo es cirujano gastrointestinal (gastroenterólogo) con especialidad en laparoscopia (cirugía de mínima invasión), cirugía de obesidad y enfermedades metabólicas.Cuenta con 15 años de experiencia en cirugía para perder peso y enfermedades gastrointestinales, así como más de 7 años practicando cirugía bariátrica en México (Manga gástrica y Bypass gástrico).',
     	'who-team'        => 'Equipo Médico Certificado',
     	'who-team-desc'   => 'Somos un equipo conformado por especialistas en Gastroenterología, Cirugía Gastrointestinal, Anestesiología, Medicina interna, Terapia intensiva, Psicología y Nutrición. Disponibles siempre a ayudarle en todo momento que usted lo requiera. Bilingües en los idiomas español e inglés.',
@@ -56,11 +57,13 @@
                 'imperial' => '400 lb'
             ],
 			'tu-imc' => 'Su IMC es de:',
+            'borrar' => 'Borrar',
+            'calcular' => 'Calcular',
 		],
     	'es-miembro' => 'El Dr. Sergio del Hoyo es miembro de:',
-    	'es-miembro-asoc-mex'  => 'Asociación Mexicana de Cirugía General',
+    	'es-miembro-asoc-mex'  => 'Colegio Mexicano de Cirugía para la Obesidad',
     	'es-miembro-asoc-end'  => 'Asociación Mexicana de Cirugía Endoscópica, A.C.',
-    	'es-miembro-asoc-mex1' => 'Asociación Mexicana de Cirugía General',
+    	'es-miembro-asoc-mex1' => 'International Federation for the Surgery of Obesity and Metabolic Disorders',
     	'es-miembro-asoc-cir'  => 'Consejo Mexicano de Cirugía General, A.C.',
         'gastro' => [
             'subtitle' => 'Atención Especializada de Enfermedades Gastrointestinales',
@@ -90,6 +93,9 @@
             'desc' => 'Puerto Vallarta es uno de los mejores destinos de turismo médico y de cirugía bariátrica en México. Un lugar hermoso con playas y atardeceres espectaculares, en donde usted no sólo vendrá a realizarse una operación, sino que sentirá que está de vacaciones en un verdadero paraíso.',
             'more' => 'LEER MÁS',
         ],
+        'video' => [
+            'button' => 'VER VIDEO COMPLETO',
+        ],
         'citas' => [
             'title' => 'CITAS',
             'phone' => '322 223 5521',
@@ -107,6 +113,20 @@
         'slider2' => [
             'title' => 'NUESTRAS CIRUGÍAS SON REALIZADAS CON',
             'subtitle' => 'LAPAROSCOPÍA'
+        ],
+        'meses' => [
+            '1'   => 'Enero',
+            '2'   => 'Febrero',
+            '3'   => 'Marzo',
+            '4'   => 'Abril',
+            '5'   => 'Mayo',
+            '6'   => 'Junio',
+            '7'   => 'Julio',
+            '8'   => 'Agosto',
+            '9'   => 'Septiembre',
+            '10'  => 'Octubre',
+            '11'  => 'Noviembre',
+            '12'  => 'Diciembre'
         ]
 	];
 ?>

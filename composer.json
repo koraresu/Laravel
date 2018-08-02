@@ -6,16 +6,19 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "backpack/base": "0.7.x",
+        "backpack/base": "^0.7.25",
+        "backpack/crud": "^3.2.27",
         "dimsav/laravel-translatable": "7.*",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "mcamara/laravel-localization": "1.2.*"
     },
     "require-dev": {
+        "backpack/generators": "^1.1",
+        "laracasts/generators": "^1.1",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0"
+        "phpunit/phpunit": "~5.7"
     },
     "autoload": {
         "classmap": [

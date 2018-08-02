@@ -150,5 +150,19 @@
 		</div>
 	</div>
 </section>
-
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org/",
+	  "@type": "Organization",
+	  "name": "NEOmédica",
+	  "address": {
+	    "@type": ""PostalAddress"",
+	    "streetAddress": "Av. Los Tules 160 int. 9 | Col. Díaz Ordaz",
+	    "addressLocality": "Puerto Vallarta",
+	    "addressRegion": "Jalisco",
+	    "postalCode": "48310"
+	  },
+	  "telephone": "322 223 5521"
+	}
+</script>
 @endsection

@@ -2,6 +2,7 @@
 @section('title', Lang::get('seo.obesity.title') )
 @section('keywords', Lang::get('seo.obesity.keywords') )
 @section('description', Lang::get('seo.obesity.description') )
+@section('h1', Lang::get('obesidad.title') . ' ' . Lang::get('obesidad.subtitle') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title/bariatrica.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title/bariatrica.png') }}); background-size: cover;">
 	<div class="container ">
@@ -33,7 +34,7 @@
 
 		</div>
 		<div class="col-md-4 sidebar" style="visibility: visible; animation-name: fadeInRight;">
-		  <h2 class="text-uppercase small-line text">@lang('obesidad.gastroenterologo.title')</h2>
+		  <div class="title text-uppercase small-line text">@lang('obesidad.gastroenterologo.title')</div>
 			<p>@lang('obesidad.gastroenterologo.paragraph')</p>
 			<ul>
 				<li> @lang('obesidad.gastroenterologo.lista.abdominal') </li>

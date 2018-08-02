@@ -379,6 +379,9 @@
         type: 'image'
         // other options
     });
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
 
 
 	/* ---------------------------------------------------------------------------

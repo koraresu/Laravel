@@ -178,7 +178,10 @@ return [
         App\Providers\RouteServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Backpack\Base\BaseServiceProvider::class,
+        //servicios extras requeridos
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Backpack\Base\BaseServiceProvider::class,
+        Backpack\CRUD\CrudServiceProvider::class,
     ],
 
     /*
@@ -227,6 +230,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        
         'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
     ],
 

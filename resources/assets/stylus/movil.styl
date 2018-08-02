@@ -15,6 +15,25 @@
 			.outer-box
 				padding-right 0
 				padding-left 0
+	.scroll-to-top
+		display none !important
+	.gallery
+		.section-title
+			h2
+				color #3f3a36
+	section.gallery
+		.col-md-3
+			padding 0
+		.modal_image
+			display block
+			height 223px
+			overflow hidden
+			img
+				width 100%
+		.portfolio
+			&.col-4
+				.portfolio-item
+					width 100% !important
 	.main-menu
 		.collapse
 			max-height initial
@@ -57,7 +76,7 @@
 					display none
 	.float_contact
 		position fixed
-		bottom 100px
+		bottom -1px
 		right 0
 		left 0
 		ul
@@ -101,6 +120,37 @@
 				display none
 	section.tag
 		padding 15px 30px
+	.contacto
+	.sidebar
+		a
+			width 100%
+			img
+				width 100%
+		p
+			text-align left
+		a.map
+			font-family 'Titillium Web', sans-serif
+			font-size 18px
+			font-weight bold
+			font-style normal
+			font-stretch normal
+			line-height normal
+			letter-spacing normal
+			text-align right
+			color #0d79aa
+			text-transform uppercase
+	
+	.comunicacion
+		padding-top 10px
+		padding-bottom 10px
+		.right
+			span
+				line-height 14px !important
+			span + span
+				line-height 1.4em !important
+			span + span + span
+				line-height 14px !important
+				padding-bottom 10px
 	section.who-we-are
 		.section-content
 			p
@@ -160,16 +210,21 @@
 	.emergencies
 		display none
 	.calculator-imc
-		margin 0 30px
+		margin 0
 		.container
 			.imc-message
 				padding 0
 				padding-left 0
 				padding-right 0
+				h3
+					margin-bottom 10px
+					margin-left 20px
 				p
 					padding 20px 20px 0 40px
+					margin-top 0
 			.imc-resultado
 				padding 60px 10px 10px 10px
+				min-height 208px
 	.miembro
 		h3
 			font-size 14px
@@ -259,9 +314,14 @@
 					top 50%
 					left 0
 					margin-top -50px
+					&:hover
+						background #0798BC
+						color #FFF
+						border 1px solid #0798BC
 				.owl-next
 					left auto
 					right 0
+				
 	.testimonial
 		.desc
 			width 100%

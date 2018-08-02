@@ -15,7 +15,7 @@
 		'phone'           => '(322) 223 5521',
 		'movil'           => '(044) 322 150 6291',
         'dr-title-url'    => 'DR. SERGIO DEL HOYO',
-        'team-title-url'  => 'EQUIPO',
+        'team-title-url'  => 'OUR TEAM',
 		'dr'              => 'DR. SERGIO DEL HOYO GALVÁN',
 		'dr-certificado'  => 'Certified Gastrointestinal Surgeon',
     	'dr-especialista' => 'Specialists in general surgery, weight loss surgery and gastric diseases',
@@ -31,6 +31,7 @@
     	'cmq-nayarit'     => 'CMQ Riviera Nayarit',
     	'consultorio'     => 'DOCTOR’S OFFICE',
     	'aviso-privacidad'=> 'Notice of Privacy',
+        'conozca-mas'     => 'Get More Info',
     	'who-we-are'      => 'Dr. Sergio del Hoyo gastrointestinal surgeon with training in laparoscopic and obesity surgery, has over 10 years experience in general surgery and 5 years in bariatric surgery. Live and performed surgical procedures in Puerto Vallarta, Jalisco, Mexico.
 ',
     	'who-team'        => 'Surgical team Certified',
@@ -41,20 +42,30 @@
     	'atencion-desc'   => '<p>7 days a week</p>',
     	'urgencia'        => 'EMERGENCIES',
     	'urgencia-desc'   => '<p>24 hours a day with attention at the best hospitals in Puerto Vallarta and Nuevo Vallarta.</p>',
-		'imc'             => [
-			'title' => '<span>BMI</span> CALCULATOR',
-			'desc'  => '<p> Know your Body Mass Index, enter your height in inches and weight in pounds. </p>',
-			'metrico' => 'Metric',
-			'imperial' => 'Imperial',
-			'altura' => 'Height',
-			'peso' => 'Weight',
-			'tu-imc' => 'Your BMI is:',
-		],
+        'imc'             => [
+            'title' => '<span>BMI</span> CALCULATOR',
+            'desc'  => '<p> Know your Body Mass Index, enter your height in inches and weight in pounds. </p>',
+            'metrico' => 'Metric',
+            'imperial' => 'Imperial',
+            'altura' => [
+                'title' => 'Height',
+                'metric' => '1.80 cm',
+                'imperial' => '24.5 ft'
+            ],
+            'peso' => [
+                'title' => 'Weight',
+                'metric' => '200 kg',
+                'imperial' => '400 lb'
+            ],
+            'tu-imc' => 'Your BMI is:',
+            'borrar' => 'Clean',
+            'calcular' => 'Calculate',
+        ],
     	'es-miembro' => 'HE IS MEMBER OF:',
-    	'es-miembro-asoc-mex'  => 'Asociación Mexicana de Cirugía General',
-    	'es-miembro-asoc-end'  => 'Asociación Mexicana de Cirugía Endoscópica, A.C.',
-    	'es-miembro-asoc-mex1' => 'Asociación Mexicana de Cirugía General',
-    	'es-miembro-asoc-cir'  => 'Consejo Mexicano de Cirugía General, A.C.',
+        'es-miembro-asoc-mex'  => 'Colegio Mexicano de Cirugía para la Obesidad',
+        'es-miembro-asoc-end'  => 'Asociación Mexicana de Cirugía Endoscópica, A.C.',
+        'es-miembro-asoc-mex1' => 'International Federation for the Surgery of Obesity and Metabolic Disorders',
+        'es-miembro-asoc-cir'  => 'Consejo Mexicano de Cirugía General, A.C.',
         'gastro' => [
             'subtitle' => 'SPECIALIZED ATTENTION OF GASTROINTESTINAL DISEASES',
             'title' => 'Gastroenterologist <span>Gastroenterology</span>',
@@ -83,6 +94,9 @@
             'desc' => 'Puerto Vallarta is one of the most important medical tourism destinations in Mexico. It is a beautiful destination with spectacular beaches and sunsets where you will not only come to perform a surgery, but you will feel that you are on vacation.',
             'more' => 'READ MORE',
         ],
+        'video' => [
+            'button' => 'WATCH FULL VIDEO',
+        ],
         'citas' => [
             'title' => 'APPOINMENTS',
             'phone' => '322 223 5521',
@@ -100,6 +114,20 @@
         'slider2' => [
             'title' => 'OUR SURGERIES ARE PERFORMED WITH',
             'subtitle' => 'LAPAROSCOPY'
+        ],
+        'meses' => [
+            '1'   => 'January',
+            '2'   => 'February',
+            '3'   => 'March',
+            '4'   => 'April',
+            '5'   => 'May',
+            '6'   => 'June',
+            '7'   => 'July',
+            '8'   => 'August',
+            '9'   => 'Septiember',
+            '10'  => 'Octuber',
+            '11'  => 'Noviember',
+            '12'  => 'December'
         ]
 	];
 ?>

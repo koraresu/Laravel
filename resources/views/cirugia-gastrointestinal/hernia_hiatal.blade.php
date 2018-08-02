@@ -2,13 +2,14 @@
 @section('title', Lang::get('seo.hiatal-hernias.title') )
 @section('keywords', Lang::get('seo.hiatal-hernias.keywords') )
 @section('description', Lang::get('seo.hiatal-hernias.description') )
+@section('h1', Lang::get('hernia_hiatal.title') . ' ' . Lang::get('hernia_hiatal.subtitle') )
 @section('content')
 <section class="overlay overlay-green title_section" data-bg-image="{{ asset('images/section_title.png') }}" data-stellar-background-ratio="0.0" style="background-position: 50% 0%; background-image: url({{ asset('images/section_title.png') }}); background-size: cover;">
     <div class="container ">
       <div class="row">
         <div class="col-md-12">
           <div class="inner-title">
-            <h2>@lang('hernia_hiatal.title')</h2>
+            <div class="title">@lang('hernia_hiatal.title')</div>
             <p>@lang('hernia_hiatal.subtitle')</p>
           </div>
         </div>

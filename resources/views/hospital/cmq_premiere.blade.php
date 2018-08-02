@@ -56,4 +56,20 @@
 		</div>
 	</div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "CMQ PREMIERE",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Francisco Villa # 1749 | Col. Vallarta Villas",
+    "addressLocality": "Puerto Vallarta",
+    "addressRegion": "Jalisco",
+    "postalCode": "48300"
+  },
+ }
+</script>
+
 @endsection

@@ -81,7 +81,7 @@ class CirujanosController extends Controller
             'education' => $doctor->education,
             'days' => $doctor->days,
             'members' => $doctor_member,
-            'certificates' => [],
+            'certificates' => $doctor_certificate,
             'seo_title' => $doctor->seo_title,
             'seo_keywords' => $doctor->seo_keywords,
             'seo_description' => $doctor->seo_description

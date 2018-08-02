@@ -1,5 +1,5 @@
 @extends('general')
-@section('title', '' )
+@section('title', $blog_trans->titulo )
 @section('keywords', '' )
 @section('description', '' )
 @section('content')
@@ -29,7 +29,7 @@
 	                    <div class="blog-effect">
 	                    	<a href="#">
 	                    		<figure>
-	                    			<img class="img-responsive" src="{{ asset('images/b1.jpg') }}" alt="">
+	                    			<img class="img-responsive" src="{{ asset('uploads/blog/banner/'.$blog->image_banner ) }}" alt="">
 	                    		</figure>
 	                    	</a>
 	                    </div>
@@ -49,80 +49,12 @@
 
             </div>
             <div class="col-md-4">
-              <div class="sidebar">
-              
-                  <!-- Search Form -->
-                  <div class="sidebar-widget search-box">
-                      <form method="post" action="index-mp-layout1.html">
-                          <div class="form-group">
-                              <input name="search-field" value="" placeholder="@lang('blog.search')" type="search">
-                              <button type="submit">
-                              	<span class="icon-search"></span>
-                              </button>
-                          </div>
-                      </form>
-                      
-                  </div>
-                  
-                  
-                  <!-- Popular Posts -->
-                  <div class="sidebar-widget popular-posts">
-                      <div class="sidebar-title">
-                      	<h2 class="text-uppercase small-line text">@lang('blog.ultimas')</h2>
-                      </div>
-                      <article class="post">
-                          <figure class="post-thumb"><a href="#"><img class="" src="images/blog/s1.jpg" alt=""></a></figure>
-                          <h4><a href="#">GONE TO GHANA &ndash; VOLUNTEERING IN AFRICA</a></h4>
-                          <div class="post-info">Oct 19<sup>th</sup>, 2016</div>
-                      </article>
-                      
-                      <article class="post">
-                          <figure class="post-thumb"><a href="#"><img src="images/blog/s2.jpg" alt=""></a></figure>
-                          <h4><a href="#">GONE TO GHANA &ndash; VOLUNTEERING IN AFRICA</a></h4>
-                          <div class="post-info">Oct 19<sup>th</sup>, 2016</div>
-                      </article>
-                      
-                      <article class="post">
-                          <figure class="post-thumb"><a href="#"><img src="images/blog/s3.jpg" alt=""></a></figure>
-                          <h4><a href="#">GONE TO GHANA &ndash; VOLUNTEERING IN AFRICA</a></h4>
-                          <div class="post-info">Oct 19<sup>th</sup>, 2016</div>
-                      </article>
-                      
-                      
-                  </div>
-                  
-                  
-                  <!-- Archives -->
-                  <div class="sidebar-widget archives-widget">
-                      <div class="sidebar-title">
-                      	<h2 class="text-uppercase small-line text">@lang('blog.archivo')</h2>
-                      </div>
-                      
-                      <ul class="archives-list">
-                          <li><a href="#" class="clearfix"><span class="pull-left">September 2016</span> <span class="pull-right">(25)</span></a></li>
-                          <li><a href="#" class="clearfix"><span class="pull-left">August 2016</span> <span class="pull-right">(18)</span></a></li>
-                          <li><a href="#" class="clearfix"><span class="pull-left">July 2016</span> <span class="pull-right">(72)</span></a></li>
-                          <li><a href="#" class="clearfix"><span class="pull-left">June 2016</span> <span class="pull-right">(33)</span></a></li>
-                          <li><a href="#" class="clearfix"><span class="pull-left">May 2016</span> <span class="pull-right">(12)</span></a></li>
-                          <li><a href="#" class="clearfix"><span class="pull-left">April 2016</span> <span class="pull-right">(81)</span></a></li>
-                      </ul>
-                      
-                  </div>
-                  
-                  <!-- Popular Tags -->
-                  <div class="sidebar-widget popular-tags">
-                      <div class="sidebar-title">
-                      	<h2 class="text-uppercase small-line text">@lang('blog.tag')</h2>
-                      </div>
-                      
-                      <a href="#">Education</a>
-                      <a href="#">Crisis</a>
-                      <a href="#">Water</a>
-                      <a href="#">Business</a>
-                      <a href="#">Giving</a>
-                      <a href="#">Children</a>
-                  </div> 
-              </div>
+              @component('blog.sidebar',[
+                'b_archive' => $b_archive,
+                'm_archive' => $m_archive,
+                'tags' => $tags,
+              ])
+              @endcomponent
             </div>
           </div>
         </div>

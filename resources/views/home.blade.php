@@ -2,6 +2,8 @@
 @section('title', Lang::get('seo.home.title') )
 @section('keywords', Lang::get('seo.home.keywords') )
 @section('description', Lang::get('seo.home.description') )
+@section('h1', Lang::get('home.dr-certificado') . ' ' . Lang::get('home.dr-especialista'))
+
 @section('content')
 <!-- start of hero -->
 <section class="hero hero-slider-wrapper">
@@ -17,8 +19,8 @@
 			<div class="slide">
 				<img src="{{ asset('upload/slideshow/'.$ss->photo) }}" />
 				<div class="title">
-					<span>{{ $ss->title }}</span>
-					<h1>{{ $ss->subtitle }}</h1>
+					<span class="tit">{{ $ss->title }}</span>
+					<span class="sub">{{ $ss->subtitle }}</span>
 				</div>
 			</div>
 		@endforeach
@@ -49,7 +51,7 @@
 							<p>
 								@lang('home.who-team-desc')
 							</p>
-							<a href=""> Conozca Más </a>
+							<a href=""> @lang('home.conozca-mas') </a>
 						</div>
 
 
@@ -128,10 +130,10 @@
 
 					<div class="botones col-md-12">
 						<div class="borrar col-md-6 col-sm-6  col-xs-6">
-							<input type="reset" value="Borrar" />
+							<input type="reset" value="@lang('home.imc.borrar')" />
 						</div>
 						<div class="calcular col-md-6 col-sm-6  col-xs-6">
-							<input type="button" value="Calcular" />
+							<input type="button" value="@lang('home.imc.calcular')	" />
 						</div>
 					</div>
 
@@ -182,8 +184,6 @@
 			</div>
 		</div>
 	</div>
-
-
 </section>
 <section class="miembro">
 	<div class="container">
@@ -222,19 +222,14 @@
 		</div>
 	</div>
 </section>
-
-
-
-
-
-
 <section class="our-department">
 	<div class="container ptn">
 		<div class="section-title">
 			<div class="row">
 				<div class="col-md-12">
+					<h2 class="h"> @lang('home.gastro.subtitle') @lang('home.gastro.title')</h2>
 					<h6> @lang('home.gastro.subtitle') </h6>
-					<h2> @lang('home.gastro.title') </h2>
+					<h3> @lang('home.gastro.title') </h3>
 				</div>
 			</div>
 		</div>
@@ -325,14 +320,13 @@
 		</div>
 	</div>
 </section>
-
 <section class="team">
 	<div class="container ptn">
 		<div class="section-title">
 			<div class="row">
 				<div class="col-md-12">
 					<h6>@lang('home.team.title')</h6>
-					<h2>@lang('home.team.subtitle')</h2>
+					<h3>@lang('home.team.subtitle')</h3>
 				</div>
 			</div>
 		</div>
@@ -400,7 +394,10 @@
 		</div>
 	</section>
 	<section class="video">
-		<iframe width="640" height="360" src="//www.youtube.com/embed/_cebmtTGS90" frameborder="0" allowfullscreen></iframe>
+		<iframe width="640" height="360" src="//www.youtube.com/embed/jXfgXc95uaU" frameborder="0" allowfullscreen></iframe>
+		<div class="bottom">
+			<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gallery') }}#videos"> @lang('home.video.button') </a>
+		</div>
 	</section>
 	<section class="vallarta" style="background-image: url( {{ asset('images/vallarta.jpg') }} ); background-size: cover;">
 		<div class="container">
