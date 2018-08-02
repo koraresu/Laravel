@@ -23,9 +23,9 @@
 					@lang('cmq_premiere.paragraph')
 				</div>
 				<div class="col-md-4 sidebar">
-					<a href="">
-						<img src="{{ asset('/images/hospital/cmq_premiere.png') }}" />
-					</a>
+					<div class="cont_image">
+						<img src="{{ asset('/images/hospital/cmq_premiere.jpg') }}" />
+					</div>
 					<p>
 						@lang('cmq_premiere.direccion')
 					</p>
@@ -47,7 +47,7 @@
 
 				@foreach($photos as $filename)
 					<div class="col-md-3">
-						<a href="#" class="modal_image">
+						<a href="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" class="popup-link" title="">
 							<img src="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" />
 						</a>
 					</div>

@@ -1512,14 +1512,14 @@ ul.lista li:before {
   content: initial;
   padding-left: 0;
 }
-.cmq_nayarit .sidebar a,
-.cmq_premiere .sidebar a,
-.consultorio .sidebar a {
+.cmq_nayarit .sidebar .cont_image,
+.cmq_premiere .sidebar .cont_image,
+.consultorio .sidebar .cont_image {
   width: 100%;
 }
-.cmq_nayarit .sidebar a img,
-.cmq_premiere .sidebar a img,
-.consultorio .sidebar a img {
+.cmq_nayarit .sidebar .cont_image img,
+.cmq_premiere .sidebar .cont_image img,
+.consultorio .sidebar .cont_image img {
   width: 100%;
 }
 .cmq_nayarit .sidebar p,
@@ -1709,12 +1709,12 @@ ul.lista li:before {
 section.gallery .col-md-3 {
   padding: 0;
 }
-section.gallery .modal_image {
+section.gallery .popup-link {
   display: block;
   height: 223px;
   overflow: hidden;
 }
-section.gallery .modal_image img {
+section.gallery .popup-link img {
   width: 100%;
 }
 .overlay_vallarta {

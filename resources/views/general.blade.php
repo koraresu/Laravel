@@ -6,12 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>@yield('title')</title>
 
+<link rel='shortcut icon' type='image/x-icon' href='{{ asset("favicon.ico") }}' />
 <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('favicon-72.png') }}" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('favicon-114.png') }}" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ asset('favicon-120.png') }}" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('favicon-144.png') }}" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ asset('favicon-152.png') }}" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('apple-touch-icon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('apple-touch-icon-16x16.png') }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('apple-touch-icon-60x60.png') }}" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('apple-touch-icon-76x76.png') }}" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('apple-touch-icon-120x120.png') }}" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('apple-touch-icon-152x152.png') }}" />
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ asset('apple-touch-icon-128x128.png') }}" />
+
+
+
+
+<link rel="manifest" href="{{ asset('site.webmanifest') }}">
+<link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -46,7 +60,6 @@ p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
  <meta property="place:location:longitude" content="-105.220184">
 
 <!-- Stylesheets -->
-<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
