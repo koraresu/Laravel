@@ -52,10 +52,10 @@
     background: transparent;
   }
   .main-menu .navbar-collapse > .navigation > li {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
   }
   .main-menu .navbar-collapse > .navigation > li > a {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -67,17 +67,17 @@
     padding: 10px 30px !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li > a {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
     padding: 10px 50px !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
   }
   .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
-    background-color: #37b4f0 !important;
+    background-color: #0d79aa !important;
   }
   .main-menu .navbar-collapse .dropdown-btn {
     border: 0 !important;

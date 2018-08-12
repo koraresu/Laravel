@@ -128,7 +128,7 @@
 
 						@foreach($certificates as $certificate)
 						<div class="col-md-3">
-							<a href="#" class="modal_image">
+							<a href="{{ url('/upload/certificate/' . $certificate->photo ) }}" class="popup-link" title="">
 								<img src="{{ url('/upload/certificate/' . $certificate->photo ) }}" />
 							</a>
 						</div>
