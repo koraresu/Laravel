@@ -847,6 +847,132 @@ h3 {
 .main-footer .aviso a {
   color: #fff;
 }
+.bariatric-surgerion {
+  margin: 0px;
+  margin-top: 30px;
+}
+.bariatric-surgerion .section-title h6,
+.bariatric-surgerion .section-title h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+.bariatric-surgerion .section-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #181818;
+}
+.bariatric-surgerion .section-title h6 {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 4.7px;
+  text-align: left;
+  color: #181818;
+}
+.bariatric-surgerion .section-wrap .service-box {
+  color: #fff;
+  padding: 0;
+  height: 160px;
+  position: relative;
+  text-align: center;
+  transform: translateZ(0px);
+  z-index: 1;
+  margin-bottom: 30px;
+}
+.bariatric-surgerion .section-wrap .service-box:before,
+.bariatric-surgerion .section-wrap .service-box::after {
+  content: "";
+}
+.bariatric-surgerion .section-wrap .service-box::before {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: scaleY(0);
+  transform-origin: 100% 0 0;
+}
+.bariatric-surgerion .section-wrap .service-box::after {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  transform: scaleX(0);
+  transform-origin: 0 100% 0;
+}
+.bariatric-surgerion .section-wrap .service-box .service-box-overlay {
+  background-color: #0d79aa;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+  opacity: 0.9;
+}
+.bariatric-surgerion .section-wrap .service-box > i {
+  color: #fff;
+  display: block;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 4;
+}
+.bariatric-surgerion .section-wrap .service-box .service-box-content {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+  padding: 40px 0;
+}
+.bariatric-surgerion .section-wrap .service-box .service-box-content a {
+  color: #fff;
+}
+.bariatric-surgerion .section-wrap .service-box .service-box-content h5 {
+  font-size: 1.143em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 4px);
+  padding: 0 15px;
+  text-align: center;
+}
+.bariatric-surgerion .section-wrap .service-box .service-box-content span {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+}
+.bariatric-surgerion .section-wrap .service-box::before {
+  transform: scaleY(1);
+}
+.bariatric-surgerion .section-wrap .service-box::after {
+  transform: scaleX(1);
+}
+.bariatric-surgerion .foot {
+  text-align: center;
+}
+.bariatric-surgerion .foot a.more {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0d79aa;
+  border: solid 2px #0d79aa;
+  padding: 8px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
 .our-department .section-title h6,
 .our-department .section-title h2 {
   font-family: 'Titillium Web', sans-serif;

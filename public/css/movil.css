@@ -294,6 +294,42 @@
   .miembro .rasoc .image img {
     max-width: calc(100% - 4px);
   }
+  .bariatric-surgerion {
+    padding: 0;
+  }
+  .bariatric-surgerion h6 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 4.7px;
+    text-align: left;
+    color: #181818;
+  }
+  .bariatric-surgerion h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #181818;
+  }
+  .bariatric-surgerion .section-title {
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  .bariatric-surgerion .section-wrap .service-box .service-box-content {
+    padding: 17px 0;
+  }
+  .bariatric-surgerion .section-wrap .service-box .service-box-content span {
+    display: none;
+  }
+  .bariatric-surgerion .section-wrap .service-box .service-box-content img {
+    width: 70px;
+  }
   .our-department {
     padding: 0;
   }

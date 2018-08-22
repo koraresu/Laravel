@@ -242,6 +242,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <ul>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_manga_gastrica') }}"> @lang('menu.cirugia-bar-sub.manga-gastrica') </a></li>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_bypass') }}"> @lang('menu.cirugia-bar-sub.bypass') </a></li>
+
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.switch_duodenal') }}"> @lang('menu.cirugia-bar-sub.switch-duodenal') </a></li>
+
+                      <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.revision_bariatrica') }}"> @lang('menu.cirugia-bar-sub.revision_bariatrica') </a></li>
+
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_paquetes') }}"> @lang('menu.cirugia-bar-sub.cirugia-paq') </a></li>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_imc') }}"> @lang('menu.cirugia-bar-sub.url-imc') </a></li>
                       <li><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_obesidad') }}"> @lang('menu.cirugia-bar-sub.obesidad') </a></li>

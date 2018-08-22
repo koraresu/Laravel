@@ -115,6 +115,15 @@
 			'h1' => '',
 			'description' => 'Aviso de Privacidad del Dr Sergio del Hoyo',
 		],
-		
+		'switch_duodenal' => [
+			'title' => '',
+			'h1' => '',
+			'description' => '',
+		],
+		'revision_bariatrica' => [
+			'title' => '',
+			'h1' => '',
+			'description' => '',
+		]
 	];
 ?>

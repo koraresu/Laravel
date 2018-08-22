@@ -222,6 +222,72 @@
 		</div>
 	</div>
 </section>
+<section class="bariatric-surgerion">
+	<div class="container ptn">
+		<div class="section-title">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h"> @lang('home.bariatric.subtitle') @lang('home.bariatric.title')</h2>
+					<h6> @lang('home.bariatric.subtitle') </h6>
+					<h3> @lang('home.bariatric.title') </h3>
+				</div>
+			</div>
+		</div>
+		<div class="section-wrap">
+			<div class="row">
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<span></span>
+							<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
+							<h5>@lang('home.bariatric.sleeves')</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<span></span>
+							<img src="{{ asset('images/cirugia/bypass_icon.png') }}" />
+							<h5>@lang('home.bariatric.bypass')</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<span></span>
+							<img src="{{ asset('images/cirugia/duodenal_icon.png') }}" />
+							<h5>@lang('home.bariatric.duodenal')</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="service-box style-1">
+						<div class="service-box-overlay"></div>
+						<div class="service-box-content">
+							<span></span>
+							
+							<img src="{{ asset('images/cirugia/revision_icon.png') }}" />
+							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}"> @lang('home.bariatric.revision') </a></h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="foot">
+			<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_paquetes') }}" class="more"> @lang('home.bariatric.more') </a>
+		</div>
+	</div>
+</section>
 <section class="our-department">
 	<div class="container ptn">
 		<div class="section-title">

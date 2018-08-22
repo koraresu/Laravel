@@ -40,6 +40,10 @@ Route::group([
     //Cirugia Bariatrica
     Route::get( LaravelLocalization::transRoute('routes.bariatrica_manga_gastrica') , 'CirugiaBariatricaController@manga_gastrica')-> name('manga_gastrica');
     Route::get( LaravelLocalization::transRoute('routes.bariatrica_bypass') , 'CirugiaBariatricaController@bypass_gastrico')-> name('bypass');
+    
+    Route::get( LaravelLocalization::transRoute('routes.revision_bariatrica') , 'CirugiaBariatricaController@revision_bariatrica')-> name('revision_bariatrica');
+    Route::get( LaravelLocalization::transRoute('routes.switch_duodenal') , 'CirugiaBariatricaController@switch_duodenal')-> name('switch_duodenal');
+
     Route::get( LaravelLocalization::transRoute('routes.bariatrica_paquetes') , 'CirugiaBariatricaController@paquetes_cirugias')-> name('paquetes');
     Route::get( LaravelLocalization::transRoute('routes.bariatrica_imc') , 'CirugiaBariatricaController@imc')-> name('imc');
     Route::get( LaravelLocalization::transRoute('routes.bariatrica_obesidad') , 'CirugiaBariatricaController@obesidad')-> name('obesidad');

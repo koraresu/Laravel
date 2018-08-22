@@ -19,6 +19,8 @@
         'bariatrica'                               => 'cirugia-bariatrica',
         'bariatrica_manga_gastrica'                => 'cirugia-bariatrica/manga-gastrica',
         'bariatrica_bypass'                        => 'cirugia-bariatrica/bypass-gastrico',
+        'revision_bariatrica'                      => 'cirugia-bariatrica/revision-bariatrica',
+        'switch_duodenal'                          => 'cirugia-bariatrica/switch-duodenal',
         'bariatrica_paquetes'                      => 'cirugia-bariatrica/paquetes-cirugias',
         'bariatrica_imc'                           => 'cirugia-bariatrica/imc',
         'bariatrica_obesidad'                      => 'cirugia-bariatrica/obesidad',

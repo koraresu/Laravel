@@ -22,4 +22,10 @@ public function imc(){
 public function obesidad(){
     return view('cirugia_ariatrica.obesidad',[]);
 }
+public function revision_bariatrica(){
+	return view('cirugia_ariatrica.revision_bariatrica',[]);	
+}
+public function switch_duodenal(){
+	return view('cirugia_ariatrica.switch_duodenal',[]);	
+}
 }

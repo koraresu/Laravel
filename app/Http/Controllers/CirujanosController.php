@@ -56,12 +56,14 @@ class CirujanosController extends Controller
     }
     public function dr_sergio(){
         $doctor = Doctor::where('id','=',1)->first();
+
         $doctor_member = DoctorMember::where('doctor_id','=',$doctor->id)->get();
         $doctor_certificate = DoctorCertificate::where('doctor_id','=',$doctor->id)->get();
         $description = $doctor->description;
         $laboral = $doctor->laboral;
         $chequeo = $doctor->chequeo;
         $reconocimientos = $doctor->reconocimientos;
+        $degree = $doctor->degree;
 
 
         $description = str_replace('\r\n','', $description);
@@ -84,7 +86,8 @@ class CirujanosController extends Controller
             'certificates' => $doctor_certificate,
             'seo_title' => $doctor->seo_title,
             'seo_keywords' => $doctor->seo_keywords,
-            'seo_description' => $doctor->seo_description
+            'seo_description' => $doctor->seo_description,
+            'degree' => $degree
         ]);
     }
 }

@@ -8,8 +8,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="inner-title">
-					<div class="title">@lang('paquetes_bariatrica.title')</div>
-					<p>@lang('paquetes_bariatrica.subtitle')</p>
+					<div class="title">@lang('paquete_bariatrica.title')</div>
+					<p>@lang('paquete_bariatrica.subtitle')</p>
 				</div>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
 						<div class="service-box-content">
-							<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
+							<img src="{{ asset('images/cirugia/duodenal_icon.png') }}" />
 							<h3><a href="#"> @lang('paquete_bariatrica.switch') </a></h3>
 						</div>
 					</div>

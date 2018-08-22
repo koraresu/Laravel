@@ -13,6 +13,8 @@
         'cirugia-bar-sub' => [
             'manga-gastrica'  => 'Sleeve Gastrectomy',
             'bypass'          => 'Gastric Bypass RNY',
+            'switch-duodenal' => 'Duodenal Switch',
+            'revision_bariatrica' => 'BARIATRIC REVISION',
             'cirugia-paq'     => 'Bariactric Surgery Packages',
             'url-imc'         => 'Body Mass Index (BMI)',
             'obesidad'        => 'Obesity',

@@ -26,8 +26,16 @@
 				<div class="visible-xs visible-sm col-md-4 sidebar" style="visibility: visible; animation-name: fadeInRight;">
 					<img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$photo) }}" alt="">
 					<div class="cirujano_info">
-						@lang('dr_sergio.acerca')						
-					</div>
+							<h5> @lang('cirujano.contacto') </h5>
+							<ul>
+								<li>@lang('cirujano.phone',['phone' => $phone ])</li>
+								<li>@lang('cirujano.especialidad',['speciality' => $speciality])</li>
+								<li>@lang('cirujano.educacion',['education' => $education ])</li>
+								@if($days != '')
+								<li>@lang('cirujano.days',['days' => $days ])</li>
+								@endif
+							</ul>
+						</div>
 					<div class="cirujano_asociado row">
 						<h5> @lang('dr_sergio.miembro') </h5>
 						@foreach ($members as $member)
@@ -43,11 +51,16 @@
 					</div>
 				</div>
 				<div class="col-md-8" style="visibility: visible; animation-name: fadeInLeft;">
-
+					<p>
+						@lang('dr_sergio.acerca')
+					</p>
 					<h2 class="text-uppercase small-line text">
 						@lang('dr_sergio.estudios.title')
 					</h2>
-					@lang('dr_sergio.estudios.paragraph')
+					
+					<p>
+						@lang('dr_sergio.estudios.paragraph')
+					</p>
 					<h2 class="text-uppercase small-line text">
 						@lang('dr_sergio.especialidad.title')
 					</h2>
@@ -61,8 +74,28 @@
 				<div class="hidden-xs hidden-sm col-md-4 sidebar" style="visibility: visible; animation-name: fadeInRight;">
 					<img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$photo) }}" alt="">
 					<div class="cirujano_info">
-						@lang('dr_sergio.acerca')						
+						
 					</div>
+					<div class="cirujano_info">
+							<h5> @lang('cirujano.contacto') </h5>
+							<ul>
+								@if($phone != '')
+									<li>@lang('cirujano.phone',['phone' => $phone ])</li>
+								@endif
+								@if($speciality != '')
+									<li>@lang('cirujano.especialidad',['speciality' => $speciality])</li>
+								@endif
+								@if($education != '')
+									<li>@lang('cirujano.educacion',['education' => $education ])</li>
+								@endif
+								@if($degree != '')
+									<li>@lang('cirujano.degree',['text' => $degree])
+								@endif
+								@if($days != '')
+									<li>@lang('cirujano.days',['days' => $days ])</li>
+								@endif
+							</ul>
+						</div>
 					<div class="cirujano_asociado row">
 						<h5> @lang('dr_sergio.miembro') </h5>
 						@foreach ($members as $member)

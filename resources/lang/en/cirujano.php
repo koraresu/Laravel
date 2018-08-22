@@ -10,6 +10,7 @@
 		'especialidad' => '<span class="tag_info">SPECIALITY:</span> <span>:speciality</span>',
 		'educacion' => '<span class="tag_info">EDUCATION:</span> <span>:education</span>',
 		'days' => '<span class="tag_info">WORK DAYS:</span> <span>:days</span>',
-		'miembro' => 'MEMBER OF:'
+		'miembro' => 'MEMBER OF:',
+		'degree' => '<span class="tag_info">DEGRESS:</span> <span>:text</span>'
 	];
 ?>

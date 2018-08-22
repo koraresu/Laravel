@@ -66,6 +66,15 @@
         'es-miembro-asoc-end'  => 'Asociación Mexicana de Cirugía Endoscópica, A.C.',
         'es-miembro-asoc-mex1' => 'International Federation for the Surgery of Obesity and Metabolic Disorders',
         'es-miembro-asoc-cir'  => 'Consejo Mexicano de Cirugía General, A.C.',
+        'bariatric' => [
+            'title' => 'Bariatric <span>Surgery</span>',
+            'subtitle' => 'Specialized Care for Weight Loss Surgery',
+            'sleeves' => 'Gastric Sleeve',
+            'bypass' => 'Gastric Bypass',
+            'duodenal' => 'Duodenal Switch',
+            'revision' => 'Bariatric Revision',
+            'more'   => 'What’s included in our packages?'
+        ],
         'gastro' => [
             'subtitle' => 'SPECIALIZED ATTENTION OF GASTROINTESTINAL DISEASES',
             'title' => 'Gastroenterologist <span>Gastroenterology</span>',

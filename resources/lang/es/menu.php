@@ -13,6 +13,8 @@
         'cirugia-bar-sub' => [
             'manga-gastrica'  => 'Manga Gástrica',
             'bypass'          => 'Bypass Gástrico RNY',
+            'switch-duodenal' => 'Switch Duodenal',
+            'revision_bariatrica' => 'Cirugía de Revisión',
             'cirugia-paq'     => 'Paquete de Cirugía Bariátrica',
             'url-imc'         => 'Índice de Masa Corporal (IMC)',
             'obesidad'        => 'Obesidad',
