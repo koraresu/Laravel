@@ -26,6 +26,9 @@ html {
   height: 0;
   overflow: hidden;
 }
+img {
+  image-orientation: from-image;
+}
 h2.h {
   height: 0;
   overflow: hidden;
