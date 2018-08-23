@@ -115,24 +115,10 @@
 	</div>
 </section>
 	@if(count( $certificates ) > 0)
-		<section class="gallery">
-			<div class="container">
-				<div class="section-title">
-					<h2 class="text-uppercase small-line text">@lang('cirujano.certificados')</h2>
-				</div>
-				<div class="section-content">
-					<div class="row">
+		@component('compgall',['certificates' => $certificates, 'title' => Lang::get('cirujano.certificados'),'path' => '/upload/certificate/','fn' => function($ce){return $ce->photo;} ])
+		@endcomponent
 
-						@foreach($certificates as $certificate)
-						<div class="col-md-3">
-							<a href="{{ url('/upload/certificate/' . $certificate->photo ) }}" class="popup-link" title="">
-								<img src="{{ url('/upload/certificate/' . $certificate->photo ) }}" />
-							</a>
-						</div>
-						@endforeach
-					</div>
-				</div>
-			</div>
-		</section>
+		@component('compgal',['certificates' => $certificates, 'title' => Lang::get('cirujano.certificados'),'path' => '/upload/certificate/','fn' => function($ce){return $ce->photo;} ])
+		@endcomponent	
 	@endif
 @endsection

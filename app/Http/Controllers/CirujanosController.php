@@ -65,7 +65,6 @@ class CirujanosController extends Controller
         $reconocimientos = $doctor->reconocimientos;
         $degree = $doctor->degree;
 
-
         $description = str_replace('\r\n','', $description);
         $laboral = str_replace('\r\n','', $laboral);
         $chequeo = str_replace('\r\n','', $chequeo);

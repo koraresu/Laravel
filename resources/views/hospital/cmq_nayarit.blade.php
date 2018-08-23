@@ -37,25 +37,13 @@
 		</div>
 	</div>
 </section>
-<section class="gallery">
-	<div class="container">
-		<div class="section-title">
-			<h2 class="text-uppercase small-line text">@lang('cmq_nayarit.instalacion')</h2>
-		</div>
-		<div class="section-content">
-			<div class="row">
+@if(count( $photos ) > 0)
+	@component('compgall',['certificates' => $photos, 'title' => Lang::get('cmq_premiere.instalacion'),'path' => '/images/hospital/' . $folder . '/','fn' => function($ce){return basename( $ce );} ])
+	@endcomponent
 
-				@foreach($photos as $filename)
-					<div class="col-md-3">
-						<a href="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" class="popup-link" title="">
-							<img src="{{ url('/images/hospital/' . $folder . '/' . basename( $filename ) ) }}" />
-						</a>
-					</div>
-				@endforeach
-			</div>
-		</div>
-	</div>
-</section>
+	@component('compgal',['certificates' => $photos, 'title' => Lang::get('cmq_premiere.instalacion'),'path' => '/images/hospital/' . $folder . '/','fn' => function($ce){return basename( $ce );} ])
+	@endcomponent	
+@endif
 
 <script type="application/ld+json">
 {
