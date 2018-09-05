@@ -3,7 +3,7 @@
 		<div class="section-title">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-uppercase small-line text">{{ $title }}</h2>
+					<h2 class="text-uppercase small-line text">{!! $title !!}</h2>
 				</div>
 			</div>
 		</div>

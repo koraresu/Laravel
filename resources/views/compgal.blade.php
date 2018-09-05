@@ -1,7 +1,7 @@
 <section class="gallery hidden-xs hidden-sm">
 	<div class="container">
 		<div class="section-title">
-			<h2 class="text-uppercase small-line text">{{ $title }}</h2>
+			<h2 class="text-uppercase small-line text">{!! $title !!}</h2>
 		</div>
 		<div class="section-content">
 			<div class="row">
