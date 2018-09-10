@@ -239,45 +239,52 @@
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
-						<div class="service-box-content">
-							<span></span>
-							<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
-							<h5>@lang('home.bariatric.sleeves')</h5>
-						</div>
+						<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_manga_gastrica') }}">
+							<div class="service-box-content">
+								<span></span>
+								<img src="{{ asset('images/cirugia/sleeve_icon.png') }}" />
+								<h5>@lang('home.bariatric.sleeves')</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
-						<div class="service-box-content">
-							<span></span>
-							<img src="{{ asset('images/cirugia/bypass_icon.png') }}" />
-							<h5>@lang('home.bariatric.bypass')</h5>
-						</div>
+						<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.bariatrica_bypass') }}">
+							<div class="service-box-content">
+								<span></span>
+								<img src="{{ asset('images/cirugia/bypass_icon.png') }}" />
+								<h5>@lang('home.bariatric.bypass')</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
-						<div class="service-box-content">
-							<span></span>
-							<img src="{{ asset('images/cirugia/duodenal_icon.png') }}" />
-							<h5>@lang('home.bariatric.duodenal')</h5>
-						</div>
+						<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.switch_duodenal') }}">
+							<div class="service-box-content">
+								<span></span>
+								<img src="{{ asset('images/cirugia/duodenal_icon.png') }}" />
+								<h5>@lang('home.bariatric.duodenal')</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="service-box style-1">
 						<div class="service-box-overlay"></div>
-						<div class="service-box-content">
-							<span></span>
-							
-							<img src="{{ asset('images/cirugia/revision_icon.png') }}" />
-							<h5><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.gastrointestinal_apendicitis') }}"> @lang('home.bariatric.revision') </a></h5>
-						</div>
+						<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.revision_bariatrica') }}">
+							<div class="service-box-content">
+								<span></span>
+								<img src="{{ asset('images/cirugia/revision_icon.png') }}" />
+								<h5>@lang('home.bariatric.revision')</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 

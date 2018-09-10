@@ -21,17 +21,27 @@
 	<div class="section-content">
 	  <div class="row">
 		<div class="col-md-8" style="visibility: visible; animation-name: fadeInLeft;">
-			@foreach ($doctors as $doctor)
+			@foreach ($doctors as $key => $doctor)
 				<div class="col-md-6">
 					<div class="team-item item">
 						<div class="team-img">
-							<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}">
+							@if($key)
+								<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}">
+							@else
+								<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}">
+							@endif
 								<img class="img-fullwidth img-responsive" src="{{ asset('upload/doctor/'.$doctor->photo) }}" alt="">
 							</a>
 						</div>
 						<div class="img-title">
 							<h2 class="h"> {{ $doctor->title }} {{ $doctor->name }} {{ $doctor->speciality }} </h2>
-							<h4><a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}"> {{ $doctor->title }} {{ $doctor->name }} </a> </h4>
+							<h4>
+								@if($key)
+									<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.drs', ['dr' => $doctor->url ]) }}"> {{ $doctor->title }} {{ $doctor->name }} </a>
+								@else
+									<a href="{{ LaravelLocalization::getURLFromRouteNameTranslated( LaravelLocalization::getCurrentLocale() , 'routes.dr_sergio') }}"> {{ $doctor->title }} {{ $doctor->name }} </a>
+								@endif
+							</h4>
 							<p> {{ $doctor->speciality }} </p>
 						</div>
 					</div>

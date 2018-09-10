@@ -52,6 +52,84 @@
                             </div>
                         </div>
 
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/Qx21dKk6wYc/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=Qx21dKk6wYc" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/mA8Mb8YMFkk/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=mA8Mb8YMFkk" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/6peGGmfQ5jg/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=6peGGmfQ5jg" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/IvLpNkUMBQs/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=IvLpNkUMBQs" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/uphjvCwamyM/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=uphjvCwamyM" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              <img src="https://img.youtube.com/vi/s9Eu0j5EQf0/maxresdefault.jpg" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=s9Eu0j5EQf0" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="portfolio-item item-two">
+                            <div class="thumb">
+                              {{--<img src="https://img.youtube.com/vi/bMeuSf3BK84/hqdefault.jpg" alt="">--}}
+                              <img src="https://i9.ytimg.com/vi/bMeuSf3BK84/mq1.jpg?sqp=CIiay9wF&rs=AOn4CLC9tTrJGyoUfDzbg3ovxubFSnnhoQ" alt="">
+                              <div class="portfolio-hover">
+                                <div class="portfolio-btn">
+                                  <a href="https://www.youtube.com/watch?v=bMeuSf3BK84" class="popup-youtube" title="lightbox view"> <span class="icon-search"></span>  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
