@@ -45,7 +45,7 @@ p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
 <meta name="title" content="@yield('title')">
 <meta name="description" content="@yield('description')">
 
-<meta name=""DC.title" content="@yield('title')" />
+<meta name="DC.title" content="@yield('title')" />
  <meta name="geo.region" content="MX-JAL" />
  <meta name="geo.placename" content="Puerto Vallarta" />
  <meta name="geo.position" content="20.641706;-105.231316" />
