@@ -2111,3 +2111,7 @@ section.gallery .popup-link img {
   color: #fff;
   border: 1px solid #fff;
 }
+
+.section-wrap a {
+  color: #fff;
+}

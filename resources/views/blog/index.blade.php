@@ -25,7 +25,7 @@
 	                    <div class="blog-effect">
 	                    	<a href="#">
 	                    		<figure>
-	                    			<img class="img-responsive" src="{{ asset('upload/blog/'.$blog->image_banner ) }}" alt="">
+	                    			<img class="img-responsive" src="{{ asset('upload/blog/'.$article->image_banner ) }}" alt="">
 	                    		</figure>
 	                    	</a>
 	                    </div>

@@ -2,7 +2,7 @@
 	return [
 		'title' => 'Bypass Gástrico RNY',
 		'subtitle' => 'Cirugía Bariátrica',
-		'paragraph' => '<p>La cirugía de Switch Duodenal es realizada por el Dr. Sergio Del Hoyo en Mexico, Puerto Vallarta . Es conocido también como (DS), (BPD/DS). (División biliopancreática, Switch Duodenal).<br>Es una cirugía altamente efectiva, pero muy específica en su indicación quirúrgica y con cuidados nutricionales, muy específicos.</p><p>El Switch Duodenal es una variación de otra cirugía bariátrica llamada desviación biliopancreática con excepción de que el Switch Duodenal deja una gran parte del estómago intacto, incluyendo la válvula pilórica, que se encarga de regular la liberación del contenido estomacal en el intestino delgado.</p>',
+		'paragraph' => '<p>La cirugía de Bypass Gástrico en México, Puerto Vallarta  y en el mundo es considerada el Gold standart para el tratamiento de la Obesidad y sus enfermedades asociadas como diabetes, hipertensión y dislipidemia.</p>',
 		'consiste_title'            => 'Beneficios de la cirugia de BYPASS GÁSTRICO y resolución de Diabetes ',
 		'consiste_paragraph'        => '<p>El Bypass Gástrico ofrece beneficios a corto y a largo plazo, ya que además de lograr perder peso y mantener esa pérdida de peso, puede ayudar a controlar la diabetes en >90 % de los casos, principalmente aquellos aquellos pacientes con diagnóstico de diabetes < a 5 años de inicio.</p><p>Se logra incluso no utilizar medicamentos para tratar el diabetes, siempre que tenga apego a nutrición y cambio de hábitos, además de la cirugía.</p>',
 
